@@ -1,0 +1,18 @@
+# Pinned from the environment the experiments ran in (Python 3.13.12, Windows 11).
+# Offline verification (verify/, audits/) needs only the Python standard library.
+
+# Model clients (live runs only; DeepSeek uses its OpenAI-compatible endpoint)
+anthropic==1.2.0
+openai==3.46.0
+
+# Analysis and figures
+numpy==2.5.4
+pandas==3.1.1
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.1
+pytest==9.1.1
+
+# Report build (paper/tools/build_docx_from_template.py)
+lxml==6.1.2
+pillow==12.3.0
