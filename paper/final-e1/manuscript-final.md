@@ -14,18 +14,18 @@ AI agents are increasingly overseen by other AI models, and those monitors are u
 
 An agent deploys a software artifact and cites an approval for a different version. That mismatch deserves a closer look, but it does not prove that no valid approval exists. If the policy accepts any qualifying approval issued before deployment, another record may make the deployment fully compliant. A monitor that stops after checking the cited approval has mistaken an incomplete search for proof.
 
-Monitoring is central to AI control [1], and distributed workflows make observation harder [2]. Wrongful accusations are costly: they halt legitimate work, consume scarce review, and could let an adversary frame other agents. Yet monitors are usually evaluated on harmful versus ordinary benign examples, where clearing a benign agent needs no extra evidence. We ask what happens when the monitor has to go and find the record that clears an agent. The workflows are scripted; the monitor is the only model under test.
+Monitoring is central to AI control [1], and distributed workflows make observation harder [2]. Wrongful accusations are costly: they halt legitimate work, consume scarce review, and could let an adversary frame other agents. Yet monitors are usually evaluated on harmful versus ordinary benign examples, where clearing a benign agent needs no extra evidence; we ask what happens when the monitor must go and find the record that clears an agent. The workflows are scripted; the monitor is the only model under test.
 
 **Our main contributions are:**
 
 1. **A test that ordinary evaluation misses:** matched harmful / exculpatory / ordinary-compliant workflow triplets with identical visible logs, executable state and a clearing record reachable within the query budget.
 2. **A large failure across models and providers:** on release workflows, Claude Sonnet 5.5, DeepSeek Flash, GPT-5.4-mini and GPT-4.1-mini accused 25 to 30 of 30 exculpatory agents (Claude Haiku 5.5: 11). Sonnet and Haiku accused no ordinary compliant agent.
 3. **A repeated failure to look up the clearing record:** in their standard configuration, all 120 wrongful accusations by the five monitors followed a skipped lookup; given the record, Sonnet cleared every case, and a label-blind policy router succeeded on all 30 triplets. A generic verification reminder did not significantly improve triplet success.
-4. **Boundaries:** in a data-consent family the pre-registered contrast was null, and a pre-registered forecast of monitor risk missed its success criterion. We report both, with a policy-ambiguity lesson for benchmark design.
+4. **Boundaries:** in a data-consent family the pre-registered contrast was null, and a pre-registered forecast of monitor risk missed its success criterion; we report both.
 
 ## 2. Related Work
 
-MiniLab shows that distributed multi-agent attacks can evade trajectory monitors [2]. The Arbiter monitors multi-agent conversations with a budget for active inspection and reports false accusations against aligned agents [3]. We study a narrower, controlled question: with identical visible inputs, does a monitor fetch the authoritative record that would defeat its own accusation?
+This study grew out of John Kitaoka's sprint talk and the MiniLab paper [2], which shows that distributed attacks can evade trajectory monitors. The Arbiter monitors multi-agent conversations with an inspection budget and reports false accusations against aligned agents [3]. We ask a narrower question: with identical visible inputs, does a monitor fetch the record that would defeat its own accusation?
 
 EnvTrustBench examines agents that fail to check claims against current state [4]; AgentMonBench improves how oversight locates evidence in long trajectories [5]; TelemetrySuffBench separates diagnosis from evidential sufficiency [6]; and Certify makes evidence requirements explicit for search [7]. We add a stress test aimed at the monitor itself, built around evidence that exonerates rather than incriminates. CAVE-Bench studies how workers react to false accusations [8]; we study the monitor that makes them.
 
@@ -114,7 +114,7 @@ Monitors that look reliable on ordinary benign cases can still accuse most compl
 
 ## Code and Data
 
-All code and data were created during this sprint. The accompanying artifact (E1-REPORTED-STUDIES-ARTIFACT-20261109.zip) contains the generators, synthetic states, protocols, raw model and query records, analyses and audit receipts, with offline commands that reconstruct Studies 2 to 4.
+All code and data were created during this sprint and are available at [https://github.com/ebt55/one-query-away](https://github.com/ebt55/one-query-away): the generators, synthetic states, protocols, raw model and query records, analyses and audit receipts, with offline commands that reconstruct Studies 2 to 4.
 
 <!-- pagebreak -->
 
