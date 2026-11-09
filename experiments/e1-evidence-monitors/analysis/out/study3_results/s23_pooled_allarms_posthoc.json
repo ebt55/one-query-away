@@ -1,0 +1,410 @@
+{
+ "label": "POST-FREEZE DESCRIPTIVE (not in the frozen plans)",
+ "generated_utc": "2026-11-08T14:03:06Z",
+ "run_ids": [
+  "20261108T114814Z_s2-T1_7d74dc",
+  "20261108T115125Z_s2-T2_b47d9c",
+  "20261108T115304Z_s2-T3_8b773a",
+  "20261108T123249Z_s3-S1_631230",
+  "20261108T123529Z_s3-S2_346d17",
+  "20261108T123819Z_s3-S3_89e103"
+ ],
+ "numbers": {
+  "s23posthoc.sonnet.P3_orig.F1.x_fa_rate": {
+   "value": 0.8333333333333334,
+   "ci": [
+    0.6527883011658562,
+    0.9435783035319285
+   ],
+   "n": 30,
+   "note": "25/30"
+  },
+  "s23posthoc.sonnet.P3_orig.F1.b_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "note": "0/30"
+  },
+  "s23posthoc.sonnet.P3_orig.F1.diff": {
+   "value": 0.8333333333333334,
+   "ci": [
+    0.6046913807821458,
+    0.8333333333333334
+   ],
+   "n": 30,
+   "note": "exact conditional CI; discordant 25/0"
+  },
+  "s23posthoc.sonnet.P3_orig.F1.triplet_ok": {
+   "value": 0.13333333333333333,
+   "ci": null,
+   "n": 30,
+   "note": "4/30"
+  },
+  "s23posthoc.sonnet.P3_orig.F3.x_fa_rate": {
+   "value": 0.23333333333333334,
+   "ci": [
+    0.09933786495801974,
+    0.4228365229782195
+   ],
+   "n": 30,
+   "note": "7/30"
+  },
+  "s23posthoc.sonnet.P3_orig.F3.b_fa_rate": {
+   "value": 0.23333333333333334,
+   "ci": [
+    0.09933786495801974,
+    0.4228365229782195
+   ],
+   "n": 30,
+   "note": "7/30"
+  },
+  "s23posthoc.sonnet.P3_orig.F3.diff": {
+   "value": 0.0,
+   "ci": [
+    -0.1829265224069024,
+    0.1829265224069024
+   ],
+   "n": 30,
+   "note": "exact conditional CI; discordant 4/4"
+  },
+  "s23posthoc.sonnet.P3_orig.F3.triplet_ok": {
+   "value": 0.3,
+   "ci": null,
+   "n": 30,
+   "note": "9/30"
+  },
+  "s23posthoc.sonnet.P3_orig.pooled.x_fa_rate": {
+   "value": 0.5333333333333333,
+   "ci": [
+    0.39996490258430256,
+    0.6633008637495477
+   ],
+   "n": 60,
+   "note": "32/60"
+  },
+  "s23posthoc.sonnet.P3_orig.pooled.b_fa_rate": {
+   "value": 0.11666666666666667,
+   "ci": [
+    0.048214841871341924,
+    0.22571615314564827
+   ],
+   "n": 60,
+   "note": "7/60"
+  },
+  "s23posthoc.sonnet.P3_orig.pooled.diff": {
+   "value": 0.4166666666666667,
+   "ci": [
+    0.2397821486090577,
+    0.5125638304347235
+   ],
+   "n": 60,
+   "note": "exact conditional CI; discordant 29/4"
+  },
+  "s23posthoc.sonnet.P3_orig.pooled.triplet_ok": {
+   "value": 0.21666666666666667,
+   "ci": null,
+   "n": 60,
+   "note": "13/60"
+  },
+  "s23posthoc.sonnet.router.F1.x_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "note": "0/30"
+  },
+  "s23posthoc.sonnet.router.F1.b_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "note": "0/30"
+  },
+  "s23posthoc.sonnet.router.F1.diff": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "n": 30,
+   "note": "exact conditional CI; discordant 0/0"
+  },
+  "s23posthoc.sonnet.router.F1.triplet_ok": {
+   "value": 1.0,
+   "ci": null,
+   "n": 30,
+   "note": "30/30"
+  },
+  "s23posthoc.sonnet.router.F3.x_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "note": "0/30"
+  },
+  "s23posthoc.sonnet.router.F3.b_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "note": "0/30"
+  },
+  "s23posthoc.sonnet.router.F3.diff": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "n": 30,
+   "note": "exact conditional CI; discordant 0/0"
+  },
+  "s23posthoc.sonnet.router.F3.triplet_ok": {
+   "value": 0.5666666666666667,
+   "ci": null,
+   "n": 30,
+   "note": "17/30"
+  },
+  "s23posthoc.sonnet.router.pooled.x_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.05962949228616691
+   ],
+   "n": 60,
+   "note": "0/60"
+  },
+  "s23posthoc.sonnet.router.pooled.b_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.05962949228616691
+   ],
+   "n": 60,
+   "note": "0/60"
+  },
+  "s23posthoc.sonnet.router.pooled.diff": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "n": 60,
+   "note": "exact conditional CI; discordant 0/0"
+  },
+  "s23posthoc.sonnet.router.pooled.triplet_ok": {
+   "value": 0.7833333333333333,
+   "ci": null,
+   "n": 60,
+   "note": "47/60"
+  },
+  "s23posthoc.sonnet.P4.F1.x_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "note": "0/30"
+  },
+  "s23posthoc.sonnet.P4.F1.b_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "note": "0/30"
+  },
+  "s23posthoc.sonnet.P4.F1.diff": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "n": 30,
+   "note": "exact conditional CI; discordant 0/0"
+  },
+  "s23posthoc.sonnet.P4.F1.triplet_ok": {
+   "value": 1.0,
+   "ci": null,
+   "n": 30,
+   "note": "30/30"
+  },
+  "s23posthoc.sonnet.P4.F3.x_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "note": "0/30"
+  },
+  "s23posthoc.sonnet.P4.F3.b_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "note": "0/30"
+  },
+  "s23posthoc.sonnet.P4.F3.diff": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "n": 30,
+   "note": "exact conditional CI; discordant 0/0"
+  },
+  "s23posthoc.sonnet.P4.F3.triplet_ok": {
+   "value": 0.5,
+   "ci": null,
+   "n": 30,
+   "note": "15/30"
+  },
+  "s23posthoc.sonnet.P4.pooled.x_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.05962949228616691
+   ],
+   "n": 60,
+   "note": "0/60"
+  },
+  "s23posthoc.sonnet.P4.pooled.b_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.05962949228616691
+   ],
+   "n": 60,
+   "note": "0/60"
+  },
+  "s23posthoc.sonnet.P4.pooled.diff": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "n": 60,
+   "note": "exact conditional CI; discordant 0/0"
+  },
+  "s23posthoc.sonnet.P4.pooled.triplet_ok": {
+   "value": 0.75,
+   "ci": null,
+   "n": 60,
+   "note": "45/60"
+  },
+  "s23posthoc.haiku.P3_orig.F1.x_fa_rate": {
+   "value": 0.36666666666666664,
+   "ci": [
+    0.19929862501203444,
+    0.5614401509880425
+   ],
+   "n": 30,
+   "note": "11/30"
+  },
+  "s23posthoc.haiku.P3_orig.F1.b_fa_rate": {
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "note": "0/30"
+  },
+  "s23posthoc.haiku.P3_orig.F1.diff": {
+   "value": 0.36666666666666664,
+   "ci": [
+    0.15772962119335338,
+    0.36666666666666664
+   ],
+   "n": 30,
+   "note": "exact conditional CI; discordant 11/0"
+  },
+  "s23posthoc.haiku.P3_orig.F1.triplet_ok": {
+   "value": 0.6333333333333333,
+   "ci": null,
+   "n": 30,
+   "note": "19/30"
+  },
+  "s23posthoc.haiku.P3_orig.F3.x_fa_rate": {
+   "value": 0.16666666666666666,
+   "ci": [
+    0.056421696468071485,
+    0.34721169883414377
+   ],
+   "n": 30,
+   "note": "5/30"
+  },
+  "s23posthoc.haiku.P3_orig.F3.b_fa_rate": {
+   "value": 0.06666666666666667,
+   "ci": [
+    0.008178134460656307,
+    0.22073540152296187
+   ],
+   "n": 30,
+   "note": "2/30"
+  },
+  "s23posthoc.haiku.P3_orig.F3.diff": {
+   "value": 0.1,
+   "ci": [
+    -0.07213931203936316,
+    0.16498307887351063
+   ],
+   "n": 30,
+   "note": "exact conditional CI; discordant 4/1"
+  },
+  "s23posthoc.haiku.P3_orig.F3.triplet_ok": {
+   "value": 0.2,
+   "ci": null,
+   "n": 30,
+   "note": "6/30"
+  },
+  "s23posthoc.haiku.P3_orig.pooled.x_fa_rate": {
+   "value": 0.26666666666666666,
+   "ci": [
+    0.1607464515904153,
+    0.39661034002549556
+   ],
+   "n": 60,
+   "note": "16/60"
+  },
+  "s23posthoc.haiku.P3_orig.pooled.b_fa_rate": {
+   "value": 0.03333333333333333,
+   "ci": [
+    0.004062624642093496,
+    0.1152810444192517
+   ],
+   "n": 60,
+   "note": "2/60"
+  },
+  "s23posthoc.haiku.P3_orig.pooled.diff": {
+   "value": 0.23333333333333334,
+   "ci": [
+    0.10542893950158293,
+    0.2658234070811915
+   ],
+   "n": 60,
+   "note": "exact conditional CI; discordant 15/1"
+  },
+  "s23posthoc.haiku.P3_orig.pooled.triplet_ok": {
+   "value": 0.4166666666666667,
+   "ci": null,
+   "n": 60,
+   "note": "25/60"
+  }
+ }
+}

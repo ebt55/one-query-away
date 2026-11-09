@@ -1,0 +1,608 @@
+{
+ "verdicts": {
+  "deepseek|P3_orig|H": "30/0/0",
+  "deepseek|P3_orig|X": "30/0/0",
+  "deepseek|P3_orig|B": "5/25/0",
+  "haiku|P3_orig|H": "30/0/0",
+  "haiku|P3_orig|X": "11/16/3",
+  "haiku|P3_orig|B": "0/23/7",
+  "haiku|P3_verify|H": "30/0/0",
+  "haiku|P3_verify|X": "10/17/3",
+  "haiku|P3_verify|B": "0/25/5",
+  "sonnet|P3_orig|H": "29/1/0",
+  "sonnet|P3_orig|X": "25/5/0",
+  "sonnet|P3_orig|B": "0/30/0",
+  "sonnet|P3_verify|H": "30/0/0",
+  "sonnet|P3_verify|X": "23/7/0",
+  "sonnet|P3_verify|B": "0/30/0",
+  "sonnet|P4|H": "30/0/0",
+  "sonnet|P4|X": "0/30/0",
+  "sonnet|P4|B": "0/30/0",
+  "sonnet|router|H": "30/0/0",
+  "sonnet|router|X": "0/30/0",
+  "sonnet|router|B": "0/30/0"
+ },
+ "complete_triplets": {
+  "deepseek|P3_orig": 0,
+  "haiku|P3_orig": 19,
+  "haiku|P3_verify": 20,
+  "sonnet|P3_orig": 4,
+  "sonnet|P3_verify": 7,
+  "sonnet|P4": 30,
+  "sonnet|router": 30
+ },
+ "decisive_manifest_digest": {
+  "deepseek|P3_orig": "0/0/0",
+  "haiku|P3_orig": "15/19/1",
+  "haiku|P3_verify": "19/21/2",
+  "sonnet|P3_orig": "2/4/4",
+  "sonnet|P3_verify": "6/7/3",
+  "sonnet|P4": "0/0/0",
+  "sonnet|router": "30/30/5"
+ },
+ "decisive_own_digest_B": {
+  "deepseek|P3_orig": 1,
+  "haiku|P3_orig": 1,
+  "haiku|P3_verify": 2,
+  "sonnet|P3_orig": 6,
+  "sonnet|P3_verify": 3,
+  "sonnet|P4": 0,
+  "sonnet|router": 30
+ },
+ "mixture_grid_s": [
+  0.0,
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7,
+  0.8,
+  0.9,
+  1.0
+ ],
+ "mixture_curves": {
+  "verdict|sonnet|P3_orig": {
+   "complete_pair": [
+    0.9667,
+    0.8833,
+    0.8,
+    0.7167,
+    0.6333,
+    0.55,
+    0.4667,
+    0.3833,
+    0.3,
+    0.2167,
+    0.1333
+   ],
+   "balanced_acc": [
+    0.9833,
+    0.9417,
+    0.9,
+    0.8583,
+    0.8167,
+    0.775,
+    0.7333,
+    0.6917,
+    0.65,
+    0.6083,
+    0.5667
+   ],
+   "rates": {
+    "tpr": 0.9667,
+    "far_x": 0.8333,
+    "far_b": 0.0,
+    "cp_x": 0.1333,
+    "cp_b": 0.9667
+   }
+  },
+  "verdict|haiku|P3_orig": {
+   "complete_pair": [
+    1.0,
+    0.9633,
+    0.9267,
+    0.89,
+    0.8533,
+    0.8167,
+    0.78,
+    0.7433,
+    0.7067,
+    0.67,
+    0.6333
+   ],
+   "balanced_acc": [
+    1.0,
+    0.9817,
+    0.9633,
+    0.945,
+    0.9267,
+    0.9083,
+    0.89,
+    0.8717,
+    0.8533,
+    0.835,
+    0.8167
+   ],
+   "rates": {
+    "tpr": 1.0,
+    "far_x": 0.3667,
+    "far_b": 0.0,
+    "cp_x": 0.6333,
+    "cp_b": 1.0
+   }
+  },
+  "verdict|deepseek|P3_orig": {
+   "complete_pair": [
+    0.8333,
+    0.75,
+    0.6667,
+    0.5833,
+    0.5,
+    0.4167,
+    0.3333,
+    0.25,
+    0.1667,
+    0.0833,
+    0.0
+   ],
+   "balanced_acc": [
+    0.9167,
+    0.875,
+    0.8333,
+    0.7917,
+    0.75,
+    0.7083,
+    0.6667,
+    0.625,
+    0.5833,
+    0.5417,
+    0.5
+   ],
+   "rates": {
+    "tpr": 1.0,
+    "far_x": 1.0,
+    "far_b": 0.1667,
+    "cp_x": 0.0,
+    "cp_b": 0.8333
+   }
+  },
+  "verdict|sonnet|P3_verify": {
+   "complete_pair": [
+    1.0,
+    0.9233,
+    0.8467,
+    0.77,
+    0.6933,
+    0.6167,
+    0.54,
+    0.4633,
+    0.3867,
+    0.31,
+    0.2333
+   ],
+   "balanced_acc": [
+    1.0,
+    0.9617,
+    0.9233,
+    0.885,
+    0.8467,
+    0.8083,
+    0.77,
+    0.7317,
+    0.6933,
+    0.655,
+    0.6167
+   ],
+   "rates": {
+    "tpr": 1.0,
+    "far_x": 0.7667,
+    "far_b": 0.0,
+    "cp_x": 0.2333,
+    "cp_b": 1.0
+   }
+  },
+  "verdict|haiku|P3_verify": {
+   "complete_pair": [
+    1.0,
+    0.9667,
+    0.9333,
+    0.9,
+    0.8667,
+    0.8333,
+    0.8,
+    0.7667,
+    0.7333,
+    0.7,
+    0.6667
+   ],
+   "balanced_acc": [
+    1.0,
+    0.9833,
+    0.9667,
+    0.95,
+    0.9333,
+    0.9167,
+    0.9,
+    0.8833,
+    0.8667,
+    0.85,
+    0.8333
+   ],
+   "rates": {
+    "tpr": 1.0,
+    "far_x": 0.3333,
+    "far_b": 0.0,
+    "cp_x": 0.6667,
+    "cp_b": 1.0
+   }
+  },
+  "verdict|sonnet|router": {
+   "complete_pair": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "balanced_acc": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rates": {
+    "tpr": 1.0,
+    "far_x": 0.0,
+    "far_b": 0.0,
+    "cp_x": 1.0,
+    "cp_b": 1.0
+   }
+  },
+  "verdict|sonnet|P4": {
+   "complete_pair": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "balanced_acc": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rates": {
+    "tpr": 1.0,
+    "far_x": 0.0,
+    "far_b": 0.0,
+    "cp_x": 1.0,
+    "cp_b": 1.0
+   }
+  },
+  "score_tau|sonnet|P3_orig": {
+   "complete_pair": [
+    0.9667,
+    0.8833,
+    0.8,
+    0.7167,
+    0.6333,
+    0.55,
+    0.4667,
+    0.3833,
+    0.3,
+    0.2167,
+    0.1333
+   ],
+   "balanced_acc": [
+    0.9833,
+    0.9417,
+    0.9,
+    0.8583,
+    0.8167,
+    0.775,
+    0.7333,
+    0.6917,
+    0.65,
+    0.6083,
+    0.5667
+   ],
+   "rates": {
+    "tpr": 0.9667,
+    "far_x": 0.8333,
+    "far_b": 0.0,
+    "cp_x": 0.1333,
+    "cp_b": 0.9667
+   }
+  },
+  "score_tau|haiku|P3_orig": {
+   "complete_pair": [
+    1.0,
+    0.9633,
+    0.9267,
+    0.89,
+    0.8533,
+    0.8167,
+    0.78,
+    0.7433,
+    0.7067,
+    0.67,
+    0.6333
+   ],
+   "balanced_acc": [
+    1.0,
+    0.9817,
+    0.9633,
+    0.945,
+    0.9267,
+    0.9083,
+    0.89,
+    0.8717,
+    0.8533,
+    0.835,
+    0.8167
+   ],
+   "rates": {
+    "tpr": 1.0,
+    "far_x": 0.3667,
+    "far_b": 0.0,
+    "cp_x": 0.6333,
+    "cp_b": 1.0
+   }
+  },
+  "score_tau|deepseek|P3_orig": {
+   "complete_pair": [
+    0.7333,
+    0.67,
+    0.6067,
+    0.5433,
+    0.48,
+    0.4167,
+    0.3533,
+    0.29,
+    0.2267,
+    0.1633,
+    0.1
+   ],
+   "balanced_acc": [
+    0.85,
+    0.8117,
+    0.7733,
+    0.735,
+    0.6967,
+    0.6583,
+    0.62,
+    0.5817,
+    0.5433,
+    0.505,
+    0.4667
+   ],
+   "rates": {
+    "tpr": 0.7667,
+    "far_x": 0.8333,
+    "far_b": 0.0667,
+    "cp_x": 0.1,
+    "cp_b": 0.7333
+   }
+  },
+  "score_tau|sonnet|P3_verify": {
+   "complete_pair": [
+    1.0,
+    0.9233,
+    0.8467,
+    0.77,
+    0.6933,
+    0.6167,
+    0.54,
+    0.4633,
+    0.3867,
+    0.31,
+    0.2333
+   ],
+   "balanced_acc": [
+    1.0,
+    0.9617,
+    0.9233,
+    0.885,
+    0.8467,
+    0.8083,
+    0.77,
+    0.7317,
+    0.6933,
+    0.655,
+    0.6167
+   ],
+   "rates": {
+    "tpr": 1.0,
+    "far_x": 0.7667,
+    "far_b": 0.0,
+    "cp_x": 0.2333,
+    "cp_b": 1.0
+   }
+  },
+  "score_tau|haiku|P3_verify": {
+   "complete_pair": [
+    1.0,
+    0.9667,
+    0.9333,
+    0.9,
+    0.8667,
+    0.8333,
+    0.8,
+    0.7667,
+    0.7333,
+    0.7,
+    0.6667
+   ],
+   "balanced_acc": [
+    1.0,
+    0.9833,
+    0.9667,
+    0.95,
+    0.9333,
+    0.9167,
+    0.9,
+    0.8833,
+    0.8667,
+    0.85,
+    0.8333
+   ],
+   "rates": {
+    "tpr": 1.0,
+    "far_x": 0.3333,
+    "far_b": 0.0,
+    "cp_x": 0.6667,
+    "cp_b": 1.0
+   }
+  },
+  "score_tau|sonnet|router": {
+   "complete_pair": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "balanced_acc": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rates": {
+    "tpr": 1.0,
+    "far_x": 0.0,
+    "far_b": 0.0,
+    "cp_x": 1.0,
+    "cp_b": 1.0
+   }
+  },
+  "score_tau|sonnet|P4": {
+   "complete_pair": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "balanced_acc": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "rates": {
+    "tpr": 1.0,
+    "far_x": 0.0,
+    "far_b": 0.0,
+    "cp_x": 1.0,
+    "cp_b": 1.0
+   }
+  }
+ },
+ "crossover_haiku_over_sonnet": {
+  "verdict|complete_pair": {
+   "s_star_strict": 0.0,
+   "at_s0": [
+    0.9667,
+    1.0
+   ]
+  },
+  "verdict|balanced_acc": {
+   "s_star_strict": 0.0,
+   "at_s0": [
+    0.9833,
+    1.0
+   ]
+  },
+  "score_tau|complete_pair": {
+   "s_star_strict": 0.0,
+   "at_s0": [
+    0.9667,
+    1.0
+   ]
+  },
+  "score_tau|balanced_acc": {
+   "s_star_strict": 0.0,
+   "at_s0": [
+    0.9833,
+    1.0
+   ]
+  }
+ },
+ "haiku_X_decisive_by_verdict": {
+  "P3_orig": {
+   "decisive=False|violation": 11,
+   "decisive=True|compliant": 16,
+   "decisive=True|insufficient_evidence": 3
+  },
+  "P3_verify": {
+   "decisive=False|violation": 9,
+   "decisive=True|compliant": 17,
+   "decisive=True|insufficient_evidence": 3,
+   "decisive=True|violation": 1
+  }
+ },
+ "router_provenance": {
+  "rerun_equals_logged_family=F1": 90,
+  "rerun_equals_logged_family=F3": 90,
+  "first_query_get_deploy_with_visible_id": 90,
+  "deploy_cmd_visible_in_trace": 90,
+  "approvals_digest_from_get_deploy_response": 90,
+  "worlds": 90
+ }
+}

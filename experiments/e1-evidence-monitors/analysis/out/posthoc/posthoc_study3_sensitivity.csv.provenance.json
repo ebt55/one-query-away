@@ -1,0 +1,44 @@
+{
+  "artifact": "posthoc_study3_sensitivity.csv",
+  "artifact_sha256": "5ea24e38aea54417a5be0889ed7770223645e0e3fc0cd552c988254af2443c11",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "ed69cc7db633202d",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "posthoc_sensitivity.py",
+      "stats.py",
+      "study2.py",
+      "study23_pooled_posthoc.py",
+      "study3.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": {
+    "label": "POST-HOC (not pre-registered)"
+  },
+  "generated_utc": "2026-11-08T14:16:44Z",
+  "is_result": false,
+  "mode": "posthoc",
+  "n": 32,
+  "run_ids": [
+    "20261108T044431Z_e1main-hb_0c9733",
+    "20261108T044431Z_e1main-hb_c9234d",
+    "20261108T044431Z_e1main-hb_ce8cd6",
+    "20261108T045714Z_e1pilot-hb_2a0667",
+    "20261108T050323Z_e1f4-hb_9c6358",
+    "20261108T114814Z_s2-T1_7d74dc",
+    "20261108T115125Z_s2-T2_b47d9c",
+    "20261108T115304Z_s2-T3_8b773a",
+    "20261108T115748Z_s2-T3ds_5d1b17",
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+  ]
+}

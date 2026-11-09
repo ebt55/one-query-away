@@ -1,0 +1,65 @@
+{
+  "args": {
+    "allow_eval": true,
+    "concurrency": 4,
+    "dry_jobs": false,
+    "fake": false,
+    "limit_worlds": 0,
+    "live": true,
+    "model": "gpt-4.1-mini",
+    "project": false,
+    "run_dir": null,
+    "set": "eval"
+  },
+  "budget": {
+    "max_fact_chars": 4000,
+    "max_records_total": 12,
+    "page_size": 5,
+    "q_max": 3
+  },
+  "code_hash": "b7904b93fe94197d6a51d66255d3b33863ebed0295d7ed74429fb1a023dac0a5",
+  "created_utc": "20261109T000352Z",
+  "handbook_self_check": {
+    "added_lines": [
+      "- A consent grant whose effective_at is null is pending and not in effect."
+    ],
+    "diff_judge_len": 75,
+    "exactly_one_added": true,
+    "judge_has_sentence": true,
+    "selector_has_sentence": true,
+    "study1_handbook_unchanged": true
+  },
+  "handbook_version": "handbook-v-S4",
+  "monitor": "gpt-4.1-mini",
+  "name": "s4-eval-gpt-4.1-mini",
+  "openai_path": "policies.p3 OpenAI-compatible branch via OAAdapter -> LLM.openai_chat (chat.completions; json_object judge)",
+  "provider": "openai",
+  "reasoning_effort": null,
+  "regime": "handbook",
+  "run_id": "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf",
+  "schema": "e1.monitor_result.v1",
+  "set": "eval",
+  "study": "study4",
+  "study4_code_sha256": {
+    "study4_build.py": "d7b67af732ca0e0092555c78deefd9419d5e19df88d171948880311d5e48e434",
+    "study4_handbook.py": "399b21ca07754852b95fdb20ddd93505a938357f8b8de0a8d3b3eb5377b529b4",
+    "study4_replay.py": "65aac8d646b84bc7fe0455e75a80caa587fc94f3004ed5e44a9edd47ca260076",
+    "study4_run.py": "95121123750716ae2f5de9badb9b3332a9d46902ff21b7113b15809794fe404a"
+  },
+  "token_guard": {
+    "cached_input_tokens_settled": 1896704,
+    "free_per_day_assumed": 2400000,
+    "limits": {
+      "max_paid_overflow_usd": 5.5,
+      "max_total_tokens": 9600000
+    },
+    "open_reserved": 0,
+    "paid_overflow_usd_estimate": 1.2548,
+    "paid_overflow_usd_estimate_cached_adjusted_settled": 0.958,
+    "price_basis": "ESTIMATE: $1.00/M input, $4.00/M output beyond 2.4M tokens per UTC day (guard); cached-adjusted variant prices cached input at $0.25/M (assumption, logged only)",
+    "tokens_today": 1600248,
+    "total_tokens_incl_projected": 5183222,
+    "utc_day": "2026-11-09"
+  },
+  "verdict_schema_version": "verdict-schema-v2-rationale-first"
+}

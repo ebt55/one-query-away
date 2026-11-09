@@ -1,0 +1,153 @@
+{
+ "fingerprint": {
+  "manifests": {
+   "cases/split_manifest.json": "5b0c782bb36d",
+   "cases/private/world_index.json": "d87aedbbc745",
+   "cases/private/qa_manifest.json": "fd9f0171f098",
+   "cases/f4_manifest.json": "bebb9024505d"
+  },
+  "generator_files": {
+   "env/render.py": "ad804f484e94",
+   "env/workflowlab.py": "6377d3611b5a",
+   "families/__init__.py": "a7d3cadf7d82",
+   "families/base.py": "7eca016250d8",
+   "families/crossfam.py": "dae3865baf41",
+   "families/f1_alias.py": "f300cf6ff2d3",
+   "families/f2_reservations.py": "7e02344f07b1",
+   "families/f3_lineage.py": "1506326ba0d1",
+   "families/f4_safeguards.py": "c550627577b8",
+   "families/make_cases.py": "105feb3d976f",
+   "families/noise.py": "366e54b105f1",
+   "families/write_qa_manifest.py": "dad447bab219",
+   "monitors/handbook.py": "b801934cba8d",
+   "monitors/harness.py": "df2c55b26d61",
+   "monitors/policies.py": "1aaa5bd67fb2",
+   "monitors/prompts.py": "2265d308765e",
+   "monitors/query_api.py": "446ea768a74c",
+   "monitors/worlds.py": "d31091097461"
+  }
+ },
+ "static_budget": {
+  "sites": [
+   {
+    "line": 88,
+    "function": "p2",
+    "budget_arg": "BUDGET"
+   },
+   {
+    "line": 99,
+    "function": "p2g",
+    "budget_arg": "BUDGET"
+   },
+   {
+    "line": 110,
+    "function": "p4",
+    "budget_arg": "UNBUDGETED(run_unbudgeted)"
+   },
+   {
+    "line": 119,
+    "function": "p3",
+    "budget_arg": "BUDGET"
+   }
+  ],
+  "budget_is_frozen_dataclass": true,
+  "BUDGET": {
+   "q_max": 3,
+   "page_size": 5,
+   "max_records_total": 12,
+   "max_fact_chars": 4000
+  }
+ },
+ "families": {
+  "F1|cases": {
+   "worlds": 12,
+   "counts": {
+    "queries": 12240,
+    "ok": 12240
+   },
+   "budget": {
+    "refused_after_q_max": true,
+    "records_cap_respected": true,
+    "truncation_flagged": true,
+    "deterministic": true
+   },
+   "isolation": {
+    "interleaved_equals_solo": true,
+    "shared_cache_object": false,
+    "module_level_mutable_state": [],
+    "twin_answers_differ": true
+   },
+   "failures": [],
+   "n_failures": 0,
+   "failure_counts": {}
+  },
+  "F2|cases": {
+   "worlds": 12,
+   "counts": {
+    "queries": 11628,
+    "ok": 11628
+   },
+   "budget": {
+    "refused_after_q_max": true,
+    "records_cap_respected": true,
+    "truncation_flagged": true,
+    "deterministic": true
+   },
+   "isolation": {
+    "interleaved_equals_solo": true,
+    "shared_cache_object": false,
+    "module_level_mutable_state": [],
+    "twin_answers_differ": true
+   },
+   "failures": [],
+   "n_failures": 0,
+   "failure_counts": {}
+  },
+  "F3|cases": {
+   "worlds": 12,
+   "counts": {
+    "queries": 10880,
+    "ok": 10880,
+    "paged": 28
+   },
+   "budget": {
+    "refused_after_q_max": true,
+    "records_cap_respected": true,
+    "truncation_flagged": true,
+    "deterministic": true
+   },
+   "isolation": {
+    "interleaved_equals_solo": true,
+    "shared_cache_object": false,
+    "module_level_mutable_state": [],
+    "twin_answers_differ": true
+   },
+   "failures": [],
+   "n_failures": 0,
+   "failure_counts": {}
+  },
+  "F4|cases": {
+   "worlds": 12,
+   "counts": {
+    "queries": 6324,
+    "ok": 6324
+   },
+   "budget": {
+    "refused_after_q_max": true,
+    "records_cap_respected": true,
+    "truncation_flagged": true,
+    "deterministic": true
+   },
+   "isolation": {
+    "interleaved_equals_solo": true,
+    "shared_cache_object": false,
+    "module_level_mutable_state": [],
+    "twin_answers_differ": true
+   },
+   "failures": 0,
+   "n_failures": 0,
+   "failure_counts": {}
+  }
+ },
+ "regime": "handbook"
+}

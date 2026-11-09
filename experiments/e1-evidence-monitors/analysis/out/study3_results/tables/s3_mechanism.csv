@@ -1,0 +1,9 @@
+model_key,arm,flag,accused_skipped_k,n_skipped,accused_run_k,n_run,rate_skipped,rate_run,fisher_p
+haiku,P3_orig,consent,5,19,0,11,0.2631578947368421,0.0,0.12883668056081848
+haiku,P3_orig,consent_or_lineage,0,4,5,26,0.0,0.19230769230769232,1.0
+sonnet,P3_orig,consent,7,10,0,20,0.7,0.0,5.894488653109341e-05
+sonnet,P3_orig,consent_or_lineage,1,2,6,28,0.5,0.21428571428571427,0.4183908045977011
+sonnet,P4,consent,0,0,0,30,,0.0,
+sonnet,P4,consent_or_lineage,0,0,0,30,,0.0,
+sonnet,router,consent,0,0,0,30,,0.0,
+sonnet,router,consent_or_lineage,0,0,0,30,,0.0,

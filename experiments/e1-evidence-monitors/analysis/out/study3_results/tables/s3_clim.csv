@@ -1,0 +1,13 @@
+model_key,arm,world_type,n,clim_violation,clim_compliant,clim_unknown,unsupported_accusation_k,n_violation_verdicts,supported_clearance_k,n_compliant_verdicts
+haiku,P3_orig,B,30,0,0,30,2,2,1,1
+haiku,P3_orig,H,30,5,0,25,5,7,0,0
+haiku,P3_orig,X,30,0,0,30,5,5,0,0
+sonnet,P3_orig,B,30,0,0,30,7,7,10,11
+sonnet,P3_orig,H,30,2,0,28,13,15,0,3
+sonnet,P3_orig,X,30,0,0,30,7,7,4,11
+sonnet,P4,B,30,0,0,30,0,0,30,30
+sonnet,P4,H,30,30,0,0,0,15,0,15
+sonnet,P4,X,30,0,0,30,0,0,30,30
+sonnet,router,B,30,0,0,30,0,0,22,22
+sonnet,router,H,30,30,0,0,0,17,0,9
+sonnet,router,X,30,0,0,30,0,0,25,25

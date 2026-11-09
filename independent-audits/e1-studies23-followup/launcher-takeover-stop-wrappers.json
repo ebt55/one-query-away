@@ -1,0 +1,7 @@
+{
+  "TimeUtc": "2026-11-08T17:20:28.2073252Z",
+  "StoppedPids": [],
+  "Reason": "The first stopped shell did not halt log updates; stop remaining uniquely scoped original launcher wrappers",
+  "LogBytes": 1193,
+  "LogModifiedUtc": "2026-11-08T17:19:51.1155297Z"
+}

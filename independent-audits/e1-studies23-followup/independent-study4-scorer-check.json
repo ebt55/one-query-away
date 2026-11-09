@@ -1,0 +1,47 @@
+{
+  "scope": "synthetic only; no evaluation output/model calls",
+  "fixed_win_regions_verified": {
+    "gpt-5.4-mini|F1": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "gpt-5.4-mini|F3": [],
+    "gpt-4.1-mini|F1": [
+      27,
+      28,
+      29,
+      30
+    ],
+    "gpt-4.1-mini|F3": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "partial_cell_rejected": true,
+  "decomposition_checks": 124
+}

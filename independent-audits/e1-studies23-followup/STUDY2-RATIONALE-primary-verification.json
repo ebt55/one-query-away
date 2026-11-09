@@ -1,0 +1,14 @@
+{
+  "audit_sha256": "95b9e3ef75ee97e7a557af75286a92f0e4a13d22c1cc502ab7a2975705a9877e",
+  "verifier_sha256": "1888c22d5bf08d2c79aa2463f00820b66da24d4f3cb724c8cdaf2c4c55a211ed",
+  "source_files_verified": 73,
+  "rationale_records_verified": 31,
+  "posthoc_categories": {
+    "G": 19,
+    "W": 4,
+    "V": 6,
+    "T": 1
+  },
+  "verified": true,
+  "scope": "Exact source and record binding. Interpretive categories remain model-assisted qualitative coding."
+}

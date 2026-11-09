@@ -1,0 +1,32 @@
+{
+  "artifact": "fig1_ce_views_targeted.png",
+  "artifact_sha256": "a91bad7a23d75bbf9b91795d7140c9892af341627506884bea8140ba934718d5",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "5edd2abcd884f5b9",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "stats.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": {
+    "regime": "targeted",
+    "repeat_idx": 0,
+    "role": "split==test",
+    "stratum": "CE"
+  },
+  "generated_utc": "2026-11-08T05:42:03Z",
+  "is_result": true,
+  "mode": "results",
+  "n": 180,
+  "run_ids": [
+    "20261108T051626Z_e1main_7536cd"
+  ]
+}

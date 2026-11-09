@@ -1,0 +1,13 @@
+metric,arm_a,arm_b,reversal,first_sign_change_s,diff_s0,diff_s1
+balanced_accuracy,sonnet.P3_orig,haiku.P3_orig,False,,0.05,0.1
+balanced_accuracy,sonnet.P3_orig,sonnet.router,False,,-0.15,-0.15
+balanced_accuracy,sonnet.P3_orig,sonnet.P4,False,,-0.116666666667,-0.116666666667
+balanced_accuracy,haiku.P3_orig,sonnet.router,False,,-0.2,-0.25
+balanced_accuracy,haiku.P3_orig,sonnet.P4,False,,-0.166666666667,-0.216666666667
+balanced_accuracy,sonnet.router,sonnet.P4,False,,0.033333333333,0.033333333333
+complete_pair,sonnet.P3_orig,haiku.P3_orig,False,,0.133333333333,0.166666666667
+complete_pair,sonnet.P3_orig,sonnet.router,False,,-0.2,-0.2
+complete_pair,sonnet.P3_orig,sonnet.P4,False,,-0.133333333333,-0.133333333333
+complete_pair,haiku.P3_orig,sonnet.router,False,,-0.333333333333,-0.366666666667
+complete_pair,haiku.P3_orig,sonnet.P4,False,,-0.266666666667,-0.3
+complete_pair,sonnet.router,sonnet.P4,False,,0.066666666667,0.066666666667

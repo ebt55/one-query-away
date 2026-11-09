@@ -1,0 +1,6 @@
+model_key,arm,world_type,k,n,lo,hi,within,note
+sonnet,P3_orig,X,7,30,5,15,True,point ~9-10/30
+sonnet,P3_orig,B,7,30,0,6,False,Study-1 F3 benign 4/30
+haiku,P3_orig,X,5,30,0,5,True,point ~1/30
+sonnet,router,X,0,30,0,2,True,as in Study 2
+sonnet,P4,X,0,30,0,2,True,as in Study 2

@@ -1,0 +1,35 @@
+{
+  "artifact": "tidy.csv",
+  "artifact_sha256": "8b504e0c817374163b34ae3ba101a24a16930f75d31e7509a919be2894be55df",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "5edd2abcd884f5b9",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "stats.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": "all loaded rows",
+  "generated_utc": "2026-11-08T05:41:01Z",
+  "is_result": true,
+  "mode": "results",
+  "n": 7856,
+  "run_ids": [
+    "20261108T044431Z_e1main-hb_0c9733",
+    "20261108T044431Z_e1main-hb_c9234d",
+    "20261108T044431Z_e1main-hb_ce8cd6",
+    "20261108T045714Z_e1pilot-hb_2a0667",
+    "20261108T050323Z_e1f4-hb_9c6358",
+    "20261108T050751Z_e1main-hb_4c5a2d",
+    "20261108T051626Z_e1main_7536cd",
+    "20261108T053135Z_e1main-hb_70e644",
+    "20261108T053355Z_e1main-hb_bca251"
+  ]
+}

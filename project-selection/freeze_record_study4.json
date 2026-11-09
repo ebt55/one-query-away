@@ -1,0 +1,61 @@
+{
+ "study": "Study 4: prospective forecast of unseen monitors' exculpatory risk",
+ "freeze": 1,
+ "frozen_at": "Nov 08 20:42 IST",
+ "approved_by": "author chose Study 4 (Nov 8 ~20:05 IST); monitors gpt-5.4-mini + gpt-4.1-mini (free mini tier); up to $6 paid OpenAI overflow authorised by the author",
+ "preregistration_frozen_sha256": "3ec73c0bc336af82bb721661a7875669fc842b856331198c56613557182fcbdb",
+ "files_sha256": {
+  "preregistration_study4.md": "3ec73c0bc336af82bb721661a7875669fc842b856331198c56613557182fcbdb",
+  "STUDY4_BUILD.md": "d07900e626552cc58cfaecc1118dc21f08a12b424facc38cae8862986ad58f83",
+  "cases_study4/calibration_subset.json": "077782721e7088f8df30549435b5d871adcd27074600939f4d975330fc396698",
+  "cases_study4/build_summary.json": "a43902d30bb72921360f5f0249a24ca4ade241171f19ce22390451ee94ca3182",
+  "analysis/study4.py": "939a850f4bff4334368acb0e6d3ea6176874f1469ea86f963272119ad378e445",
+  "analysis/STUDY4_ANALYSIS_PLAN.md": "700ad459db83b51ac38c4324f100696cc2edf094e539ffae9e89c89876f76fdf",
+  "analysis/tests/test_study4.py": "29817eb3c63c84bbef44a063b38bb7d5a6518c6ff530e16af113259e06e6656d",
+  "monitors/study4_build.py": "d7b67af732ca0e0092555c78deefd9419d5e19df88d171948880311d5e48e434",
+  "monitors/study4_handbook.py": "399b21ca07754852b95fdb20ddd93505a938357f8b8de0a8d3b3eb5377b529b4",
+  "monitors/study4_replay.py": "65aac8d646b84bc7fe0455e75a80caa587fc94f3004ed5e44a9edd47ca260076",
+  "monitors/study4_run.py": "95121123750716ae2f5de9badb9b3332a9d46902ff21b7113b15809794fe404a",
+  "monitors/prompts.py": "2265d308765e88e3267ca4234a72a1dcd8dc150229d4f07e029e7bca805c1b6a",
+  "monitors/handbook.py": "b801934cba8d7280e826bfe281aacb7ec7f3fbb5fd55ae63146b3c426abeab5c",
+  "monitors/query_api.py": "446ea768a74cb9dcaf03d813d41384366b95be1af761c9ffc6552b7821c480e3",
+  "qa/study4_gate.py": "f410ef4d6b0625d13089d559bff30e9427f34664364a64c4b03dc1c9dedbaa33",
+  "qa/STUDY4_QA_REPORT.md": "9d57999763d1e2c628e8a2313b82cda7c5cc1b60f1f45f946835252b400a5a44",
+  "shared/llm.py": "f2464b9079712a058c05cdf16d3aeee4f3c2d097e23e50f4d61fc09e57ab7451",
+  "shared/cost_ledger.py": "f275fa2896a8af98a86ad6fd3b9f41e5468edd3fec833e25d68bebe408f80225"
+ },
+ "cases_study4_tree_sha256": "7cfe8b37bcc7cb6f6657c85ef59810b54089cda7e6e5769ae0e3a787640a1075",
+ "monitors": [
+  "gpt-5.4-mini",
+  "gpt-4.1-mini"
+ ],
+ "caps": {
+  "STUDY4_MAX_TOKENS": 9600000,
+  "paid_overflow_pause_usd_conservative": 5.5
+ },
+ "smoke_calls_tokens": 67,
+ "freeze2": {
+  "frozen_at": "Nov 08 20:47 IST",
+  "forecasts_path": "experiments/e1-evidence-monitors/analysis/forecasts_study4.json",
+  "forecasts_sha256": "c53d1532c74054dd3549b9bec824d896f4a3c91c78dc80f433fada9e302e7dda",
+  "calibration_runs": [
+   "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+   "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+  ],
+  "forecasts_summary": {
+   "gpt-5.4-mini/F1": "15/18 f=.833 PI[16,30] B0/18",
+   "gpt-5.4-mini/F3": "2/18 f=.111 PI[0,12] B2/18",
+   "gpt-4.1-mini/F1": "18/18 f=1.0 PI[23,30] B0/18",
+   "gpt-4.1-mini/F3": "6/18 f=.333 PI[3,20] B4/18"
+  },
+  "x_rows_read_before_freeze": 0,
+  "files_sha256_updates": {
+   "preregistration_study4.md": "8cd6d02591863e474ff55f494ebf4ae7ba42077f51c7fc41fb5ee34bfc41d3a5",
+   "qa/STUDY4_QA_REPORT.md": "de6c353709f99b3020f33b243b378ba329db69ddb8c56aaa91eca293760baaec"
+  },
+  "files_sha256_update_reasons": {
+   "preregistration_study4.md": "lead appended a §9 configuration note at ~20:45 IST (gpt-5.4-mini reasoning_effort fallback with tools); the frozen snapshot preregistration_study4.FROZEN.md is unchanged",
+   "qa/STUDY4_QA_REPORT.md": "QA appended a 'Post-freeze replay re-check' section (PASS) before freeze 2"
+  }
+ }
+}

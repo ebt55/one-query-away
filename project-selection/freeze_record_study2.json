@@ -1,0 +1,32 @@
+{
+ "study": "Study 2: exculpatory verification challenge",
+ "frozen_at": "Nov 08 17:16 IST",
+ "approved_by": "author GO (Nov 8 ~16:58 IST), conditional on QA PASS + freeze; QA PASS 7/7 + 4/4 pre-freeze items",
+ "preregistration_frozen_sha256": "108f950769a64f08a1531e82912f0d08c6725d26122124b035497a517d896107",
+ "files_sha256": {
+  "preregistration_study2.md": "108f950769a64f08a1531e82912f0d08c6725d26122124b035497a517d896107",
+  "cases_study2_manifest": "6da86af9f6fe66cd09ac31d787b5273267be70918b179b6575edd06256cd654b",
+  "STUDY2_BUILD.md": "9acadf970766687fff82ca9007394705a84e46019ead4ae64f4cd3ef62c78293",
+  "analysis/study2.py": "8d366cc338b8e82f76d7a07564b695294c7e9ddaf2bd4af67885fff2761cff39",
+  "analysis/STUDY2_ANALYSIS_PLAN.md": "e76935ab164381287d74b1f759b10b55732ff2b972f1f79de54a0e27ba2f3aa8",
+  "monitors/harness.py": "16d8e9f050d0c73dab146fb31df99cc2a186366d6c3c90902577c8f035157baa",
+  "monitors/prompts.py": "2265d308765e88e3267ca4234a72a1dcd8dc150229d4f07e029e7bca805c1b6a",
+  "qa/STUDY2_QA_REPORT.md": "0ead405c50ccee084d8fd3d6d8d88cc2c719e348cc677f63b270aabb3d4fb5d3",
+  "qa/study2_gate.py": "5524d715200bc5be7ccbde7f9391b55c266ebbcaeae786b3e301929a7ac06dec",
+  "shared/cost_ledger.py": "11892c65e75a696c87af6ecd45add897add0ea6924be0adb9a0ba3263552512f",
+  "monitors/study2_build.py": "e81c4f574a2fd1be080f8fa29453b309bd3ef8d98ee998f9c7bbca10c221159f",
+  "monitors/study2_router.py": "8e4d54616da2bb0ea38d4701e654d8b5da120c8936fe0f92890955067b74e830",
+  "monitors/study2_run.py": "9fdc039c6f36ea1a07986a70b18f26c046793d11881e25e4905734588ab8480f",
+  "monitors/handbook.py": "b801934cba8d7280e826bfe281aacb7ec7f3fbb5fd55ae63146b3c426abeab5c",
+  "monitors/query_api.py": "446ea768a74cb9dcaf03d813d41384366b95be1af761c9ffc6552b7821c480e3",
+  "monitors/policies.py": "1aaa5bd67fb2d65f4f236d7a0b9812a391833e2e72db7985a1df604149342226"
+ },
+ "cases_study2_tree_sha256": "dfab035dbefc960b7874a505546e0ff24710a1cf14cbed5d6ff4c4c4f6735826",
+ "seeds": "50000-50029",
+ "fake_dry_run_id": "20261108T114501Z_s2fake-T1_e657ff",
+ "phase_cap_usd": {
+  "study2": 20.0,
+  "anthropic_provider_cap": 100.0
+ },
+ "verify_paragraph": "Verification duty: before relying on an apparent violation, spend your queries on the records most likely to overturn it — any record that would make the action compliant under the applicable policy — and check that the records you rely on are complete before treating the absence of a record as evidence."
+}

@@ -1,0 +1,21 @@
+role,regime,model_key,condition,repeat_idx,n_rows,refusal,invalid,timeout,incoherent,selector_failed,invalid_details,run_ids
+f4,handbook,deepseek,P1,0,40,0,1,0,0,0,"parse_error: JSONDecodeError: Expecting ',' delimiter: line 1 column 12555 (char 12554) x1",20261108T050323Z_e1f4-hb_9c6358
+f4,handbook,deepseek,P2G,0,40,0,0,0,0,0,,20261108T050323Z_e1f4-hb_9c6358
+f4,handbook,deepseek,P2S,0,40,0,0,0,0,0,,20261108T050323Z_e1f4-hb_9c6358
+f4,handbook,deepseek,P3,0,40,0,0,0,0,0,,20261108T050323Z_e1f4-hb_9c6358
+f4,handbook,deepseek,V0,0,40,0,0,0,0,0,,20261108T050323Z_e1f4-hb_9c6358
+f4,handbook,deepseek,V2,0,40,0,1,0,0,0,"parse_error: JSONDecodeError: Expecting ',' delimiter: line 1 column 8385 (char 8384) x1",20261108T050323Z_e1f4-hb_9c6358
+f4,handbook,haiku,P1,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,haiku,P2G,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,haiku,P2S,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,haiku,P3,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,haiku,P4,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,haiku,V0,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,haiku,V2,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,sonnet,P1,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,sonnet,P2G,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,sonnet,P2S,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,sonnet,P3,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,sonnet,P4,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,sonnet,V0,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667
+f4,handbook,sonnet,V2,0,40,0,0,0,0,0,,20261108T045714Z_e1pilot-hb_2a0667

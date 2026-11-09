@@ -1,0 +1,6038 @@
+{
+ "mode": "study3_results",
+ "banner": "",
+ "generated_utc": "2026-11-08T12:43:20Z",
+ "code_version": {
+  "analysis_src_sha256": "6e0f6f2ef9c5a2a2",
+  "files": [
+   "calibrate.py",
+   "common.py",
+   "figures.py",
+   "load.py",
+   "make_all.py",
+   "metrics.py",
+   "stats.py",
+   "study2.py",
+   "study3.py",
+   "synthetic.py"
+  ],
+  "git_commit": null
+ },
+ "numbers": {
+  "s3.T1.x_fa_k": {
+   "key": "s3.T1.x_fa_k",
+   "value": 7,
+   "ci": null,
+   "n": 30,
+   "filter": "Sonnet P3-orig, repeat 0, complete triplets; accused = verdict 'violation'",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 confirmatory S3-T1 (single test; Sonnet P3-orig X vs B; exact two-sided McNemar by base; alpha 0.05)",
+   "note": "7/30"
+  },
+  "s3.T1.b_fa_k": {
+   "key": "s3.T1.b_fa_k",
+   "value": 7,
+   "ci": null,
+   "n": 30,
+   "filter": "Sonnet P3-orig, repeat 0, complete triplets; accused = verdict 'violation'",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 confirmatory S3-T1 (single test; Sonnet P3-orig X vs B; exact two-sided McNemar by base; alpha 0.05)",
+   "note": "7/30"
+  },
+  "s3.T1.x_fa_rate": {
+   "key": "s3.T1.x_fa_rate",
+   "value": 0.23333333333333334,
+   "ci": [
+    0.09933786495801974,
+    0.4228365229782195
+   ],
+   "n": 30,
+   "filter": "Sonnet P3-orig, repeat 0, complete triplets; accused = verdict 'violation'",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 confirmatory S3-T1 (single test; Sonnet P3-orig X vs B; exact two-sided McNemar by base; alpha 0.05)",
+   "note": "Clopper-Pearson"
+  },
+  "s3.T1.b_fa_rate": {
+   "key": "s3.T1.b_fa_rate",
+   "value": 0.23333333333333334,
+   "ci": [
+    0.09933786495801974,
+    0.4228365229782195
+   ],
+   "n": 30,
+   "filter": "Sonnet P3-orig, repeat 0, complete triplets; accused = verdict 'violation'",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 confirmatory S3-T1 (single test; Sonnet P3-orig X vs B; exact two-sided McNemar by base; alpha 0.05)",
+   "note": "Clopper-Pearson"
+  },
+  "s3.T1.diff": {
+   "key": "s3.T1.diff",
+   "value": 0.0,
+   "ci": [
+    -0.1829265224069024,
+    0.1829265224069024
+   ],
+   "n": 30,
+   "filter": "Sonnet P3-orig, repeat 0, complete triplets; accused = verdict 'violation'",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 confirmatory S3-T1 (single test; Sonnet P3-orig X vs B; exact two-sided McNemar by base; alpha 0.05)",
+   "note": "X - B; exact CI conditional on discordant pairs (4 X-only, 4 B-only)"
+  },
+  "s3.T1.mcnemar_p": {
+   "key": "s3.T1.mcnemar_p",
+   "value": 1.0,
+   "ci": null,
+   "n": 30,
+   "filter": "Sonnet P3-orig, repeat 0, complete triplets; accused = verdict 'violation'",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 confirmatory S3-T1 (single test; Sonnet P3-orig X vs B; exact two-sided McNemar by base; alpha 0.05)",
+   "note": "exact two-sided; no Holm"
+  },
+  "s3.T1.significant": {
+   "key": "s3.T1.significant",
+   "value": false,
+   "ci": null,
+   "n": 30,
+   "filter": "Sonnet P3-orig, repeat 0, complete triplets; accused = verdict 'violation'",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 confirmatory S3-T1 (single test; Sonnet P3-orig X vs B; exact two-sided McNemar by base; alpha 0.05)",
+   "note": "p < 0.05"
+  },
+  "s3.T1.interpretation": {
+   "key": "s3.T1.interpretation",
+   "value": "not significant; X inside 5-15: consistent with the prediction (power note)",
+   "ci": null,
+   "n": 30,
+   "filter": "Sonnet P3-orig, repeat 0, complete triplets; accused = verdict 'violation'",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 confirmatory S3-T1 (single test; Sonnet P3-orig X vs B; exact two-sided McNemar by base; alpha 0.05)",
+   "note": "S3-T1 has low power at n = 30 with X ~9-10 and B ~4; a non-significant S3-T1 with Sonnet X inside 5-15 is consistent with the prediction, not a failed replication (prereg_study3 section 2)."
+  },
+  "s3.pred.sonnet.P3_orig.X.accused_k": {
+   "key": "s3.pred.sonnet.P3_orig.X.accused_k",
+   "value": 7,
+   "ci": null,
+   "n": 30,
+   "filter": "sonnet P3_orig world X",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 prediction check (pre-registered acceptance intervals; prereg_study3 section 2)",
+   "note": "7/30; interval [5, 15]; point ~9-10/30"
+  },
+  "s3.pred.sonnet.P3_orig.X.within": {
+   "key": "s3.pred.sonnet.P3_orig.X.within",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "sonnet P3_orig world X",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 prediction check (pre-registered acceptance intervals; prereg_study3 section 2)",
+   "note": "7 in [5, 15]"
+  },
+  "s3.pred.sonnet.P3_orig.B.accused_k": {
+   "key": "s3.pred.sonnet.P3_orig.B.accused_k",
+   "value": 7,
+   "ci": null,
+   "n": 30,
+   "filter": "sonnet P3_orig world B",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 prediction check (pre-registered acceptance intervals; prereg_study3 section 2)",
+   "note": "7/30; interval [0, 6]; Study-1 F3 benign 4/30"
+  },
+  "s3.pred.sonnet.P3_orig.B.within": {
+   "key": "s3.pred.sonnet.P3_orig.B.within",
+   "value": false,
+   "ci": null,
+   "n": 30,
+   "filter": "sonnet P3_orig world B",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 prediction check (pre-registered acceptance intervals; prereg_study3 section 2)",
+   "note": "7 in [0, 6]"
+  },
+  "s3.pred.haiku.P3_orig.X.accused_k": {
+   "key": "s3.pred.haiku.P3_orig.X.accused_k",
+   "value": 5,
+   "ci": null,
+   "n": 30,
+   "filter": "haiku P3_orig world X",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 prediction check (pre-registered acceptance intervals; prereg_study3 section 2)",
+   "note": "5/30; interval [0, 5]; point ~1/30"
+  },
+  "s3.pred.haiku.P3_orig.X.within": {
+   "key": "s3.pred.haiku.P3_orig.X.within",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "haiku P3_orig world X",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 prediction check (pre-registered acceptance intervals; prereg_study3 section 2)",
+   "note": "5 in [0, 5]"
+  },
+  "s3.pred.sonnet.router.X.accused_k": {
+   "key": "s3.pred.sonnet.router.X.accused_k",
+   "value": 0,
+   "ci": null,
+   "n": 30,
+   "filter": "sonnet router world X",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 prediction check (pre-registered acceptance intervals; prereg_study3 section 2)",
+   "note": "0/30; interval [0, 2]; as in Study 2"
+  },
+  "s3.pred.sonnet.router.X.within": {
+   "key": "s3.pred.sonnet.router.X.within",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "sonnet router world X",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 prediction check (pre-registered acceptance intervals; prereg_study3 section 2)",
+   "note": "0 in [0, 2]"
+  },
+  "s3.pred.sonnet.P4.X.accused_k": {
+   "key": "s3.pred.sonnet.P4.X.accused_k",
+   "value": 0,
+   "ci": null,
+   "n": 30,
+   "filter": "sonnet P4 world X",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 prediction check (pre-registered acceptance intervals; prereg_study3 section 2)",
+   "note": "0/30; interval [0, 2]; as in Study 2"
+  },
+  "s3.pred.sonnet.P4.X.within": {
+   "key": "s3.pred.sonnet.P4.X.within",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "sonnet P4 world X",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 prediction check (pre-registered acceptance intervals; prereg_study3 section 2)",
+   "note": "0 in [0, 2]"
+  },
+  "s3.mech.haiku.P3_orig.X.consent.accused_when_skipped": {
+   "key": "s3.mech.haiku.P3_orig.X.consent.accused_when_skipped",
+   "value": 0.2631578947368421,
+   "ci": null,
+   "n": 19,
+   "filter": "X worlds; flag consent defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "5/19"
+  },
+  "s3.mech.haiku.P3_orig.X.consent.accused_when_run": {
+   "key": "s3.mech.haiku.P3_orig.X.consent.accused_when_run",
+   "value": 0.0,
+   "ci": null,
+   "n": 11,
+   "filter": "X worlds; flag consent defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "0/11"
+  },
+  "s3.mech.haiku.P3_orig.X.consent.fisher_p": {
+   "key": "s3.mech.haiku.P3_orig.X.consent.fisher_p",
+   "value": 0.12883668056081848,
+   "ci": null,
+   "n": 30,
+   "filter": "X worlds; flag consent defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "two-sided Fisher exact; descriptive"
+  },
+  "s3.mech.haiku.P3_orig.X.consent_or_lineage.accused_when_skipped": {
+   "key": "s3.mech.haiku.P3_orig.X.consent_or_lineage.accused_when_skipped",
+   "value": 0.0,
+   "ci": null,
+   "n": 4,
+   "filter": "X worlds; flag consent_or_lineage defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "0/4"
+  },
+  "s3.mech.haiku.P3_orig.X.consent_or_lineage.accused_when_run": {
+   "key": "s3.mech.haiku.P3_orig.X.consent_or_lineage.accused_when_run",
+   "value": 0.19230769230769232,
+   "ci": null,
+   "n": 26,
+   "filter": "X worlds; flag consent_or_lineage defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "5/26"
+  },
+  "s3.mech.haiku.P3_orig.X.consent_or_lineage.fisher_p": {
+   "key": "s3.mech.haiku.P3_orig.X.consent_or_lineage.fisher_p",
+   "value": 1.0,
+   "ci": null,
+   "n": 30,
+   "filter": "X worlds; flag consent_or_lineage defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "two-sided Fisher exact; descriptive"
+  },
+  "s3.mech.sonnet.P3_orig.X.consent.accused_when_skipped": {
+   "key": "s3.mech.sonnet.P3_orig.X.consent.accused_when_skipped",
+   "value": 0.7,
+   "ci": null,
+   "n": 10,
+   "filter": "X worlds; flag consent defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "7/10"
+  },
+  "s3.mech.sonnet.P3_orig.X.consent.accused_when_run": {
+   "key": "s3.mech.sonnet.P3_orig.X.consent.accused_when_run",
+   "value": 0.0,
+   "ci": null,
+   "n": 20,
+   "filter": "X worlds; flag consent defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "0/20"
+  },
+  "s3.mech.sonnet.P3_orig.X.consent.fisher_p": {
+   "key": "s3.mech.sonnet.P3_orig.X.consent.fisher_p",
+   "value": 5.894488653109341e-05,
+   "ci": null,
+   "n": 30,
+   "filter": "X worlds; flag consent defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "two-sided Fisher exact; descriptive"
+  },
+  "s3.mech.sonnet.P3_orig.X.consent_or_lineage.accused_when_skipped": {
+   "key": "s3.mech.sonnet.P3_orig.X.consent_or_lineage.accused_when_skipped",
+   "value": 0.5,
+   "ci": null,
+   "n": 2,
+   "filter": "X worlds; flag consent_or_lineage defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "1/2"
+  },
+  "s3.mech.sonnet.P3_orig.X.consent_or_lineage.accused_when_run": {
+   "key": "s3.mech.sonnet.P3_orig.X.consent_or_lineage.accused_when_run",
+   "value": 0.21428571428571427,
+   "ci": null,
+   "n": 28,
+   "filter": "X worlds; flag consent_or_lineage defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "6/28"
+  },
+  "s3.mech.sonnet.P3_orig.X.consent_or_lineage.fisher_p": {
+   "key": "s3.mech.sonnet.P3_orig.X.consent_or_lineage.fisher_p",
+   "value": 0.4183908045977011,
+   "ci": null,
+   "n": 30,
+   "filter": "X worlds; flag consent_or_lineage defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "two-sided Fisher exact; descriptive"
+  },
+  "s3.mech.sonnet.P4.X.consent.accused_when_run": {
+   "key": "s3.mech.sonnet.P4.X.consent.accused_when_run",
+   "value": 0.0,
+   "ci": null,
+   "n": 30,
+   "filter": "X worlds; flag consent defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "0/30"
+  },
+  "s3.mech.sonnet.P4.X.consent_or_lineage.accused_when_run": {
+   "key": "s3.mech.sonnet.P4.X.consent_or_lineage.accused_when_run",
+   "value": 0.0,
+   "ci": null,
+   "n": 30,
+   "filter": "X worlds; flag consent_or_lineage defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "0/30"
+  },
+  "s3.mech.sonnet.router.X.consent.accused_when_run": {
+   "key": "s3.mech.sonnet.router.X.consent.accused_when_run",
+   "value": 0.0,
+   "ci": null,
+   "n": 30,
+   "filter": "X worlds; flag consent defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "0/30"
+  },
+  "s3.mech.sonnet.router.X.consent_or_lineage.accused_when_run": {
+   "key": "s3.mech.sonnet.router.X.consent_or_lineage.accused_when_run",
+   "value": 0.0,
+   "ci": null,
+   "n": 30,
+   "filter": "X worlds; flag consent_or_lineage defined against the world's own consumed source/dataset",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 mechanism: X accusations when the decisive query was skipped vs run (descriptive; Fisher exact)",
+   "note": "0/30"
+  },
+  "s3.haiku.P3_orig.triplet_ok": {
+   "key": "s3.haiku.P3_orig.triplet_ok",
+   "value": 0.2,
+   "ci": [
+    0.07713551200106561,
+    0.3856665109966071
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "6/30"
+  },
+  "s3.haiku.P3_orig.H_det": {
+   "key": "s3.haiku.P3_orig.H_det",
+   "value": 0.23333333333333334,
+   "ci": [
+    0.09933786495801974,
+    0.4228365229782195
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "7/30"
+  },
+  "s3.haiku.P3_orig.X_acc": {
+   "key": "s3.haiku.P3_orig.X_acc",
+   "value": 0.16666666666666666,
+   "ci": [
+    0.056421696468071485,
+    0.34721169883414377
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "5/30"
+  },
+  "s3.haiku.P3_orig.B_acc": {
+   "key": "s3.haiku.P3_orig.B_acc",
+   "value": 0.06666666666666667,
+   "ci": [
+    0.008178134460656307,
+    0.22073540152296187
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "2/30"
+  },
+  "s3.haiku.P3_orig.X_abst": {
+   "key": "s3.haiku.P3_orig.X_abst",
+   "value": 0.8333333333333334,
+   "ci": [
+    0.6527883011658562,
+    0.9435783035319285
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "25/30"
+  },
+  "s3.sonnet.P3_orig.triplet_ok": {
+   "key": "s3.sonnet.P3_orig.triplet_ok",
+   "value": 0.3,
+   "ci": [
+    0.14734518475470101,
+    0.4939590414625536
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "9/30"
+  },
+  "s3.sonnet.P3_orig.H_det": {
+   "key": "s3.sonnet.P3_orig.H_det",
+   "value": 0.5,
+   "ci": [
+    0.31297028586802744,
+    0.6870297141319726
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "15/30"
+  },
+  "s3.sonnet.P3_orig.X_acc": {
+   "key": "s3.sonnet.P3_orig.X_acc",
+   "value": 0.23333333333333334,
+   "ci": [
+    0.09933786495801974,
+    0.4228365229782195
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "7/30"
+  },
+  "s3.sonnet.P3_orig.B_acc": {
+   "key": "s3.sonnet.P3_orig.B_acc",
+   "value": 0.23333333333333334,
+   "ci": [
+    0.09933786495801974,
+    0.4228365229782195
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "7/30"
+  },
+  "s3.sonnet.P3_orig.X_abst": {
+   "key": "s3.sonnet.P3_orig.X_abst",
+   "value": 0.4,
+   "ci": [
+    0.22655764882859367,
+    0.5939650699481813
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "12/30"
+  },
+  "s3.sonnet.P4.triplet_ok": {
+   "key": "s3.sonnet.P4.triplet_ok",
+   "value": 0.5,
+   "ci": [
+    0.31297028586802744,
+    0.6870297141319726
+   ],
+   "n": 30,
+   "filter": "sonnet P4, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "15/30"
+  },
+  "s3.sonnet.P4.H_det": {
+   "key": "s3.sonnet.P4.H_det",
+   "value": 0.5,
+   "ci": [
+    0.31297028586802744,
+    0.6870297141319726
+   ],
+   "n": 30,
+   "filter": "sonnet P4, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "15/30"
+  },
+  "s3.sonnet.P4.X_acc": {
+   "key": "s3.sonnet.P4.X_acc",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "0/30"
+  },
+  "s3.sonnet.P4.B_acc": {
+   "key": "s3.sonnet.P4.B_acc",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "0/30"
+  },
+  "s3.sonnet.P4.X_abst": {
+   "key": "s3.sonnet.P4.X_abst",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "0/30"
+  },
+  "s3.sonnet.router.triplet_ok": {
+   "key": "s3.sonnet.router.triplet_ok",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.37427345060922074,
+    0.745392450096737
+   ],
+   "n": 30,
+   "filter": "sonnet router, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "17/30"
+  },
+  "s3.sonnet.router.H_det": {
+   "key": "s3.sonnet.router.H_det",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.37427345060922074,
+    0.745392450096737
+   ],
+   "n": 30,
+   "filter": "sonnet router, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "17/30"
+  },
+  "s3.sonnet.router.X_acc": {
+   "key": "s3.sonnet.router.X_acc",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet router, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "0/30"
+  },
+  "s3.sonnet.router.B_acc": {
+   "key": "s3.sonnet.router.B_acc",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet router, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "0/30"
+  },
+  "s3.sonnet.router.X_abst": {
+   "key": "s3.sonnet.router.X_abst",
+   "value": 0.16666666666666666,
+   "ci": [
+    0.056421696468071485,
+    0.34721169883414377
+   ],
+   "n": 30,
+   "filter": "sonnet router, repeat 0, complete triplets",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-arm triplet metrics",
+   "note": "5/30"
+  },
+  "s3.haiku.P3_orig.B.violation_rate": {
+   "key": "s3.haiku.P3_orig.B.violation_rate",
+   "value": 0.06666666666666667,
+   "ci": [
+    0.008178134460656307,
+    0.22073540152296187
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "2/30"
+  },
+  "s3.haiku.P3_orig.B.compliant_rate": {
+   "key": "s3.haiku.P3_orig.B.compliant_rate",
+   "value": 0.03333333333333333,
+   "ci": [
+    0.0008435709266304789,
+    0.17216945563341265
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "1/30"
+  },
+  "s3.haiku.P3_orig.B.insufficient_evidence_rate": {
+   "key": "s3.haiku.P3_orig.B.insufficient_evidence_rate",
+   "value": 0.9,
+   "ci": [
+    0.7347115495257919,
+    0.9788828629702774
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "27/30"
+  },
+  "s3.haiku.P3_orig.B.failure_rate": {
+   "key": "s3.haiku.P3_orig.B.failure_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.haiku.P3_orig.B.incoherent_score_rate": {
+   "key": "s3.haiku.P3_orig.B.incoherent_score_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.haiku.P3_orig.H.violation_rate": {
+   "key": "s3.haiku.P3_orig.H.violation_rate",
+   "value": 0.23333333333333334,
+   "ci": [
+    0.09933786495801974,
+    0.4228365229782195
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "7/30"
+  },
+  "s3.haiku.P3_orig.H.compliant_rate": {
+   "key": "s3.haiku.P3_orig.H.compliant_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.haiku.P3_orig.H.insufficient_evidence_rate": {
+   "key": "s3.haiku.P3_orig.H.insufficient_evidence_rate",
+   "value": 0.7666666666666667,
+   "ci": [
+    0.5771634770217805,
+    0.9006621350419802
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "23/30"
+  },
+  "s3.haiku.P3_orig.H.failure_rate": {
+   "key": "s3.haiku.P3_orig.H.failure_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.haiku.P3_orig.H.incoherent_score_rate": {
+   "key": "s3.haiku.P3_orig.H.incoherent_score_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.haiku.P3_orig.X.violation_rate": {
+   "key": "s3.haiku.P3_orig.X.violation_rate",
+   "value": 0.16666666666666666,
+   "ci": [
+    0.056421696468071485,
+    0.34721169883414377
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "5/30"
+  },
+  "s3.haiku.P3_orig.X.compliant_rate": {
+   "key": "s3.haiku.P3_orig.X.compliant_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.haiku.P3_orig.X.insufficient_evidence_rate": {
+   "key": "s3.haiku.P3_orig.X.insufficient_evidence_rate",
+   "value": 0.8333333333333334,
+   "ci": [
+    0.6527883011658562,
+    0.9435783035319285
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "25/30"
+  },
+  "s3.haiku.P3_orig.X.failure_rate": {
+   "key": "s3.haiku.P3_orig.X.failure_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.haiku.P3_orig.X.incoherent_score_rate": {
+   "key": "s3.haiku.P3_orig.X.incoherent_score_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "haiku P3_orig world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P3_orig.B.violation_rate": {
+   "key": "s3.sonnet.P3_orig.B.violation_rate",
+   "value": 0.23333333333333334,
+   "ci": [
+    0.09933786495801974,
+    0.4228365229782195
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "7/30"
+  },
+  "s3.sonnet.P3_orig.B.compliant_rate": {
+   "key": "s3.sonnet.P3_orig.B.compliant_rate",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.19929862501203444,
+    0.5614401509880425
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "11/30"
+  },
+  "s3.sonnet.P3_orig.B.insufficient_evidence_rate": {
+   "key": "s3.sonnet.P3_orig.B.insufficient_evidence_rate",
+   "value": 0.4,
+   "ci": [
+    0.22655764882859367,
+    0.5939650699481813
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "12/30"
+  },
+  "s3.sonnet.P3_orig.B.failure_rate": {
+   "key": "s3.sonnet.P3_orig.B.failure_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P3_orig.B.incoherent_score_rate": {
+   "key": "s3.sonnet.P3_orig.B.incoherent_score_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P3_orig.H.violation_rate": {
+   "key": "s3.sonnet.P3_orig.H.violation_rate",
+   "value": 0.5,
+   "ci": [
+    0.31297028586802744,
+    0.6870297141319726
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "15/30"
+  },
+  "s3.sonnet.P3_orig.H.compliant_rate": {
+   "key": "s3.sonnet.P3_orig.H.compliant_rate",
+   "value": 0.1,
+   "ci": [
+    0.02111713702972257,
+    0.2652884504742081
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "3/30"
+  },
+  "s3.sonnet.P3_orig.H.insufficient_evidence_rate": {
+   "key": "s3.sonnet.P3_orig.H.insufficient_evidence_rate",
+   "value": 0.4,
+   "ci": [
+    0.22655764882859367,
+    0.5939650699481813
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "12/30"
+  },
+  "s3.sonnet.P3_orig.H.failure_rate": {
+   "key": "s3.sonnet.P3_orig.H.failure_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P3_orig.H.incoherent_score_rate": {
+   "key": "s3.sonnet.P3_orig.H.incoherent_score_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P3_orig.X.violation_rate": {
+   "key": "s3.sonnet.P3_orig.X.violation_rate",
+   "value": 0.23333333333333334,
+   "ci": [
+    0.09933786495801974,
+    0.4228365229782195
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "7/30"
+  },
+  "s3.sonnet.P3_orig.X.compliant_rate": {
+   "key": "s3.sonnet.P3_orig.X.compliant_rate",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.19929862501203444,
+    0.5614401509880425
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "11/30"
+  },
+  "s3.sonnet.P3_orig.X.insufficient_evidence_rate": {
+   "key": "s3.sonnet.P3_orig.X.insufficient_evidence_rate",
+   "value": 0.4,
+   "ci": [
+    0.22655764882859367,
+    0.5939650699481813
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "12/30"
+  },
+  "s3.sonnet.P3_orig.X.failure_rate": {
+   "key": "s3.sonnet.P3_orig.X.failure_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P3_orig.X.incoherent_score_rate": {
+   "key": "s3.sonnet.P3_orig.X.incoherent_score_rate",
+   "value": 0.03333333333333333,
+   "ci": [
+    0.0008435709266304789,
+    0.17216945563341265
+   ],
+   "n": 30,
+   "filter": "sonnet P3_orig world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "1/30"
+  },
+  "s3.sonnet.P4.B.violation_rate": {
+   "key": "s3.sonnet.P4.B.violation_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P4.B.compliant_rate": {
+   "key": "s3.sonnet.P4.B.compliant_rate",
+   "value": 1.0,
+   "ci": [
+    0.8842966917779722,
+    1.0
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "30/30"
+  },
+  "s3.sonnet.P4.B.insufficient_evidence_rate": {
+   "key": "s3.sonnet.P4.B.insufficient_evidence_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P4.B.failure_rate": {
+   "key": "s3.sonnet.P4.B.failure_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P4.B.incoherent_score_rate": {
+   "key": "s3.sonnet.P4.B.incoherent_score_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P4.H.violation_rate": {
+   "key": "s3.sonnet.P4.H.violation_rate",
+   "value": 0.5,
+   "ci": [
+    0.31297028586802744,
+    0.6870297141319726
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "15/30"
+  },
+  "s3.sonnet.P4.H.compliant_rate": {
+   "key": "s3.sonnet.P4.H.compliant_rate",
+   "value": 0.5,
+   "ci": [
+    0.31297028586802744,
+    0.6870297141319726
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "15/30"
+  },
+  "s3.sonnet.P4.H.insufficient_evidence_rate": {
+   "key": "s3.sonnet.P4.H.insufficient_evidence_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P4.H.failure_rate": {
+   "key": "s3.sonnet.P4.H.failure_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P4.H.incoherent_score_rate": {
+   "key": "s3.sonnet.P4.H.incoherent_score_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P4.X.violation_rate": {
+   "key": "s3.sonnet.P4.X.violation_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P4.X.compliant_rate": {
+   "key": "s3.sonnet.P4.X.compliant_rate",
+   "value": 1.0,
+   "ci": [
+    0.8842966917779722,
+    1.0
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "30/30"
+  },
+  "s3.sonnet.P4.X.insufficient_evidence_rate": {
+   "key": "s3.sonnet.P4.X.insufficient_evidence_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P4.X.failure_rate": {
+   "key": "s3.sonnet.P4.X.failure_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.P4.X.incoherent_score_rate": {
+   "key": "s3.sonnet.P4.X.incoherent_score_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet P4 world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.router.B.violation_rate": {
+   "key": "s3.sonnet.router.B.violation_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet router world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.router.B.compliant_rate": {
+   "key": "s3.sonnet.router.B.compliant_rate",
+   "value": 0.7333333333333333,
+   "ci": [
+    0.5411063486052486,
+    0.8772051901276451
+   ],
+   "n": 30,
+   "filter": "sonnet router world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "22/30"
+  },
+  "s3.sonnet.router.B.insufficient_evidence_rate": {
+   "key": "s3.sonnet.router.B.insufficient_evidence_rate",
+   "value": 0.26666666666666666,
+   "ci": [
+    0.12279480987235482,
+    0.45889365139475125
+   ],
+   "n": 30,
+   "filter": "sonnet router world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "8/30"
+  },
+  "s3.sonnet.router.B.failure_rate": {
+   "key": "s3.sonnet.router.B.failure_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet router world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.router.B.incoherent_score_rate": {
+   "key": "s3.sonnet.router.B.incoherent_score_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet router world B, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.router.H.violation_rate": {
+   "key": "s3.sonnet.router.H.violation_rate",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.37427345060922074,
+    0.745392450096737
+   ],
+   "n": 30,
+   "filter": "sonnet router world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "17/30"
+  },
+  "s3.sonnet.router.H.compliant_rate": {
+   "key": "s3.sonnet.router.H.compliant_rate",
+   "value": 0.3,
+   "ci": [
+    0.14734518475470101,
+    0.4939590414625536
+   ],
+   "n": 30,
+   "filter": "sonnet router world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "9/30"
+  },
+  "s3.sonnet.router.H.insufficient_evidence_rate": {
+   "key": "s3.sonnet.router.H.insufficient_evidence_rate",
+   "value": 0.13333333333333333,
+   "ci": [
+    0.037553496338363315,
+    0.30721835027612676
+   ],
+   "n": 30,
+   "filter": "sonnet router world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "4/30"
+  },
+  "s3.sonnet.router.H.failure_rate": {
+   "key": "s3.sonnet.router.H.failure_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet router world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.router.H.incoherent_score_rate": {
+   "key": "s3.sonnet.router.H.incoherent_score_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet router world H, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.router.X.violation_rate": {
+   "key": "s3.sonnet.router.X.violation_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet router world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.router.X.compliant_rate": {
+   "key": "s3.sonnet.router.X.compliant_rate",
+   "value": 0.8333333333333334,
+   "ci": [
+    0.6527883011658562,
+    0.9435783035319285
+   ],
+   "n": 30,
+   "filter": "sonnet router world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "25/30"
+  },
+  "s3.sonnet.router.X.insufficient_evidence_rate": {
+   "key": "s3.sonnet.router.X.insufficient_evidence_rate",
+   "value": 0.16666666666666666,
+   "ci": [
+    0.056421696468071485,
+    0.34721169883414377
+   ],
+   "n": 30,
+   "filter": "sonnet router world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "5/30"
+  },
+  "s3.sonnet.router.X.failure_rate": {
+   "key": "s3.sonnet.router.X.failure_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet router world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.sonnet.router.X.incoherent_score_rate": {
+   "key": "s3.sonnet.router.X.incoherent_score_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "sonnet router world X, repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 verdict distributions",
+   "note": "0/30"
+  },
+  "s3.haiku.P3_orig.B.decisive_query_rate": {
+   "key": "s3.haiku.P3_orig.B.decisive_query_rate",
+   "value": 0.43333333333333335,
+   "ci": [
+    0.254607549903263,
+    0.6257265493907793
+   ],
+   "n": 30,
+   "filter": "consent_history covering the world's own consumed source; repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 decisive-query frequency (own consumed source)",
+   "note": "13/30; lineage on own consumed dataset 25/30; source lineage (R absent from the world's consumed lineage);own_consumed_source (consent_sources_queried)"
+  },
+  "s3.haiku.P3_orig.H.decisive_query_rate": {
+   "key": "s3.haiku.P3_orig.H.decisive_query_rate",
+   "value": 0.4666666666666667,
+   "ci": [
+    0.283418079183537,
+    0.6567447618392659
+   ],
+   "n": 30,
+   "filter": "consent_history covering the world's own consumed source; repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 decisive-query frequency (own consumed source)",
+   "note": "14/30; lineage on own consumed dataset 26/30; source own_consumed_source (consent_sources_queried)"
+  },
+  "s3.haiku.P3_orig.X.decisive_query_rate": {
+   "key": "s3.haiku.P3_orig.X.decisive_query_rate",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.19929862501203444,
+    0.5614401509880425
+   ],
+   "n": 30,
+   "filter": "consent_history covering the world's own consumed source; repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 decisive-query frequency (own consumed source)",
+   "note": "11/30; lineage on own consumed dataset 26/30; source own_consumed_source (consent_sources_queried)"
+  },
+  "s3.sonnet.P3_orig.B.decisive_query_rate": {
+   "key": "s3.sonnet.P3_orig.B.decisive_query_rate",
+   "value": 0.6666666666666666,
+   "ci": [
+    0.47187995521011944,
+    0.8271257784739607
+   ],
+   "n": 30,
+   "filter": "consent_history covering the world's own consumed source; repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 decisive-query frequency (own consumed source)",
+   "note": "20/30; lineage on own consumed dataset 25/30; source lineage (R absent from the world's consumed lineage);own_consumed_source (consent_sources_queried)"
+  },
+  "s3.sonnet.P3_orig.H.decisive_query_rate": {
+   "key": "s3.sonnet.P3_orig.H.decisive_query_rate",
+   "value": 0.6,
+   "ci": [
+    0.4060349300518187,
+    0.7734423511714064
+   ],
+   "n": 30,
+   "filter": "consent_history covering the world's own consumed source; repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 decisive-query frequency (own consumed source)",
+   "note": "18/30; lineage on own consumed dataset 26/30; source own_consumed_source (consent_sources_queried)"
+  },
+  "s3.sonnet.P3_orig.X.decisive_query_rate": {
+   "key": "s3.sonnet.P3_orig.X.decisive_query_rate",
+   "value": 0.6666666666666666,
+   "ci": [
+    0.47187995521011944,
+    0.8271257784739607
+   ],
+   "n": 30,
+   "filter": "consent_history covering the world's own consumed source; repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 decisive-query frequency (own consumed source)",
+   "note": "20/30; lineage on own consumed dataset 24/30; source own_consumed_source (consent_sources_queried)"
+  },
+  "s3.sonnet.P4.B.decisive_query_rate": {
+   "key": "s3.sonnet.P4.B.decisive_query_rate",
+   "value": 1.0,
+   "ci": [
+    0.8842966917779722,
+    1.0
+   ],
+   "n": 30,
+   "filter": "consent_history covering the world's own consumed source; repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 decisive-query frequency (own consumed source)",
+   "note": "30/30; lineage on own consumed dataset 30/30; source lineage (R absent from the world's consumed lineage);own_consumed_source (consent_sources_queried)"
+  },
+  "s3.sonnet.P4.H.decisive_query_rate": {
+   "key": "s3.sonnet.P4.H.decisive_query_rate",
+   "value": 1.0,
+   "ci": [
+    0.8842966917779722,
+    1.0
+   ],
+   "n": 30,
+   "filter": "consent_history covering the world's own consumed source; repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 decisive-query frequency (own consumed source)",
+   "note": "30/30; lineage on own consumed dataset 30/30; source own_consumed_source (consent_sources_queried)"
+  },
+  "s3.sonnet.P4.X.decisive_query_rate": {
+   "key": "s3.sonnet.P4.X.decisive_query_rate",
+   "value": 1.0,
+   "ci": [
+    0.8842966917779722,
+    1.0
+   ],
+   "n": 30,
+   "filter": "consent_history covering the world's own consumed source; repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 decisive-query frequency (own consumed source)",
+   "note": "30/30; lineage on own consumed dataset 30/30; source own_consumed_source (consent_sources_queried)"
+  },
+  "s3.sonnet.router.B.decisive_query_rate": {
+   "key": "s3.sonnet.router.B.decisive_query_rate",
+   "value": 1.0,
+   "ci": [
+    0.8842966917779722,
+    1.0
+   ],
+   "n": 30,
+   "filter": "consent_history covering the world's own consumed source; repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 decisive-query frequency (own consumed source)",
+   "note": "30/30; lineage on own consumed dataset 30/30; source lineage (R absent from the world's consumed lineage);own_consumed_source (consent_sources_queried)"
+  },
+  "s3.sonnet.router.H.decisive_query_rate": {
+   "key": "s3.sonnet.router.H.decisive_query_rate",
+   "value": 1.0,
+   "ci": [
+    0.8842966917779722,
+    1.0
+   ],
+   "n": 30,
+   "filter": "consent_history covering the world's own consumed source; repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 decisive-query frequency (own consumed source)",
+   "note": "30/30; lineage on own consumed dataset 30/30; source own_consumed_source (consent_sources_queried)"
+  },
+  "s3.sonnet.router.X.decisive_query_rate": {
+   "key": "s3.sonnet.router.X.decisive_query_rate",
+   "value": 1.0,
+   "ci": [
+    0.8842966917779722,
+    1.0
+   ],
+   "n": 30,
+   "filter": "consent_history covering the world's own consumed source; repeat 0",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 decisive-query frequency (own consumed source)",
+   "note": "30/30; lineage on own consumed dataset 30/30; source own_consumed_source (consent_sources_queried)"
+  },
+  "s3.haiku.P3_orig.B.tag_citation_rate": {
+   "key": "s3.haiku.P3_orig.B.tag_citation_rate",
+   "value": 1.0,
+   "ci": [
+    0.15811388300841897,
+    1.0
+   ],
+   "n": 2,
+   "filter": "violation verdicts whose rationale cites tags (regex)",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 tag citation in violation rationales",
+   "note": "2/2"
+  },
+  "s3.haiku.P3_orig.H.tag_citation_rate": {
+   "key": "s3.haiku.P3_orig.H.tag_citation_rate",
+   "value": 1.0,
+   "ci": [
+    0.5903836027749966,
+    1.0
+   ],
+   "n": 7,
+   "filter": "violation verdicts whose rationale cites tags (regex)",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 tag citation in violation rationales",
+   "note": "7/7"
+  },
+  "s3.haiku.P3_orig.X.tag_citation_rate": {
+   "key": "s3.haiku.P3_orig.X.tag_citation_rate",
+   "value": 1.0,
+   "ci": [
+    0.4781762498950185,
+    1.0
+   ],
+   "n": 5,
+   "filter": "violation verdicts whose rationale cites tags (regex)",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 tag citation in violation rationales",
+   "note": "5/5"
+  },
+  "s3.sonnet.P3_orig.B.tag_citation_rate": {
+   "key": "s3.sonnet.P3_orig.B.tag_citation_rate",
+   "value": 1.0,
+   "ci": [
+    0.5903836027749966,
+    1.0
+   ],
+   "n": 7,
+   "filter": "violation verdicts whose rationale cites tags (regex)",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 tag citation in violation rationales",
+   "note": "7/7"
+  },
+  "s3.sonnet.P3_orig.H.tag_citation_rate": {
+   "key": "s3.sonnet.P3_orig.H.tag_citation_rate",
+   "value": 1.0,
+   "ci": [
+    0.7819806390894659,
+    1.0
+   ],
+   "n": 15,
+   "filter": "violation verdicts whose rationale cites tags (regex)",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 tag citation in violation rationales",
+   "note": "15/15"
+  },
+  "s3.sonnet.P3_orig.X.tag_citation_rate": {
+   "key": "s3.sonnet.P3_orig.X.tag_citation_rate",
+   "value": 1.0,
+   "ci": [
+    0.5903836027749966,
+    1.0
+   ],
+   "n": 7,
+   "filter": "violation verdicts whose rationale cites tags (regex)",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 tag citation in violation rationales",
+   "note": "7/7"
+  },
+  "s3.sonnet.P4.H.tag_citation_rate": {
+   "key": "s3.sonnet.P4.H.tag_citation_rate",
+   "value": 1.0,
+   "ci": [
+    0.7819806390894659,
+    1.0
+   ],
+   "n": 15,
+   "filter": "violation verdicts whose rationale cites tags (regex)",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 tag citation in violation rationales",
+   "note": "15/15"
+  },
+  "s3.sonnet.router.H.tag_citation_rate": {
+   "key": "s3.sonnet.router.H.tag_citation_rate",
+   "value": 1.0,
+   "ci": [
+    0.8049356770309067,
+    1.0
+   ],
+   "n": 17,
+   "filter": "violation verdicts whose rationale cites tags (regex)",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 tag citation in violation rationales",
+   "note": "17/17"
+  },
+  "s3.haiku.P3_orig.tpl.consent_update.H_det": {
+   "key": "s3.haiku.P3_orig.tpl.consent_update.H_det",
+   "value": 0.4,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "2/5"
+  },
+  "s3.haiku.P3_orig.tpl.consent_update.X_acc": {
+   "key": "s3.haiku.P3_orig.tpl.consent_update.X_acc",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.haiku.P3_orig.tpl.consent_update.B_acc": {
+   "key": "s3.haiku.P3_orig.tpl.consent_update.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.haiku.P3_orig.tpl.consent_update.triplet_ok": {
+   "key": "s3.haiku.P3_orig.tpl.consent_update.triplet_ok",
+   "value": 0.4,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "2/5"
+  },
+  "s3.haiku.P3_orig.tpl.glob_ingest.H_det": {
+   "key": "s3.haiku.P3_orig.tpl.glob_ingest.H_det",
+   "value": 0.4,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "2/5"
+  },
+  "s3.haiku.P3_orig.tpl.glob_ingest.X_acc": {
+   "key": "s3.haiku.P3_orig.tpl.glob_ingest.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.haiku.P3_orig.tpl.glob_ingest.B_acc": {
+   "key": "s3.haiku.P3_orig.tpl.glob_ingest.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.haiku.P3_orig.tpl.glob_ingest.triplet_ok": {
+   "key": "s3.haiku.P3_orig.tpl.glob_ingest.triplet_ok",
+   "value": 0.4,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "2/5"
+  },
+  "s3.haiku.P3_orig.tpl.latest_alias.H_det": {
+   "key": "s3.haiku.P3_orig.tpl.latest_alias.H_det",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.haiku.P3_orig.tpl.latest_alias.X_acc": {
+   "key": "s3.haiku.P3_orig.tpl.latest_alias.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.haiku.P3_orig.tpl.latest_alias.B_acc": {
+   "key": "s3.haiku.P3_orig.tpl.latest_alias.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.haiku.P3_orig.tpl.latest_alias.triplet_ok": {
+   "key": "s3.haiku.P3_orig.tpl.latest_alias.triplet_ok",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.haiku.P3_orig.tpl.review_hold_lift.H_det": {
+   "key": "s3.haiku.P3_orig.tpl.review_hold_lift.H_det",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.haiku.P3_orig.tpl.review_hold_lift.X_acc": {
+   "key": "s3.haiku.P3_orig.tpl.review_hold_lift.X_acc",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.haiku.P3_orig.tpl.review_hold_lift.B_acc": {
+   "key": "s3.haiku.P3_orig.tpl.review_hold_lift.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.haiku.P3_orig.tpl.review_hold_lift.triplet_ok": {
+   "key": "s3.haiku.P3_orig.tpl.review_hold_lift.triplet_ok",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.haiku.P3_orig.tpl.revocation.H_det": {
+   "key": "s3.haiku.P3_orig.tpl.revocation.H_det",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.haiku.P3_orig.tpl.revocation.X_acc": {
+   "key": "s3.haiku.P3_orig.tpl.revocation.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.haiku.P3_orig.tpl.revocation.B_acc": {
+   "key": "s3.haiku.P3_orig.tpl.revocation.B_acc",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.haiku.P3_orig.tpl.revocation.triplet_ok": {
+   "key": "s3.haiku.P3_orig.tpl.revocation.triplet_ok",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.haiku.P3_orig.tpl.snapshot_rebind.H_det": {
+   "key": "s3.haiku.P3_orig.tpl.snapshot_rebind.H_det",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.haiku.P3_orig.tpl.snapshot_rebind.X_acc": {
+   "key": "s3.haiku.P3_orig.tpl.snapshot_rebind.X_acc",
+   "value": 0.6,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "3/5"
+  },
+  "s3.haiku.P3_orig.tpl.snapshot_rebind.B_acc": {
+   "key": "s3.haiku.P3_orig.tpl.snapshot_rebind.B_acc",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.haiku.P3_orig.tpl.snapshot_rebind.triplet_ok": {
+   "key": "s3.haiku.P3_orig.tpl.snapshot_rebind.triplet_ok",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P3_orig.tpl.consent_update.H_det": {
+   "key": "s3.sonnet.P3_orig.tpl.consent_update.H_det",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.P3_orig.tpl.consent_update.X_acc": {
+   "key": "s3.sonnet.P3_orig.tpl.consent_update.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P3_orig.tpl.consent_update.B_acc": {
+   "key": "s3.sonnet.P3_orig.tpl.consent_update.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P3_orig.tpl.consent_update.triplet_ok": {
+   "key": "s3.sonnet.P3_orig.tpl.consent_update.triplet_ok",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.P3_orig.tpl.glob_ingest.H_det": {
+   "key": "s3.sonnet.P3_orig.tpl.glob_ingest.H_det",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.P3_orig.tpl.glob_ingest.X_acc": {
+   "key": "s3.sonnet.P3_orig.tpl.glob_ingest.X_acc",
+   "value": 0.4,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "2/5"
+  },
+  "s3.sonnet.P3_orig.tpl.glob_ingest.B_acc": {
+   "key": "s3.sonnet.P3_orig.tpl.glob_ingest.B_acc",
+   "value": 0.4,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "2/5"
+  },
+  "s3.sonnet.P3_orig.tpl.glob_ingest.triplet_ok": {
+   "key": "s3.sonnet.P3_orig.tpl.glob_ingest.triplet_ok",
+   "value": 0.4,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "2/5"
+  },
+  "s3.sonnet.P3_orig.tpl.latest_alias.H_det": {
+   "key": "s3.sonnet.P3_orig.tpl.latest_alias.H_det",
+   "value": 0.6,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "3/5"
+  },
+  "s3.sonnet.P3_orig.tpl.latest_alias.X_acc": {
+   "key": "s3.sonnet.P3_orig.tpl.latest_alias.X_acc",
+   "value": 0.4,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "2/5"
+  },
+  "s3.sonnet.P3_orig.tpl.latest_alias.B_acc": {
+   "key": "s3.sonnet.P3_orig.tpl.latest_alias.B_acc",
+   "value": 0.4,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "2/5"
+  },
+  "s3.sonnet.P3_orig.tpl.latest_alias.triplet_ok": {
+   "key": "s3.sonnet.P3_orig.tpl.latest_alias.triplet_ok",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.sonnet.P3_orig.tpl.review_hold_lift.H_det": {
+   "key": "s3.sonnet.P3_orig.tpl.review_hold_lift.H_det",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P3_orig.tpl.review_hold_lift.X_acc": {
+   "key": "s3.sonnet.P3_orig.tpl.review_hold_lift.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P3_orig.tpl.review_hold_lift.B_acc": {
+   "key": "s3.sonnet.P3_orig.tpl.review_hold_lift.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P3_orig.tpl.review_hold_lift.triplet_ok": {
+   "key": "s3.sonnet.P3_orig.tpl.review_hold_lift.triplet_ok",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P3_orig.tpl.revocation.H_det": {
+   "key": "s3.sonnet.P3_orig.tpl.revocation.H_det",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.sonnet.P3_orig.tpl.revocation.X_acc": {
+   "key": "s3.sonnet.P3_orig.tpl.revocation.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P3_orig.tpl.revocation.B_acc": {
+   "key": "s3.sonnet.P3_orig.tpl.revocation.B_acc",
+   "value": 0.4,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "2/5"
+  },
+  "s3.sonnet.P3_orig.tpl.revocation.triplet_ok": {
+   "key": "s3.sonnet.P3_orig.tpl.revocation.triplet_ok",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.sonnet.P3_orig.tpl.snapshot_rebind.H_det": {
+   "key": "s3.sonnet.P3_orig.tpl.snapshot_rebind.H_det",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.sonnet.P3_orig.tpl.snapshot_rebind.X_acc": {
+   "key": "s3.sonnet.P3_orig.tpl.snapshot_rebind.X_acc",
+   "value": 0.6,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "3/5"
+  },
+  "s3.sonnet.P3_orig.tpl.snapshot_rebind.B_acc": {
+   "key": "s3.sonnet.P3_orig.tpl.snapshot_rebind.B_acc",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.sonnet.P3_orig.tpl.snapshot_rebind.triplet_ok": {
+   "key": "s3.sonnet.P3_orig.tpl.snapshot_rebind.triplet_ok",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.consent_update.H_det": {
+   "key": "s3.sonnet.P4.tpl.consent_update.H_det",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.P4.tpl.consent_update.X_acc": {
+   "key": "s3.sonnet.P4.tpl.consent_update.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.consent_update.B_acc": {
+   "key": "s3.sonnet.P4.tpl.consent_update.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.consent_update.triplet_ok": {
+   "key": "s3.sonnet.P4.tpl.consent_update.triplet_ok",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.P4.tpl.glob_ingest.H_det": {
+   "key": "s3.sonnet.P4.tpl.glob_ingest.H_det",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.P4.tpl.glob_ingest.X_acc": {
+   "key": "s3.sonnet.P4.tpl.glob_ingest.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.glob_ingest.B_acc": {
+   "key": "s3.sonnet.P4.tpl.glob_ingest.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.glob_ingest.triplet_ok": {
+   "key": "s3.sonnet.P4.tpl.glob_ingest.triplet_ok",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.P4.tpl.latest_alias.H_det": {
+   "key": "s3.sonnet.P4.tpl.latest_alias.H_det",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.latest_alias.X_acc": {
+   "key": "s3.sonnet.P4.tpl.latest_alias.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.latest_alias.B_acc": {
+   "key": "s3.sonnet.P4.tpl.latest_alias.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.latest_alias.triplet_ok": {
+   "key": "s3.sonnet.P4.tpl.latest_alias.triplet_ok",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.review_hold_lift.H_det": {
+   "key": "s3.sonnet.P4.tpl.review_hold_lift.H_det",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.review_hold_lift.X_acc": {
+   "key": "s3.sonnet.P4.tpl.review_hold_lift.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.review_hold_lift.B_acc": {
+   "key": "s3.sonnet.P4.tpl.review_hold_lift.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.review_hold_lift.triplet_ok": {
+   "key": "s3.sonnet.P4.tpl.review_hold_lift.triplet_ok",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.revocation.H_det": {
+   "key": "s3.sonnet.P4.tpl.revocation.H_det",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.revocation.X_acc": {
+   "key": "s3.sonnet.P4.tpl.revocation.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.revocation.B_acc": {
+   "key": "s3.sonnet.P4.tpl.revocation.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.revocation.triplet_ok": {
+   "key": "s3.sonnet.P4.tpl.revocation.triplet_ok",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.snapshot_rebind.H_det": {
+   "key": "s3.sonnet.P4.tpl.snapshot_rebind.H_det",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.P4.tpl.snapshot_rebind.X_acc": {
+   "key": "s3.sonnet.P4.tpl.snapshot_rebind.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.snapshot_rebind.B_acc": {
+   "key": "s3.sonnet.P4.tpl.snapshot_rebind.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.P4.tpl.snapshot_rebind.triplet_ok": {
+   "key": "s3.sonnet.P4.tpl.snapshot_rebind.triplet_ok",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.router.tpl.consent_update.H_det": {
+   "key": "s3.sonnet.router.tpl.consent_update.H_det",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.router.tpl.consent_update.X_acc": {
+   "key": "s3.sonnet.router.tpl.consent_update.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.consent_update.B_acc": {
+   "key": "s3.sonnet.router.tpl.consent_update.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.consent_update.triplet_ok": {
+   "key": "s3.sonnet.router.tpl.consent_update.triplet_ok",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template consent_update",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.router.tpl.glob_ingest.H_det": {
+   "key": "s3.sonnet.router.tpl.glob_ingest.H_det",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.router.tpl.glob_ingest.X_acc": {
+   "key": "s3.sonnet.router.tpl.glob_ingest.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.glob_ingest.B_acc": {
+   "key": "s3.sonnet.router.tpl.glob_ingest.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.glob_ingest.triplet_ok": {
+   "key": "s3.sonnet.router.tpl.glob_ingest.triplet_ok",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template glob_ingest",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.router.tpl.latest_alias.H_det": {
+   "key": "s3.sonnet.router.tpl.latest_alias.H_det",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.sonnet.router.tpl.latest_alias.X_acc": {
+   "key": "s3.sonnet.router.tpl.latest_alias.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.latest_alias.B_acc": {
+   "key": "s3.sonnet.router.tpl.latest_alias.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.latest_alias.triplet_ok": {
+   "key": "s3.sonnet.router.tpl.latest_alias.triplet_ok",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template latest_alias",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.sonnet.router.tpl.review_hold_lift.H_det": {
+   "key": "s3.sonnet.router.tpl.review_hold_lift.H_det",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.review_hold_lift.X_acc": {
+   "key": "s3.sonnet.router.tpl.review_hold_lift.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.review_hold_lift.B_acc": {
+   "key": "s3.sonnet.router.tpl.review_hold_lift.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.review_hold_lift.triplet_ok": {
+   "key": "s3.sonnet.router.tpl.review_hold_lift.triplet_ok",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template review_hold_lift",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.revocation.H_det": {
+   "key": "s3.sonnet.router.tpl.revocation.H_det",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.sonnet.router.tpl.revocation.X_acc": {
+   "key": "s3.sonnet.router.tpl.revocation.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.revocation.B_acc": {
+   "key": "s3.sonnet.router.tpl.revocation.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.revocation.triplet_ok": {
+   "key": "s3.sonnet.router.tpl.revocation.triplet_ok",
+   "value": 0.2,
+   "ci": null,
+   "n": 5,
+   "filter": "template revocation",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "1/5"
+  },
+  "s3.sonnet.router.tpl.snapshot_rebind.H_det": {
+   "key": "s3.sonnet.router.tpl.snapshot_rebind.H_det",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.sonnet.router.tpl.snapshot_rebind.X_acc": {
+   "key": "s3.sonnet.router.tpl.snapshot_rebind.X_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.snapshot_rebind.B_acc": {
+   "key": "s3.sonnet.router.tpl.snapshot_rebind.B_acc",
+   "value": 0.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "0/5"
+  },
+  "s3.sonnet.router.tpl.snapshot_rebind.triplet_ok": {
+   "key": "s3.sonnet.router.tpl.snapshot_rebind.triplet_ok",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "template snapshot_rebind",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 per-template breakdown",
+   "note": "5/5"
+  },
+  "s3.mix.sonnet.P3_orig.s0.0.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P3_orig.s0.0.balanced_accuracy",
+   "value": 0.6333333333333333,
+   "ci": [
+    0.5166666666666666,
+    0.75
+   ],
+   "n": 30,
+   "filter": "share s=0.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.0.complete_pair": {
+   "key": "s3.mix.sonnet.P3_orig.s0.0.complete_pair",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.2,
+    0.5333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.1.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P3_orig.s0.1.balanced_accuracy",
+   "value": 0.6333333333333333,
+   "ci": [
+    0.5216666666666666,
+    0.7416666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.1 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.1.complete_pair": {
+   "key": "s3.mix.sonnet.P3_orig.s0.1.complete_pair",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.2033333333333333,
+    0.5334166666666662
+   ],
+   "n": 30,
+   "filter": "share s=0.1 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.2.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P3_orig.s0.2.balanced_accuracy",
+   "value": 0.6333333333333333,
+   "ci": [
+    0.5266666666666666,
+    0.7366666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.2 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.2.complete_pair": {
+   "key": "s3.mix.sonnet.P3_orig.s0.2.complete_pair",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.20666666666666667,
+    0.5333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.2 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.3.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P3_orig.s0.3.balanced_accuracy",
+   "value": 0.6333333333333333,
+   "ci": [
+    0.5283333333333333,
+    0.735
+   ],
+   "n": 30,
+   "filter": "share s=0.3 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.3.complete_pair": {
+   "key": "s3.mix.sonnet.P3_orig.s0.3.complete_pair",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.21000000000000002,
+    0.5333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.3 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.4.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P3_orig.s0.4.balanced_accuracy",
+   "value": 0.6333333333333333,
+   "ci": [
+    0.53,
+    0.7333333333333334
+   ],
+   "n": 30,
+   "filter": "share s=0.4 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.4.complete_pair": {
+   "key": "s3.mix.sonnet.P3_orig.s0.4.complete_pair",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.21333333333333335,
+    0.5333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.4 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.5.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P3_orig.s0.5.balanced_accuracy",
+   "value": 0.6333333333333333,
+   "ci": [
+    0.533125,
+    0.7333333333333334
+   ],
+   "n": 30,
+   "filter": "share s=0.5 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.5.complete_pair": {
+   "key": "s3.mix.sonnet.P3_orig.s0.5.complete_pair",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.21666666666666667,
+    0.5333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.5 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.6.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P3_orig.s0.6.balanced_accuracy",
+   "value": 0.6333333333333333,
+   "ci": [
+    0.53,
+    0.7334166666666663
+   ],
+   "n": 30,
+   "filter": "share s=0.6 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.6.complete_pair": {
+   "key": "s3.mix.sonnet.P3_orig.s0.6.complete_pair",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.21333333333333335,
+    0.5268333333333325
+   ],
+   "n": 30,
+   "filter": "share s=0.6 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.7.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P3_orig.s0.7.balanced_accuracy",
+   "value": 0.6333333333333333,
+   "ci": [
+    0.5266666666666666,
+    0.7350000000000001
+   ],
+   "n": 30,
+   "filter": "share s=0.7 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.7.complete_pair": {
+   "key": "s3.mix.sonnet.P3_orig.s0.7.complete_pair",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.21,
+    0.5333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.7 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.8.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P3_orig.s0.8.balanced_accuracy",
+   "value": 0.6333333333333333,
+   "ci": [
+    0.5233333333333333,
+    0.7366666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.8 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.8.complete_pair": {
+   "key": "s3.mix.sonnet.P3_orig.s0.8.complete_pair",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.20666666666666667,
+    0.5333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.8 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.9.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P3_orig.s0.9.balanced_accuracy",
+   "value": 0.6333333333333333,
+   "ci": [
+    0.52,
+    0.7400833333333329
+   ],
+   "n": 30,
+   "filter": "share s=0.9 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s0.9.complete_pair": {
+   "key": "s3.mix.sonnet.P3_orig.s0.9.complete_pair",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.2033333333333333,
+    0.5333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.9 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s1.0.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P3_orig.s1.0.balanced_accuracy",
+   "value": 0.6333333333333333,
+   "ci": [
+    0.5166666666666666,
+    0.75
+   ],
+   "n": 30,
+   "filter": "share s=1.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P3_orig.s1.0.complete_pair": {
+   "key": "s3.mix.sonnet.P3_orig.s1.0.complete_pair",
+   "value": 0.36666666666666664,
+   "ci": [
+    0.2,
+    0.5333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=1.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.0.balanced_accuracy": {
+   "key": "s3.mix.haiku.P3_orig.s0.0.balanced_accuracy",
+   "value": 0.5833333333333334,
+   "ci": [
+    0.5,
+    0.6833333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.0.complete_pair": {
+   "key": "s3.mix.haiku.P3_orig.s0.0.complete_pair",
+   "value": 0.23333333333333334,
+   "ci": [
+    0.1,
+    0.4
+   ],
+   "n": 30,
+   "filter": "share s=0.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.1.balanced_accuracy": {
+   "key": "s3.mix.haiku.P3_orig.s0.1.balanced_accuracy",
+   "value": 0.5783333333333334,
+   "ci": [
+    0.491625,
+    0.675
+   ],
+   "n": 30,
+   "filter": "share s=0.1 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.1.complete_pair": {
+   "key": "s3.mix.haiku.P3_orig.s0.1.complete_pair",
+   "value": 0.23,
+   "ci": [
+    0.09666666666666666,
+    0.3900833333333329
+   ],
+   "n": 30,
+   "filter": "share s=0.1 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.2.balanced_accuracy": {
+   "key": "s3.mix.haiku.P3_orig.s0.2.balanced_accuracy",
+   "value": 0.5733333333333334,
+   "ci": [
+    0.48333333333333334,
+    0.6666666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.2 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.2.complete_pair": {
+   "key": "s3.mix.haiku.P3_orig.s0.2.complete_pair",
+   "value": 0.22666666666666666,
+   "ci": [
+    0.09333333333333332,
+    0.3801666666666658
+   ],
+   "n": 30,
+   "filter": "share s=0.2 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.3.balanced_accuracy": {
+   "key": "s3.mix.haiku.P3_orig.s0.3.balanced_accuracy",
+   "value": 0.5683333333333334,
+   "ci": [
+    0.47833333333333333,
+    0.6616666666666666
+   ],
+   "n": 30,
+   "filter": "share s=0.3 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.3.complete_pair": {
+   "key": "s3.mix.haiku.P3_orig.s0.3.complete_pair",
+   "value": 0.22333333333333333,
+   "ci": [
+    0.09000000000000001,
+    0.3702499999999987
+   ],
+   "n": 30,
+   "filter": "share s=0.3 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.4.balanced_accuracy": {
+   "key": "s3.mix.haiku.P3_orig.s0.4.balanced_accuracy",
+   "value": 0.5633333333333334,
+   "ci": [
+    0.47333333333333333,
+    0.6566666666666666
+   ],
+   "n": 30,
+   "filter": "share s=0.4 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.4.complete_pair": {
+   "key": "s3.mix.haiku.P3_orig.s0.4.complete_pair",
+   "value": 0.22,
+   "ci": [
+    0.08666666666666667,
+    0.3668333333333324
+   ],
+   "n": 30,
+   "filter": "share s=0.4 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.5.balanced_accuracy": {
+   "key": "s3.mix.haiku.P3_orig.s0.5.balanced_accuracy",
+   "value": 0.5583333333333333,
+   "ci": [
+    0.4666666666666667,
+    0.65
+   ],
+   "n": 30,
+   "filter": "share s=0.5 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.5.complete_pair": {
+   "key": "s3.mix.haiku.P3_orig.s0.5.complete_pair",
+   "value": 0.21666666666666667,
+   "ci": [
+    0.08333333333333333,
+    0.36666666666666664
+   ],
+   "n": 30,
+   "filter": "share s=0.5 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.6.balanced_accuracy": {
+   "key": "s3.mix.haiku.P3_orig.s0.6.balanced_accuracy",
+   "value": 0.5533333333333333,
+   "ci": [
+    0.4633333333333333,
+    0.6466666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.6 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.6.complete_pair": {
+   "key": "s3.mix.haiku.P3_orig.s0.6.complete_pair",
+   "value": 0.21333333333333335,
+   "ci": [
+    0.08,
+    0.36000000000000004
+   ],
+   "n": 30,
+   "filter": "share s=0.6 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.7.balanced_accuracy": {
+   "key": "s3.mix.haiku.P3_orig.s0.7.balanced_accuracy",
+   "value": 0.5483333333333333,
+   "ci": [
+    0.4549583333333333,
+    0.6433333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.7 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.7.complete_pair": {
+   "key": "s3.mix.haiku.P3_orig.s0.7.complete_pair",
+   "value": 0.21,
+   "ci": [
+    0.07666666666666666,
+    0.3533333333333334
+   ],
+   "n": 30,
+   "filter": "share s=0.7 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.8.balanced_accuracy": {
+   "key": "s3.mix.haiku.P3_orig.s0.8.balanced_accuracy",
+   "value": 0.5433333333333333,
+   "ci": [
+    0.44666666666666666,
+    0.64
+   ],
+   "n": 30,
+   "filter": "share s=0.8 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.8.complete_pair": {
+   "key": "s3.mix.haiku.P3_orig.s0.8.complete_pair",
+   "value": 0.20666666666666667,
+   "ci": [
+    0.07333333333333333,
+    0.3466666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.8 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.9.balanced_accuracy": {
+   "key": "s3.mix.haiku.P3_orig.s0.9.balanced_accuracy",
+   "value": 0.5383333333333333,
+   "ci": [
+    0.44,
+    0.6366666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.9 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s0.9.complete_pair": {
+   "key": "s3.mix.haiku.P3_orig.s0.9.complete_pair",
+   "value": 0.2033333333333333,
+   "ci": [
+    0.07,
+    0.33999999999999997
+   ],
+   "n": 30,
+   "filter": "share s=0.9 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s1.0.balanced_accuracy": {
+   "key": "s3.mix.haiku.P3_orig.s1.0.balanced_accuracy",
+   "value": 0.5333333333333333,
+   "ci": [
+    0.4333333333333333,
+    0.6333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=1.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.haiku.P3_orig.s1.0.complete_pair": {
+   "key": "s3.mix.haiku.P3_orig.s1.0.complete_pair",
+   "value": 0.2,
+   "ci": [
+    0.06666666666666667,
+    0.3333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=1.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.0.balanced_accuracy": {
+   "key": "s3.mix.sonnet.router.s0.0.balanced_accuracy",
+   "value": 0.7833333333333333,
+   "ci": [
+    0.7,
+    0.8666666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.0.complete_pair": {
+   "key": "s3.mix.sonnet.router.s0.0.complete_pair",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.4,
+    0.7333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.1.balanced_accuracy": {
+   "key": "s3.mix.sonnet.router.s0.1.balanced_accuracy",
+   "value": 0.7833333333333333,
+   "ci": [
+    0.7,
+    0.8666666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.1 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.1.complete_pair": {
+   "key": "s3.mix.sonnet.router.s0.1.complete_pair",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.4,
+    0.7333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.1 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.2.balanced_accuracy": {
+   "key": "s3.mix.sonnet.router.s0.2.balanced_accuracy",
+   "value": 0.7833333333333333,
+   "ci": [
+    0.7,
+    0.8666666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.2 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.2.complete_pair": {
+   "key": "s3.mix.sonnet.router.s0.2.complete_pair",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.4,
+    0.7333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.2 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.3.balanced_accuracy": {
+   "key": "s3.mix.sonnet.router.s0.3.balanced_accuracy",
+   "value": 0.7833333333333333,
+   "ci": [
+    0.7,
+    0.8666666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.3 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.3.complete_pair": {
+   "key": "s3.mix.sonnet.router.s0.3.complete_pair",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.4,
+    0.7333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.3 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.4.balanced_accuracy": {
+   "key": "s3.mix.sonnet.router.s0.4.balanced_accuracy",
+   "value": 0.7833333333333333,
+   "ci": [
+    0.7,
+    0.8666666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.4 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.4.complete_pair": {
+   "key": "s3.mix.sonnet.router.s0.4.complete_pair",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.4,
+    0.7333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.4 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.5.balanced_accuracy": {
+   "key": "s3.mix.sonnet.router.s0.5.balanced_accuracy",
+   "value": 0.7833333333333333,
+   "ci": [
+    0.7,
+    0.8666666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.5 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.5.complete_pair": {
+   "key": "s3.mix.sonnet.router.s0.5.complete_pair",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.4,
+    0.7333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.5 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.6.balanced_accuracy": {
+   "key": "s3.mix.sonnet.router.s0.6.balanced_accuracy",
+   "value": 0.7833333333333333,
+   "ci": [
+    0.7,
+    0.8666666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.6 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.6.complete_pair": {
+   "key": "s3.mix.sonnet.router.s0.6.complete_pair",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.4,
+    0.7333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.6 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.7.balanced_accuracy": {
+   "key": "s3.mix.sonnet.router.s0.7.balanced_accuracy",
+   "value": 0.7833333333333333,
+   "ci": [
+    0.7,
+    0.8666666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.7 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.7.complete_pair": {
+   "key": "s3.mix.sonnet.router.s0.7.complete_pair",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.4,
+    0.7333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.7 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.8.balanced_accuracy": {
+   "key": "s3.mix.sonnet.router.s0.8.balanced_accuracy",
+   "value": 0.7833333333333333,
+   "ci": [
+    0.7,
+    0.8666666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.8 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.8.complete_pair": {
+   "key": "s3.mix.sonnet.router.s0.8.complete_pair",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.4,
+    0.7333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.8 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.9.balanced_accuracy": {
+   "key": "s3.mix.sonnet.router.s0.9.balanced_accuracy",
+   "value": 0.7833333333333333,
+   "ci": [
+    0.7,
+    0.8666666666666667
+   ],
+   "n": 30,
+   "filter": "share s=0.9 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s0.9.complete_pair": {
+   "key": "s3.mix.sonnet.router.s0.9.complete_pair",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.4,
+    0.7333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=0.9 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s1.0.balanced_accuracy": {
+   "key": "s3.mix.sonnet.router.s1.0.balanced_accuracy",
+   "value": 0.7833333333333333,
+   "ci": [
+    0.7,
+    0.8666666666666667
+   ],
+   "n": 30,
+   "filter": "share s=1.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.router.s1.0.complete_pair": {
+   "key": "s3.mix.sonnet.router.s1.0.complete_pair",
+   "value": 0.5666666666666667,
+   "ci": [
+    0.4,
+    0.7333333333333333
+   ],
+   "n": 30,
+   "filter": "share s=1.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.0.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P4.s0.0.balanced_accuracy",
+   "value": 0.75,
+   "ci": [
+    0.6666666666666666,
+    0.8337499999999977
+   ],
+   "n": 30,
+   "filter": "share s=0.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.0.complete_pair": {
+   "key": "s3.mix.sonnet.P4.s0.0.complete_pair",
+   "value": 0.5,
+   "ci": [
+    0.3333333333333333,
+    0.6674999999999954
+   ],
+   "n": 30,
+   "filter": "share s=0.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.1.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P4.s0.1.balanced_accuracy",
+   "value": 0.75,
+   "ci": [
+    0.6666666666666666,
+    0.8337499999999977
+   ],
+   "n": 30,
+   "filter": "share s=0.1 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.1.complete_pair": {
+   "key": "s3.mix.sonnet.P4.s0.1.complete_pair",
+   "value": 0.5,
+   "ci": [
+    0.3333333333333333,
+    0.6674999999999954
+   ],
+   "n": 30,
+   "filter": "share s=0.1 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.2.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P4.s0.2.balanced_accuracy",
+   "value": 0.75,
+   "ci": [
+    0.6666666666666666,
+    0.8337499999999977
+   ],
+   "n": 30,
+   "filter": "share s=0.2 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.2.complete_pair": {
+   "key": "s3.mix.sonnet.P4.s0.2.complete_pair",
+   "value": 0.5,
+   "ci": [
+    0.3333333333333333,
+    0.6674999999999954
+   ],
+   "n": 30,
+   "filter": "share s=0.2 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.3.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P4.s0.3.balanced_accuracy",
+   "value": 0.75,
+   "ci": [
+    0.6666666666666666,
+    0.8337499999999977
+   ],
+   "n": 30,
+   "filter": "share s=0.3 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.3.complete_pair": {
+   "key": "s3.mix.sonnet.P4.s0.3.complete_pair",
+   "value": 0.5,
+   "ci": [
+    0.3333333333333333,
+    0.6674999999999954
+   ],
+   "n": 30,
+   "filter": "share s=0.3 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.4.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P4.s0.4.balanced_accuracy",
+   "value": 0.75,
+   "ci": [
+    0.6666666666666666,
+    0.8337499999999977
+   ],
+   "n": 30,
+   "filter": "share s=0.4 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.4.complete_pair": {
+   "key": "s3.mix.sonnet.P4.s0.4.complete_pair",
+   "value": 0.5,
+   "ci": [
+    0.3333333333333333,
+    0.6674999999999954
+   ],
+   "n": 30,
+   "filter": "share s=0.4 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.5.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P4.s0.5.balanced_accuracy",
+   "value": 0.75,
+   "ci": [
+    0.6666666666666666,
+    0.8337499999999977
+   ],
+   "n": 30,
+   "filter": "share s=0.5 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.5.complete_pair": {
+   "key": "s3.mix.sonnet.P4.s0.5.complete_pair",
+   "value": 0.5,
+   "ci": [
+    0.3333333333333333,
+    0.6674999999999954
+   ],
+   "n": 30,
+   "filter": "share s=0.5 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.6.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P4.s0.6.balanced_accuracy",
+   "value": 0.75,
+   "ci": [
+    0.6666666666666666,
+    0.8337499999999977
+   ],
+   "n": 30,
+   "filter": "share s=0.6 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.6.complete_pair": {
+   "key": "s3.mix.sonnet.P4.s0.6.complete_pair",
+   "value": 0.5,
+   "ci": [
+    0.3333333333333333,
+    0.6674999999999954
+   ],
+   "n": 30,
+   "filter": "share s=0.6 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.7.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P4.s0.7.balanced_accuracy",
+   "value": 0.75,
+   "ci": [
+    0.6666666666666666,
+    0.8337499999999977
+   ],
+   "n": 30,
+   "filter": "share s=0.7 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.7.complete_pair": {
+   "key": "s3.mix.sonnet.P4.s0.7.complete_pair",
+   "value": 0.5,
+   "ci": [
+    0.3333333333333333,
+    0.6674999999999954
+   ],
+   "n": 30,
+   "filter": "share s=0.7 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.8.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P4.s0.8.balanced_accuracy",
+   "value": 0.75,
+   "ci": [
+    0.6666666666666666,
+    0.8337499999999977
+   ],
+   "n": 30,
+   "filter": "share s=0.8 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.8.complete_pair": {
+   "key": "s3.mix.sonnet.P4.s0.8.complete_pair",
+   "value": 0.5,
+   "ci": [
+    0.3333333333333333,
+    0.6674999999999954
+   ],
+   "n": 30,
+   "filter": "share s=0.8 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.9.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P4.s0.9.balanced_accuracy",
+   "value": 0.75,
+   "ci": [
+    0.6666666666666666,
+    0.8337499999999977
+   ],
+   "n": 30,
+   "filter": "share s=0.9 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s0.9.complete_pair": {
+   "key": "s3.mix.sonnet.P4.s0.9.complete_pair",
+   "value": 0.5,
+   "ci": [
+    0.3333333333333333,
+    0.6674999999999954
+   ],
+   "n": 30,
+   "filter": "share s=0.9 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s1.0.balanced_accuracy": {
+   "key": "s3.mix.sonnet.P4.s1.0.balanced_accuracy",
+   "value": 0.75,
+   "ci": [
+    0.6666666666666666,
+    0.8337499999999977
+   ],
+   "n": 30,
+   "filter": "share s=1.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix.sonnet.P4.s1.0.complete_pair": {
+   "key": "s3.mix.sonnet.P4.s1.0.complete_pair",
+   "value": 0.5,
+   "ci": [
+    0.3333333333333333,
+    0.6674999999999954
+   ],
+   "n": 30,
+   "filter": "share s=1.0 of X among benign worlds; bases common to all curve arms",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": ""
+  },
+  "s3.mix_reversal.balanced_accuracy.sonnet.P3_orig_vs_haiku.P3_orig": {
+   "key": "s3.mix_reversal.balanced_accuracy.sonnet.P3_orig_vs_haiku.P3_orig",
+   "value": false,
+   "ci": null,
+   "n": null,
+   "filter": "ordering of two curve arms across s",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": "diff s=0 +0.050, s=1 +0.100"
+  },
+  "s3.mix_reversal.balanced_accuracy.sonnet.P3_orig_vs_sonnet.router": {
+   "key": "s3.mix_reversal.balanced_accuracy.sonnet.P3_orig_vs_sonnet.router",
+   "value": false,
+   "ci": null,
+   "n": null,
+   "filter": "ordering of two curve arms across s",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": "diff s=0 -0.150, s=1 -0.150"
+  },
+  "s3.mix_reversal.balanced_accuracy.sonnet.P3_orig_vs_sonnet.P4": {
+   "key": "s3.mix_reversal.balanced_accuracy.sonnet.P3_orig_vs_sonnet.P4",
+   "value": false,
+   "ci": null,
+   "n": null,
+   "filter": "ordering of two curve arms across s",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": "diff s=0 -0.117, s=1 -0.117"
+  },
+  "s3.mix_reversal.balanced_accuracy.haiku.P3_orig_vs_sonnet.router": {
+   "key": "s3.mix_reversal.balanced_accuracy.haiku.P3_orig_vs_sonnet.router",
+   "value": false,
+   "ci": null,
+   "n": null,
+   "filter": "ordering of two curve arms across s",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": "diff s=0 -0.200, s=1 -0.250"
+  },
+  "s3.mix_reversal.balanced_accuracy.haiku.P3_orig_vs_sonnet.P4": {
+   "key": "s3.mix_reversal.balanced_accuracy.haiku.P3_orig_vs_sonnet.P4",
+   "value": false,
+   "ci": null,
+   "n": null,
+   "filter": "ordering of two curve arms across s",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": "diff s=0 -0.167, s=1 -0.217"
+  },
+  "s3.mix_reversal.balanced_accuracy.sonnet.router_vs_sonnet.P4": {
+   "key": "s3.mix_reversal.balanced_accuracy.sonnet.router_vs_sonnet.P4",
+   "value": false,
+   "ci": null,
+   "n": null,
+   "filter": "ordering of two curve arms across s",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": "diff s=0 +0.033, s=1 +0.033"
+  },
+  "s3.mix_reversal.complete_pair.sonnet.P3_orig_vs_haiku.P3_orig": {
+   "key": "s3.mix_reversal.complete_pair.sonnet.P3_orig_vs_haiku.P3_orig",
+   "value": false,
+   "ci": null,
+   "n": null,
+   "filter": "ordering of two curve arms across s",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": "diff s=0 +0.133, s=1 +0.167"
+  },
+  "s3.mix_reversal.complete_pair.sonnet.P3_orig_vs_sonnet.router": {
+   "key": "s3.mix_reversal.complete_pair.sonnet.P3_orig_vs_sonnet.router",
+   "value": false,
+   "ci": null,
+   "n": null,
+   "filter": "ordering of two curve arms across s",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": "diff s=0 -0.200, s=1 -0.200"
+  },
+  "s3.mix_reversal.complete_pair.sonnet.P3_orig_vs_sonnet.P4": {
+   "key": "s3.mix_reversal.complete_pair.sonnet.P3_orig_vs_sonnet.P4",
+   "value": false,
+   "ci": null,
+   "n": null,
+   "filter": "ordering of two curve arms across s",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": "diff s=0 -0.133, s=1 -0.133"
+  },
+  "s3.mix_reversal.complete_pair.haiku.P3_orig_vs_sonnet.router": {
+   "key": "s3.mix_reversal.complete_pair.haiku.P3_orig_vs_sonnet.router",
+   "value": false,
+   "ci": null,
+   "n": null,
+   "filter": "ordering of two curve arms across s",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": "diff s=0 -0.333, s=1 -0.367"
+  },
+  "s3.mix_reversal.complete_pair.haiku.P3_orig_vs_sonnet.P4": {
+   "key": "s3.mix_reversal.complete_pair.haiku.P3_orig_vs_sonnet.P4",
+   "value": false,
+   "ci": null,
+   "n": null,
+   "filter": "ordering of two curve arms across s",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": "diff s=0 -0.267, s=1 -0.300"
+  },
+  "s3.mix_reversal.complete_pair.sonnet.router_vs_sonnet.P4": {
+   "key": "s3.mix_reversal.complete_pair.sonnet.router_vs_sonnet.P4",
+   "value": false,
+   "ci": null,
+   "n": null,
+   "filter": "ordering of two curve arms across s",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cross-model mixture curve (pre-specified)",
+   "note": "diff s=0 +0.067, s=1 +0.067"
+  },
+  "s3.haiku.P3_orig.B.unsupported_accusation_rate": {
+   "key": "s3.haiku.P3_orig.B.unsupported_accusation_rate",
+   "value": 1.0,
+   "ci": null,
+   "n": 2,
+   "filter": "violation verdicts with C-lim unknown/compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "2/2"
+  },
+  "s3.haiku.P3_orig.B.supported_clearance_rate": {
+   "key": "s3.haiku.P3_orig.B.supported_clearance_rate",
+   "value": 1.0,
+   "ci": null,
+   "n": 1,
+   "filter": "compliant verdicts with C-lim-native compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "1/1"
+  },
+  "s3.haiku.P3_orig.H.unsupported_accusation_rate": {
+   "key": "s3.haiku.P3_orig.H.unsupported_accusation_rate",
+   "value": 0.7142857142857143,
+   "ci": null,
+   "n": 7,
+   "filter": "violation verdicts with C-lim unknown/compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "5/7"
+  },
+  "s3.haiku.P3_orig.X.unsupported_accusation_rate": {
+   "key": "s3.haiku.P3_orig.X.unsupported_accusation_rate",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "violation verdicts with C-lim unknown/compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "5/5"
+  },
+  "s3.sonnet.P3_orig.B.unsupported_accusation_rate": {
+   "key": "s3.sonnet.P3_orig.B.unsupported_accusation_rate",
+   "value": 1.0,
+   "ci": null,
+   "n": 7,
+   "filter": "violation verdicts with C-lim unknown/compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "7/7"
+  },
+  "s3.sonnet.P3_orig.B.supported_clearance_rate": {
+   "key": "s3.sonnet.P3_orig.B.supported_clearance_rate",
+   "value": 0.9090909090909091,
+   "ci": null,
+   "n": 11,
+   "filter": "compliant verdicts with C-lim-native compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "10/11"
+  },
+  "s3.sonnet.P3_orig.H.unsupported_accusation_rate": {
+   "key": "s3.sonnet.P3_orig.H.unsupported_accusation_rate",
+   "value": 0.8666666666666667,
+   "ci": null,
+   "n": 15,
+   "filter": "violation verdicts with C-lim unknown/compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "13/15"
+  },
+  "s3.sonnet.P3_orig.H.supported_clearance_rate": {
+   "key": "s3.sonnet.P3_orig.H.supported_clearance_rate",
+   "value": 0.0,
+   "ci": null,
+   "n": 3,
+   "filter": "compliant verdicts with C-lim-native compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "0/3"
+  },
+  "s3.sonnet.P3_orig.X.unsupported_accusation_rate": {
+   "key": "s3.sonnet.P3_orig.X.unsupported_accusation_rate",
+   "value": 1.0,
+   "ci": null,
+   "n": 7,
+   "filter": "violation verdicts with C-lim unknown/compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "7/7"
+  },
+  "s3.sonnet.P3_orig.X.supported_clearance_rate": {
+   "key": "s3.sonnet.P3_orig.X.supported_clearance_rate",
+   "value": 0.36363636363636365,
+   "ci": null,
+   "n": 11,
+   "filter": "compliant verdicts with C-lim-native compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "4/11"
+  },
+  "s3.sonnet.P4.B.supported_clearance_rate": {
+   "key": "s3.sonnet.P4.B.supported_clearance_rate",
+   "value": 1.0,
+   "ci": null,
+   "n": 30,
+   "filter": "compliant verdicts with C-lim-native compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "30/30"
+  },
+  "s3.sonnet.P4.H.unsupported_accusation_rate": {
+   "key": "s3.sonnet.P4.H.unsupported_accusation_rate",
+   "value": 0.0,
+   "ci": null,
+   "n": 15,
+   "filter": "violation verdicts with C-lim unknown/compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "0/15"
+  },
+  "s3.sonnet.P4.H.supported_clearance_rate": {
+   "key": "s3.sonnet.P4.H.supported_clearance_rate",
+   "value": 0.0,
+   "ci": null,
+   "n": 15,
+   "filter": "compliant verdicts with C-lim-native compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "0/15"
+  },
+  "s3.sonnet.P4.X.supported_clearance_rate": {
+   "key": "s3.sonnet.P4.X.supported_clearance_rate",
+   "value": 1.0,
+   "ci": null,
+   "n": 30,
+   "filter": "compliant verdicts with C-lim-native compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "30/30"
+  },
+  "s3.sonnet.router.B.supported_clearance_rate": {
+   "key": "s3.sonnet.router.B.supported_clearance_rate",
+   "value": 1.0,
+   "ci": null,
+   "n": 22,
+   "filter": "compliant verdicts with C-lim-native compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "22/22"
+  },
+  "s3.sonnet.router.H.unsupported_accusation_rate": {
+   "key": "s3.sonnet.router.H.unsupported_accusation_rate",
+   "value": 0.0,
+   "ci": null,
+   "n": 17,
+   "filter": "violation verdicts with C-lim unknown/compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "0/17"
+  },
+  "s3.sonnet.router.H.supported_clearance_rate": {
+   "key": "s3.sonnet.router.H.supported_clearance_rate",
+   "value": 0.0,
+   "ci": null,
+   "n": 9,
+   "filter": "compliant verdicts with C-lim-native compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "0/9"
+  },
+  "s3.sonnet.router.X.supported_clearance_rate": {
+   "key": "s3.sonnet.router.X.supported_clearance_rate",
+   "value": 1.0,
+   "ci": null,
+   "n": 25,
+   "filter": "compliant verdicts with C-lim-native compliant",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 evidence support (C-lim field ['C_lim[f3-c-lim-complete-v1]'])",
+   "note": "25/25"
+  },
+  "s3.haiku.P3_orig.cost_usd_per_triplet": {
+   "key": "s3.haiku.P3_orig.cost_usd_per_triplet",
+   "value": 0.009827328333333333,
+   "ci": null,
+   "n": 90,
+   "filter": "mean call cost per world x 3",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cost per arm",
+   "note": ""
+  },
+  "s3.sonnet.P3_orig.cost_usd_per_triplet": {
+   "key": "s3.sonnet.P3_orig.cost_usd_per_triplet",
+   "value": 0.15827551333333334,
+   "ci": null,
+   "n": 90,
+   "filter": "mean call cost per world x 3",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cost per arm",
+   "note": ""
+  },
+  "s3.sonnet.P4.cost_usd_per_triplet": {
+   "key": "s3.sonnet.P4.cost_usd_per_triplet",
+   "value": 0.034828733333333334,
+   "ci": null,
+   "n": 90,
+   "filter": "mean call cost per world x 3",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cost per arm",
+   "note": ""
+  },
+  "s3.sonnet.router.cost_usd_per_triplet": {
+   "key": "s3.sonnet.router.cost_usd_per_triplet",
+   "value": 0.034352400000000005,
+   "ci": null,
+   "n": 90,
+   "filter": "mean call cost per world x 3",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Study 3 cost per arm",
+   "note": ""
+  },
+  "s23.F1.x_fa_rate": {
+   "key": "s23.F1.x_fa_rate",
+   "value": 0.8333333333333334,
+   "ci": [
+    0.6527883011658562,
+    0.9435783035319285
+   ],
+   "n": 30,
+   "filter": "F1",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Pooled descriptive: F1 (Study 2) + F3 (Study 3) Sonnet P3-orig X vs B (no new test)",
+   "note": "25/30"
+  },
+  "s23.F1.b_fa_rate": {
+   "key": "s23.F1.b_fa_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "F1",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Pooled descriptive: F1 (Study 2) + F3 (Study 3) Sonnet P3-orig X vs B (no new test)",
+   "note": "0/30"
+  },
+  "s23.F1.diff": {
+   "key": "s23.F1.diff",
+   "value": 0.8333333333333334,
+   "ci": [
+    0.6046913807821458,
+    0.8333333333333334
+   ],
+   "n": 30,
+   "filter": "F1",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Pooled descriptive: F1 (Study 2) + F3 (Study 3) Sonnet P3-orig X vs B (no new test)",
+   "note": "exact conditional CI; discordant 25/0"
+  },
+  "s23.F3.x_fa_rate": {
+   "key": "s23.F3.x_fa_rate",
+   "value": 0.23333333333333334,
+   "ci": [
+    0.09933786495801974,
+    0.4228365229782195
+   ],
+   "n": 30,
+   "filter": "F3",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Pooled descriptive: F1 (Study 2) + F3 (Study 3) Sonnet P3-orig X vs B (no new test)",
+   "note": "7/30"
+  },
+  "s23.F3.b_fa_rate": {
+   "key": "s23.F3.b_fa_rate",
+   "value": 0.23333333333333334,
+   "ci": [
+    0.09933786495801974,
+    0.4228365229782195
+   ],
+   "n": 30,
+   "filter": "F3",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Pooled descriptive: F1 (Study 2) + F3 (Study 3) Sonnet P3-orig X vs B (no new test)",
+   "note": "7/30"
+  },
+  "s23.F3.diff": {
+   "key": "s23.F3.diff",
+   "value": 0.0,
+   "ci": [
+    -0.1829265224069024,
+    0.1829265224069024
+   ],
+   "n": 30,
+   "filter": "F3",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Pooled descriptive: F1 (Study 2) + F3 (Study 3) Sonnet P3-orig X vs B (no new test)",
+   "note": "exact conditional CI; discordant 4/4"
+  },
+  "s23.pooled.x_fa_rate": {
+   "key": "s23.pooled.x_fa_rate",
+   "value": 0.5333333333333333,
+   "ci": [
+    0.39996490258430256,
+    0.6633008637495477
+   ],
+   "n": 60,
+   "filter": "pooled",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Pooled descriptive: F1 (Study 2) + F3 (Study 3) Sonnet P3-orig X vs B (no new test)",
+   "note": "32/60"
+  },
+  "s23.pooled.b_fa_rate": {
+   "key": "s23.pooled.b_fa_rate",
+   "value": 0.11666666666666667,
+   "ci": [
+    0.048214841871341924,
+    0.22571615314564827
+   ],
+   "n": 60,
+   "filter": "pooled",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Pooled descriptive: F1 (Study 2) + F3 (Study 3) Sonnet P3-orig X vs B (no new test)",
+   "note": "7/60"
+  },
+  "s23.pooled.diff": {
+   "key": "s23.pooled.diff",
+   "value": 0.4166666666666667,
+   "ci": [
+    0.2397821486090577,
+    0.5125638304347235
+   ],
+   "n": 60,
+   "filter": "pooled",
+   "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+   ],
+   "unit": "",
+   "section": "Pooled descriptive: F1 (Study 2) + F3 (Study 3) Sonnet P3-orig X vs B (no new test)",
+   "note": "exact conditional CI; discordant 29/4"
+  }
+ }
+}

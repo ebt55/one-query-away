@@ -1,0 +1,50 @@
+role,regime,model_key,condition,repeat_idx,n_rows,refusal,invalid,timeout,incoherent,selector_failed,invalid_details,run_ids
+test,handbook,deepseek,P1,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_0c9733
+test,handbook,deepseek,P2G,0,180,0,1,0,0,0,"parse_error: JSONDecodeError: Expecting ',' delimiter: line 1 column 3166 (char 3165) x1",20261108T044431Z_e1main-hb_0c9733
+test,handbook,deepseek,P2S,0,180,0,1,0,0,0,parse_error: JSONDecodeError: Invalid control character at: line 1 column 1509 (char 1508) x1,20261108T044431Z_e1main-hb_0c9733
+test,handbook,deepseek,P3,0,180,0,1,0,0,0,parse_error: KeyError: 'verdict' x1,20261108T044431Z_e1main-hb_0c9733
+test,handbook,deepseek,V0,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_0c9733
+test,handbook,deepseek,V2,0,180,0,1,0,0,0,"parse_error: JSONDecodeError: Expecting ',' delimiter: line 1 column 742 (char 741) x1",20261108T044431Z_e1main-hb_0c9733
+test,handbook,haiku,P1,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_ce8cd6
+test,handbook,haiku,P1,1,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,haiku,P1,2,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,haiku,P2G,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_ce8cd6
+test,handbook,haiku,P2G,1,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,haiku,P2G,2,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,haiku,P2S,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_ce8cd6
+test,handbook,haiku,P3,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_ce8cd6
+test,handbook,haiku,P3,1,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,haiku,P3,2,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,haiku,P3I_shared,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_ce8cd6
+test,handbook,haiku,P4,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_ce8cd6
+test,handbook,haiku,V0,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_ce8cd6
+test,handbook,haiku,V0,1,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,haiku,V0,2,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,haiku,V2,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_ce8cd6
+test,handbook,haiku,V2,1,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,haiku,V2,2,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,sonnet,P1,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_c9234d
+test,handbook,sonnet,P1,1,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,sonnet,P1,2,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,sonnet,P2G,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_c9234d
+test,handbook,sonnet,P2G,1,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,sonnet,P2G,2,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,sonnet,P2S,0,180,0,0,0,1,0,,20261108T044431Z_e1main-hb_c9234d
+test,handbook,sonnet,P3,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_c9234d
+test,handbook,sonnet,P3,1,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,sonnet,P3,2,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,sonnet,P3I_standalone,0,36,0,0,0,0,0,,20261108T053135Z_e1main-hb_70e644
+test,handbook,sonnet,P4,0,180,0,0,0,2,0,,20261108T044431Z_e1main-hb_c9234d
+test,handbook,sonnet,V0,0,180,0,0,0,3,0,,20261108T044431Z_e1main-hb_c9234d
+test,handbook,sonnet,V0,1,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,sonnet,V0,2,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,sonnet,V2,0,180,0,0,0,0,0,,20261108T044431Z_e1main-hb_c9234d
+test,handbook,sonnet,V2,1,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,handbook,sonnet,V2,2,36,0,0,0,0,0,,20261108T050751Z_e1main-hb_4c5a2d
+test,targeted,haiku,P1,0,180,0,0,0,0,0,,20261108T051626Z_e1main_7536cd
+test,targeted,haiku,P2,0,180,0,0,0,0,0,,20261108T051626Z_e1main_7536cd
+test,targeted,haiku,P3,0,180,0,0,0,0,0,,20261108T051626Z_e1main_7536cd
+test,targeted,haiku,P3I_shared,0,180,0,1,0,0,0,parse_error: JSONDecodeError: Expecting value: line 1 column 1 (char 0) x1,20261108T051626Z_e1main_7536cd
+test,targeted,haiku,P4,0,180,0,0,0,0,0,,20261108T051626Z_e1main_7536cd
+test,targeted,haiku,V0,0,180,0,0,0,0,0,,20261108T051626Z_e1main_7536cd
+test,targeted,haiku,V2,0,180,0,0,0,0,0,,20261108T051626Z_e1main_7536cd

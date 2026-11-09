@@ -1,0 +1,46 @@
+{
+  "args": {
+    "arms": null,
+    "concurrency": 10,
+    "dry_jobs": false,
+    "fake": false,
+    "limit_worlds": 0,
+    "live": true,
+    "models": null,
+    "phase": "study2",
+    "project": false,
+    "run_dir": null,
+    "tier": "T3ds"
+  },
+  "arm_order": "per (world, model) random, seed = derive_seed('s2-arm-order-v1', wid, model)",
+  "arms": {
+    "p3orig": "IE_P3"
+  },
+  "budget": {
+    "max_fact_chars": 4000,
+    "max_records_total": 12,
+    "page_size": 5,
+    "q_max": 3
+  },
+  "code_hash": "b6e98371c094843fcaa00098786ce9682676c274c7305c204a130359f1ce85dc",
+  "created_utc": "20261108T115748Z",
+  "manifest_sha256": "6da86af9f6fe66cd09ac31d787b5273267be70918b179b6575edd06256cd654b",
+  "models": [
+    "deepseek"
+  ],
+  "name": "s2-T3ds",
+  "p3i": "off",
+  "prereg_sha256": "108f950769a64f08a1531e82912f0d08c6725d26122124b035497a517d896107",
+  "regime": "handbook",
+  "run_id": "20261108T115748Z_s2-T3ds_5d1b17",
+  "schema": "e1.monitor_result.v1",
+  "study": "study2",
+  "study2_code_sha256": {
+    "study2_build.py": "e81c4f574a2fd1be080f8fa29453b309bd3ef8d98ee998f9c7bbca10c221159f",
+    "study2_router.py": "8e4d54616da2bb0ea38d4701e654d8b5da120c8936fe0f92890955067b74e830",
+    "study2_run.py": "9fdc039c6f36ea1a07986a70b18f26c046793d11881e25e4905734588ab8480f"
+  },
+  "verdict_schema_version": "verdict-schema-v2-rationale-first",
+  "verify_join": "\n\n",
+  "verify_paragraph_sha256": "69eea3ee4e0b3cdfc431c05e6cafbf051dc0c1313b44510f6dfb806a8bb7a041"
+}

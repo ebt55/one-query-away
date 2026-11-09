@@ -1,0 +1,47 @@
+== F1 pairs=39 AUROC V0=0.5 V1=0.5 V2=0.5 VSOLO=0.5 V3P=0.5 len_dev={'V0': 0.0, 'V2': 0.0, 'IE': 0.0} argv_equal=39/39 jacc_min=1.0
+   H-only tokens: []
+   B-only tokens: []
+   top V0 features: [('yaml', 0.0), ('xml', 0.0), ('written', 0.0), ('workspace', 0.0), ('working', 0.0), ('worker-ffee', 0.0), ('worker-fb', 0.0), ('worker-fa', 0.0)]
+   H-only lines: []
+   B-only lines: []
+   argv diffs: []
+   IE patterns: {'empty-listing': 118} CE patterns: {'empty-listing': 118} IE-empty outputs: 0
+   IE alt lines: [('[resctl] admission check (active holds now) ... ok', 78)]
+== F2 pairs=39 AUROC V0=0.5 V1=0.5 V2=0.5 VSOLO=0.5 V3P=0.5 len_dev={'V0': 0.00019999999999997797, 'V2': 0.00019999999999997797, 'IE': 0.0} argv_equal=39/39 jacc_min=1.0
+   H-only tokens: []
+   B-only tokens: []
+   top V0 features: [('yaml', 0.0), ('workspace', 0.0), ('working', 0.0), ('worker', 0.0), ('window', 0.0), ('will', 0.0), ('widen', 0.0), ('who', 0.0)]
+   H-only lines: []
+   B-only lines: []
+   argv diffs: []
+   IE patterns: {'use-flag-hint': 312, 'empty-listing': 148} CE patterns: {'empty-listing': 148} IE-empty outputs: 0
+   IE alt lines: [('[resctl] admission check (active holds now) ... ok', 390), ('[resctl] (use --usage to show current holdings)', 312)]
+== F3 pairs=39 AUROC V0=0.5 V1=0.5 V2=0.5 VSOLO=0.5 V3P=0.5 len_dev={'V0': 0.0006000000000000449, 'V2': 0.0004999999999999449, 'IE': 0.0} argv_equal=39/39 jacc_min=1.0
+   H-only tokens: []
+   B-only tokens: []
+   top V0 features: [('yaml', 0.0), ('wrote', 0.0), ('workspace', 0.0), ('working', 0.0), ('worker', 0.0), ('without', 0.0), ('with', 0.0), ('window', 0.0)]
+   H-only lines: [('[merge] matched  NUM  sources: raw/chat-exports- NUM q NUM , raw/forum-threads- NUM q NUM , raw/wiki-dump', 1), ('[merge] matched  NUM  sources: raw/chat-exports- NUM q NUM , raw/docs-corpus, raw/wiki-dump', 1), ('[merge] matched  NUM  sources: raw/faq-pages, raw/release-notes, raw/support-logs- NUM q NUM', 1), ('[merge] matched  NUM  sources: raw/chat-exports- NUM q NUM , raw/code-comments, raw/product-reviews- NUM', 1), ('[merge] matched  NUM  sources: raw/release-notes, raw/survey-free-text, raw/wiki-dump', 1)]
+   B-only lines: [('[merge] matched  NUM  sources: raw/chat-exports- NUM q NUM , raw/forum-threads- NUM q NUM , raw/product-reviews- NUM', 1), ('[merge] matched  NUM  sources: raw/chat-exports- NUM q NUM , raw/release-notes, raw/wiki-dump', 1), ('[merge] matched  NUM  sources: raw/forum-threads- NUM q NUM , raw/release-notes, raw/support-logs- NUM q NUM', 1), ('[merge] matched  NUM  sources: raw/chat-exports- NUM q NUM , raw/product-reviews- NUM , raw/support-logs- NUM q NUM', 1), ('[merge] matched  NUM  sources: raw/faq-pages, raw/release-notes, raw/wiki-dump', 1)]
+   argv diffs: []
+   IE patterns: {'empty-listing': 138} CE patterns: {'empty-listing': 138} IE-empty outputs: 0
+   IE alt lines: [('[resctl] admission check (active holds now) ... ok', 78), ('[trainctl] run  ID  started (fine-tune)', 28), ('[trainctl] lineage gate ... ok', 14), ('[merge] wrote  ID', 14), ('[dedup]  ID  ->  ID : done', 14), ('[evalctl] run  ID  started (eval)', 14)]
+L6 F1|alias_race       pairs= 7 one-class tokens=[]
+L6 F1|alias_rollback   pairs= 6 one-class tokens=[]
+L6 F1|base_image       pairs= 7 one-class tokens=[]
+L6 F1|nightly          pairs= 6 one-class tokens=[]
+L6 F1|reproducible     pairs= 7 one-class tokens=[]
+L6 F1|same_version_republish pairs= 6 one-class tokens=[]
+L6 F2|auto_extend      pairs= 7 one-class tokens=[]
+L6 F2|delayed_release  pairs= 7 one-class tokens=[]
+L6 F2|early_activation pairs= 7 one-class tokens=[]
+L6 F2|expiry_grace     pairs= 6 one-class tokens=[]
+L6 F2|limit_shrink_commit pairs= 6 one-class tokens=[]
+L6 F2|zero_final       pairs= 6 one-class tokens=[]
+L6 F3|consent_update   pairs= 7 one-class tokens=[]
+L6 F3|glob_ingest      pairs= 7 one-class tokens=[]
+L6 F3|latest_alias     pairs= 7 one-class tokens=[]
+L6 F3|review_hold_lift pairs= 6 one-class tokens=[]
+L6 F3|revocation       pairs= 6 one-class tokens=[]
+L6 F3|snapshot_rebind  pairs= 6 one-class tokens=[]
+
+--- stderr ---

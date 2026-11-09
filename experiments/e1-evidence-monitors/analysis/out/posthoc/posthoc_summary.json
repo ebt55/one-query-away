@@ -1,0 +1,78 @@
+{
+ "label": "POST-HOC (not pre-registered)",
+ "generated_utc": "2026-11-08T14:16:44Z",
+ "study1_excluded": {
+  "full (reproduction check)": [],
+  "excl_review_hold_lift": [
+   "F3-test-005",
+   "F3-test-011",
+   "F3-test-017",
+   "F3-test-023",
+   "F3-test-029"
+  ],
+  "excl_null_grant_H": [
+   "F3-test-005",
+   "F3-test-011",
+   "F3-test-017",
+   "F3-test-023",
+   "F3-test-029"
+  ]
+ },
+ "study1_rhl_equals_null_grant": true,
+ "study3_t1_restricted": {
+  "B innocence visible by default": {
+   "templates": [
+    "glob_ingest",
+    "latest_alias",
+    "snapshot_rebind"
+   ],
+   "n": 15,
+   "x_k": 7,
+   "b_k": 5,
+   "n10": 4,
+   "n01": 2,
+   "diff": 0.13333333333333333,
+   "lo": -0.2217775235971903,
+   "hi": 0.3653825053658067,
+   "p": 0.6875
+  },
+  "complement: trap-like B templates": {
+   "templates": [
+    "consent_update",
+    "review_hold_lift",
+    "revocation"
+   ],
+   "n": 15,
+   "x_k": 0,
+   "b_k": 2,
+   "n10": 0,
+   "n01": 2,
+   "diff": -0.13333333333333333,
+   "lo": -0.13333333333333333,
+   "hi": 0.09116963119775494,
+   "p": 0.5
+  }
+ },
+ "x_run_cleared_totals": {
+  "table monitors (P3-orig x3, router, P4)": [
+   174,
+   174
+  ],
+  "LLM-selector arms only (P3-orig, P3-verify; Sonnet/Haiku/DeepSeek)": [
+   81,
+   82
+  ],
+  "P3-orig, all models (Sonnet, Haiku, DeepSeek)": [
+   54,
+   54
+  ],
+  "P3-orig all models + Sonnet P3-verify (reproduces 61)": [
+   61,
+   61
+  ],
+  "all arms": [
+   201,
+   202
+  ]
+ }
+}

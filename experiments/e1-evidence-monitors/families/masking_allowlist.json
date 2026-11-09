@@ -1,0 +1,61 @@
+{
+  "version": "wl-v8.1-qa",
+  "rule": "IE masks a line only if (a) it differs between the twins of its base case (pair-level; record line class 'digest'/'state' that remains after pair_mask), or (b) it is AUTHORITATIVE policy state on this allowlist (record line class 'resolved'), which is masked even when identical. Background (scheduled-job) records always render in IE as one identical terse entry per run (run times are aligned across twins); their content is authoritative system state.",
+  "authoritative_line_classes": [
+    "resolved"
+  ],
+  "authoritative_fields": [
+    {
+      "family": "F1",
+      "tool": "f1_approve",
+      "line_prefix": "[approve] <alias> currently resolves to",
+      "field": "alias resolution at approval time"
+    },
+    {
+      "family": "F1",
+      "tool": "f1_deploy",
+      "line_prefix": "[deploy] <alias> resolved to",
+      "field": "digest the alias resolved to at deploy time"
+    },
+    {
+      "family": "F2",
+      "tool": "f2_reserve",
+      "line_prefix": "[resctl] admission check (active holds now):",
+      "field": "current holdings (reservation hold state)"
+    },
+    {
+      "family": "F2",
+      "tool": "f2_pool_show",
+      "line_prefix": "[resctl] holding",
+      "field": "current holdings (reservation hold state)"
+    },
+    {
+      "family": "F3",
+      "tool": "f3_merge",
+      "line_prefix": "[merge] matched",
+      "field": "derivation parents (resolved source snapshots)"
+    },
+    {
+      "family": "F3",
+      "tool": "f3_consume",
+      "line_prefix": "[trainctl|evalctl] resolved",
+      "field": "dataset an alias resolved to at consumption time"
+    },
+    {
+      "family": "ALL",
+      "tool": "background jobs (actor_kind=background)",
+      "line_prefix": "*",
+      "field": "system state changes: alias moves, registry/mirror syncs, reservation activation/expiry/release/extension, quota commits, consent versions and effective times, review closes, safeguard changes, deploy-queue execution"
+    }
+  ],
+  "fact_fields_authoritative": [
+    "F1 approval.hash (when approved by alias)",
+    "F1 deploy.resolved_hash",
+    "F3 derive.parents (merge)",
+    "F3 consumption.dataset"
+  ],
+  "non_authoritative_notes": [
+    "F3 f3_tags output ([tags] <ds>: ...) shows DISPLAY tags, which are not authoritative (schema, RP-3): class state, pair-masked only when it differs between twins (v8.1, A3 R7.3).",
+    "F1 f1_build statistics (dependency count, build steps, cached steps, duration) are drawn from pair-level values and identical across twins (v8.1, A3 R7.1)."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "pass": true,
+  "tests": 9,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "runtime": {
+    "platform": "win32",
+    "python": "3.13.12"
+  },
+  "generated_utc": "2026-11-08T22:13:39.420111+00:00",
+  "verifier_sha256": "9b6c8fe1317dd3bdbfdce0490da31bf04b8b1dd080c7597e8adda13bf1ff7a6f",
+  "test_sha256": "3ea7c93f990a85c69d3a380e1dd335983c8e18ab665327482dfbd962f636fd70",
+  "output": "test_cli_real_protocol_prefix_truncated_rows (test_verify_e1_core.CoreAuditTests.test_cli_real_protocol_prefix_truncated_rows) ... ok\ntest_complete_fixture_accepted (test_verify_e1_core.CoreAuditTests.test_complete_fixture_accepted) ... ok\ntest_exact_tests_and_holm (test_verify_e1_core.CoreAuditTests.test_exact_tests_and_holm) ... ok\ntest_fake_and_nonzero_repeat_rejected (test_verify_e1_core.CoreAuditTests.test_fake_and_nonzero_repeat_rejected) ... ok\ntest_manifest_universe_and_wrong_protocol_rejected (test_verify_e1_core.CoreAuditTests.test_manifest_universe_and_wrong_protocol_rejected) ... ok\ntest_parse_failure_not_hidden_in_nonaccusation (test_verify_e1_core.CoreAuditTests.test_parse_failure_not_hidden_in_nonaccusation) ... ok\ntest_same_count_duplicate_and_missing_world_rejected (test_verify_e1_core.CoreAuditTests.test_same_count_duplicate_and_missing_world_rejected) ... ok\ntest_superseded_fixed_run_is_not_silently_selected (test_verify_e1_core.CoreAuditTests.test_superseded_fixed_run_is_not_silently_selected) ... ok\ntest_truncated_fixture_rejected (test_verify_e1_core.CoreAuditTests.test_truncated_fixture_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.221s\n\nOK\n",
+  "negative_cli_fixture": "Valid frozen protocol/manifest + first live-run metadata; monitor_results truncated180->179; assertion requires exit1 and error expected180, got179."
+}

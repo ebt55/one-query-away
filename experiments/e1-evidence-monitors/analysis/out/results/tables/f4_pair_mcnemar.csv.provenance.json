@@ -1,0 +1,31 @@
+{
+  "artifact": "f4_pair_mcnemar.csv",
+  "artifact_sha256": "7436ec012bb0d522d047f877325b32a5498e97d0faf6a47de22442fa3dcfd9af",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "5edd2abcd884f5b9",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "stats.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": {
+    "role": "f4",
+    "split": "split==f4 (thresholds transferred unchanged)"
+  },
+  "generated_utc": "2026-11-08T05:41:57Z",
+  "is_result": true,
+  "mode": "results",
+  "n": 15,
+  "run_ids": [
+    "20261108T045714Z_e1pilot-hb_2a0667",
+    "20261108T050323Z_e1f4-hb_9c6358"
+  ]
+}

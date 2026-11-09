@@ -1,0 +1,7 @@
+{
+  "ProcessId": 32064,
+  "Created": "2026-11-08T20:51:19.362285+05:30",
+  "Stopped": true,
+  "Reason": "Takeover: replace unguarded delayed launcher with supervised, single-instance evaluation before UTC reset",
+  "TimeUtc": "2026-11-08T17:06:11.8175700Z"
+}

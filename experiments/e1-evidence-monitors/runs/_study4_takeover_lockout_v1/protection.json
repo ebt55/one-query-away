@@ -1,0 +1,29 @@
+{
+  "operational_only": true,
+  "marker_sha256": "ce99e7e7fa84f653db9766835028cd2b005446af15b109a0b8a8c22a18b499b0",
+  "freeze_records_checked": {
+    "project-selection\\freeze_record.json": "9804873bcf532efac58abd5adb53106ed8de299cca32ab09bbf9834e66cd03b5",
+    "project-selection\\freeze_record_study2.json": "7b534aea2f8385434973056b3075bf3b2d62bff637b0bb6b01f6279415f6017f",
+    "project-selection\\freeze_record_study3.json": "7795251eec4df87307e62e22bea941ad45779d6ca66d044ab4133524a900c5b8",
+    "project-selection\\freeze_record_study4.json": "49f40ea215bc5fbda7782cf5b8e241de783ecb5437ecdc5fe2adf1fe5b4481b3",
+    "project-selection\\handoff-astra\\_bundle\\sources\\freeze_record.json": "9804873bcf532efac58abd5adb53106ed8de299cca32ab09bbf9834e66cd03b5",
+    "release\\project-selection\\freeze_record.json": "9804873bcf532efac58abd5adb53106ed8de299cca32ab09bbf9834e66cd03b5"
+  },
+  "legacy_sources": {
+    "run_study4_eval.sh": {
+      "original_sha256": "556c12168d7732ab891b21c043ba175f2e6ca51a46d913c27919caa6d52b2898",
+      "protected_sha256": "9f8c14b37a3644d1a03dd53661192370550274ae53000bc6b8e9290dba21605e",
+      "backup": "run_study4_eval.sh.original"
+    },
+    "study4_eval_check.py": {
+      "original_sha256": "32fe4ac4e80c398d8e3760ffc9a74160923f4d67812127369b96883b241eb41d",
+      "protected_sha256": "38d7535fadc4e4cb5b503351f682f6047f000464c0b2c06eef500ffc21dda8b3",
+      "backup": "study4_eval_check.py.original"
+    }
+  },
+  "diff": {
+    "run_study4_eval.sh": "# Operational takeover lockout: the supervised runner owns Study 4.\nTAKEOVER_MARKER=e1-evidence-monitors/runs/_study4_takeover_lockout_v1/TAKEOVER_OWNED.json\nif [ -f \"$TAKEOVER_MARKER\" ]; then\n  echo \"ABORT: Study 4 legacy launcher disabled by supervised takeover ($TAKEOVER_MARKER)\"\n  exit 9\nfi\n",
+    "study4_eval_check.py": "    # Operational lockout also catches legacy shells already waiting before takeover.\r\n    marker = E1 / \"runs\" / \"_study4_takeover_lockout_v1\" / \"TAKEOVER_OWNED.json\"\r\n    if marker.exists():\r\n        print(\"ABORT: Study 4 legacy evaluation is locked out; supervised takeover owns execution\", flush=True)\r\n        return 9\r\n"
+  },
+  "purpose": "Block fresh legacy launches and checker.verify in old already-running wait loops. No scientific, prompt, model, budget or analysis change."
+}

@@ -1,0 +1,15 @@
+{
+ "counts": {
+  "RP-5_applied": 39,
+  "RP-5_detected": 39,
+  "RP-6_applied": 39,
+  "RP-6_detected": 39,
+  "RP-7_applied": 39,
+  "RP-7_detected": 39,
+  "RP-8_applied": 39,
+  "RP-8_detected": 39,
+  "XF_applied": 26,
+  "XF_detected_and_no_policy_change": 26
+ },
+ "failures": []
+}

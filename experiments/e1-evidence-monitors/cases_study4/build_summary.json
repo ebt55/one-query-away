@@ -1,0 +1,197 @@
+{
+ "F1": {
+  "all_ok": true,
+  "ce_H_equals_X": 30,
+  "endpoints_differing_X_vs_H": {
+   "approvals_for_digest": 105,
+   "get_approval": 90
+  },
+  "failures": {},
+  "n_bases": 30,
+  "router_static_audit": {
+   "forbidden_hits": {},
+   "ok": true,
+   "router_view_reads": [
+    "actor",
+    "argv",
+    "at",
+    "base_epoch",
+    "review_t"
+   ]
+  },
+  "structure_H_vs_B": {
+   "masking_allowlist": {
+    "F1/alias_race": true,
+    "F1/alias_rollback": true,
+    "F1/base_image": true,
+    "F1/nightly": true,
+    "F1/reproducible": true,
+    "F1/same_version_republish": true
+   },
+   "phrase_value_balance": {
+    "F1/alias_race": true,
+    "F1/alias_rollback": true,
+    "F1/base_image": true,
+    "F1/nightly": true,
+    "F1/reproducible": true,
+    "F1/same_version_republish": true
+   },
+   "system_block_position": {
+    "F1/alias_race": true,
+    "F1/alias_rollback": true,
+    "F1/base_image": true,
+    "F1/nightly": true,
+    "F1/reproducible": true,
+    "F1/same_version_republish": true
+   }
+  },
+  "structure_flags": {},
+  "study1_frozen_files": {
+   "all_unchanged": true,
+   "files": {
+    "cases/f4_manifest.json": true,
+    "cases/split_manifest.json": true,
+    "families/masking_allowlist.json": true,
+    "monitors/handbook.py": true,
+    "monitors/policies.py": true,
+    "monitors/prompts.py": true,
+    "qa/QA_REPORT.md": true
+   }
+  }
+ },
+ "F3": {
+  "all_ok": false,
+  "ce_H_equals_X": 30,
+  "checker_unit_tests": {
+   "all_pass": true,
+   "n": 7
+  },
+  "endpoints_differing": {
+   "H_vs_plain": {
+    "consent_history": 140
+   },
+   "X_vs_H": {
+    "consent_history": 110
+   },
+   "X_vs_plain": {
+    "consent_history": 180
+   }
+  },
+  "failures": {},
+  "frozen_files": {
+   "all_unchanged_except_lead_cap_edit": false,
+   "changed": {
+    "study2:preregistration_study2.md": "UNEXPECTED",
+    "study2:qa/STUDY2_QA_REPORT.md": "A3 (QA report updated after freeze)",
+    "study2:shared/cost_ledger.py": "lead (added the study3 phase cap)"
+   },
+   "files": {
+    "study1:cases/f4_manifest.json": true,
+    "study1:cases/split_manifest.json": true,
+    "study1:families/masking_allowlist.json": true,
+    "study1:monitors/handbook.py": true,
+    "study1:monitors/policies.py": true,
+    "study1:monitors/prompts.py": true,
+    "study1:qa/QA_REPORT.md": true,
+    "study2:STUDY2_BUILD.md": true,
+    "study2:analysis/STUDY2_ANALYSIS_PLAN.md": true,
+    "study2:analysis/study2.py": true,
+    "study2:cases_study2_manifest": true,
+    "study2:monitors/handbook.py": true,
+    "study2:monitors/harness.py": true,
+    "study2:monitors/policies.py": true,
+    "study2:monitors/prompts.py": true,
+    "study2:monitors/query_api.py": true,
+    "study2:monitors/study2_build.py": true,
+    "study2:monitors/study2_router.py": true,
+    "study2:monitors/study2_run.py": true,
+    "study2:preregistration_study2.md": false,
+    "study2:qa/STUDY2_QA_REPORT.md": false,
+    "study2:qa/study2_gate.py": true,
+    "study2:shared/cost_ledger.py": false
+   },
+   "note": "files changed since freeze are attributed to their owners; none is a builder/generator/prompt file"
+  },
+  "n_bases": 30,
+  "router_f1_unchanged": {
+   "identical_plans": 90,
+   "ok": true,
+   "worlds": 90
+  },
+  "router_static_audit": {
+   "forbidden_hits": {},
+   "ok": true,
+   "rules_version": "s3-router-v2",
+   "v1_audit": {
+    "forbidden_hits": {},
+    "ok": true,
+    "router_view_reads": [
+     "actor",
+     "argv",
+     "at",
+     "base_epoch",
+     "review_t"
+    ]
+   }
+  },
+  "structure_H_vs_B": {
+   "masking_allowlist": {
+    "F3/consent_update": true,
+    "F3/glob_ingest": true,
+    "F3/latest_alias": true,
+    "F3/review_hold_lift": true,
+    "F3/revocation": true,
+    "F3/snapshot_rebind": true
+   },
+   "phrase_value_balance": {
+    "F3/consent_update": true,
+    "F3/glob_ingest": true,
+    "F3/latest_alias": true,
+    "F3/review_hold_lift": true,
+    "F3/revocation": true,
+    "F3/snapshot_rebind": true
+   },
+   "system_block_position": {
+    "F3/consent_update": true,
+    "F3/glob_ingest": true,
+    "F3/latest_alias": true,
+    "F3/review_hold_lift": true,
+    "F3/revocation": true,
+    "F3/snapshot_rebind": true
+   }
+  },
+  "structure_flags": {},
+  "witness_max": {
+   "chars": 1871,
+   "q": 3,
+   "records": 12
+  }
+ },
+ "study3_frozen_files": {
+  "all_unchanged": false,
+  "files": {
+   "STUDY3_BUILD.md": true,
+   "analysis/STUDY3_ANALYSIS_PLAN.md": true,
+   "analysis/study2.py": true,
+   "analysis/study3.py": true,
+   "cases_study3_manifest": true,
+   "monitors/handbook.py": true,
+   "monitors/harness.py": true,
+   "monitors/policies.py": true,
+   "monitors/prompts.py": true,
+   "monitors/query_api.py": true,
+   "monitors/study2_build.py": true,
+   "monitors/study2_router.py": true,
+   "monitors/study2_run.py": true,
+   "monitors/study3_build.py": true,
+   "monitors/study3_checker.py": true,
+   "monitors/study3_router.py": true,
+   "monitors/study3_run.py": true,
+   "monitors/study3_s1_clim_check.py": true,
+   "preregistration_study3.md": true,
+   "qa/STUDY3_QA_REPORT.md": false,
+   "qa/study3_gate.py": false,
+   "shared/cost_ledger.py": true
+  }
+ }
+}

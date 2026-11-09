@@ -1,0 +1,63 @@
+{
+  "args": {
+    "allow_split": true,
+    "case_ids": null,
+    "concurrency": 12,
+    "conds": null,
+    "deepseek_repeats": false,
+    "dry_jobs": false,
+    "fake": false,
+    "families": "F1,F2,F3",
+    "limit_worlds": 0,
+    "models": "haiku",
+    "no_p3i": false,
+    "phase": "e1_main",
+    "regime": "targeted",
+    "repeat_indices": null,
+    "repeat_n": null,
+    "repeats": 1,
+    "run_dir": null,
+    "secondary_scope": "all",
+    "split": "calibration,test",
+    "test_subset": "all",
+    "tiers": "primary",
+    "unseal_f4": false
+  },
+  "budget": {
+    "max_fact_chars": 4000,
+    "max_records_total": 12,
+    "page_size": 5,
+    "q_max": 3
+  },
+  "code_hash": "98657dcfc300014686b1984583fcb1fdd6d40d82214362891f40e290baa6cfd3",
+  "code_hash_dirs": [
+    "env",
+    "families",
+    "monitors"
+  ],
+  "cond_order": "per-world random, seed = derive_seed('cond-order-v1', wid, model, repeat, tier)",
+  "created_utc": "20261108T051626Z",
+  "deepseek_thinking": "disabled",
+  "evidence_tokens_method": "heuristic: int(len(evidence_text)/2.8)+1",
+  "filters": {
+    "case_ids": null,
+    "conds": null,
+    "repeat_cases": null,
+    "repeat_indices": null,
+    "repeat_n": null,
+    "test_subset": "all"
+  },
+  "generator_version": "wl-v8.1-qa",
+  "name": "e1main",
+  "p2g_evidence_differs": "per IE row; deterministic twin comparison of P2G evidence (cases/private/p2g_evidence_differs.json)",
+  "p2g_rule": null,
+  "p3i_scope": "repeat_idx 0 only, shared selector with IE_P3",
+  "regime": "targeted",
+  "regime_note": "targeted",
+  "run_id": "20261108T051626Z_e1main_7536cd",
+  "schema": "e1.monitor_result.v1",
+  "secondary_scope": "all",
+  "secondary_test_subset": [],
+  "verdict_schema_version": "verdict-schema-v2-rationale-first",
+  "vsolo_definition": "whole CE trace, chronological, every agent action attributed to one identity"
+}

@@ -1,0 +1,37 @@
+{
+  "artifact": "s4_forecasts.csv",
+  "artifact_sha256": "16494a6e8f98a042a1f840296a3ff3bdd48c5df7a2e0d9f21df93a9b4fa23c5f",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "b4b96eb0683f501c",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "posthoc_sensitivity.py",
+      "stats.py",
+      "study2.py",
+      "study23_pooled_posthoc.py",
+      "study3.py",
+      "study4.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": {
+    "phase": "calibration",
+    "study": 4
+  },
+  "forecast_sha256": "c53d1532c74054dd3549b9bec824d896f4a3c91c78dc80f433fada9e302e7dda",
+  "generated_utc": "2026-11-08T15:16:53Z",
+  "is_result": false,
+  "mode": "study4_results",
+  "n": 4,
+  "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+  ]
+}

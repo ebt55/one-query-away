@@ -1,0 +1,24 @@
+test_complete_universe_health_and_partial_rows (takeover_tests.TakeoverTests.test_complete_universe_health_and_partial_rows) ... ok
+test_complete_universe_rejects_duplicate_row (takeover_tests.TakeoverTests.test_complete_universe_rejects_duplicate_row) ... ok
+test_concurrent_reservations_wait_without_overrun (takeover_tests.TakeoverTests.test_concurrent_reservations_wait_without_overrun) ... ok
+test_conservative_budget_refuses_before_dispatch (takeover_tests.TakeoverTests.test_conservative_budget_refuses_before_dispatch) ... ok
+test_deadline_at_every_wire (takeover_tests.TakeoverTests.test_deadline_at_every_wire) ... ok
+test_frozen_adapter_fallback_cache_does_not_double_charge (takeover_tests.TakeoverTests.test_frozen_adapter_fallback_cache_does_not_double_charge) ... ok
+test_frozen_adapter_timeout_retains_both_reservations (takeover_tests.TakeoverTests.test_frozen_adapter_timeout_retains_both_reservations) ... ok
+test_historical_gross_cost_includes_cached_as_uncached (takeover_tests.TakeoverTests.test_historical_gross_cost_includes_cached_as_uncached) ... ok
+test_interrupted_second_monitor_resumes_before_global_gate (takeover_tests.TakeoverTests.test_interrupted_second_monitor_resumes_before_global_gate) ... ok
+test_logical_cache_skips_frozen_reservation_and_wire (takeover_tests.TakeoverTests.test_logical_cache_skips_frozen_reservation_and_wire) ... ok
+test_missing_usage_and_refusal_stop (takeover_tests.TakeoverTests.test_missing_usage_and_refusal_stop) ... ok
+test_only_explicit_unsupported_400_can_release (takeover_tests.TakeoverTests.test_only_explicit_unsupported_400_can_release) ... ok
+test_other_400_does_not_release (takeover_tests.TakeoverTests.test_other_400_does_not_release) ... ok
+test_process_lock_exclusive (takeover_tests.TakeoverTests.test_process_lock_exclusive) ... ok
+test_snapshot_mismatch_preserves_raw_and_reservation (takeover_tests.TakeoverTests.test_snapshot_mismatch_preserves_raw_and_reservation) ... ok
+test_snapshot_pin_and_recorded_wire_hash (takeover_tests.TakeoverTests.test_snapshot_pin_and_recorded_wire_hash) ... ok
+test_successful_wire_without_logical_commit_does_not_auto_resume (takeover_tests.TakeoverTests.test_successful_wire_without_logical_commit_does_not_auto_resume) ... ok
+test_timeout_retains_unknown_and_blocks_restart (takeover_tests.TakeoverTests.test_timeout_retains_unknown_and_blocks_restart) ... ok
+test_world_and_run_identity_segregation (takeover_tests.TakeoverTests.test_world_and_run_identity_segregation) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.553s
+
+OK

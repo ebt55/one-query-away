@@ -1,0 +1,48 @@
+{
+  "args": {
+    "arms": null,
+    "concurrency": 10,
+    "dry_jobs": false,
+    "fake": false,
+    "limit_worlds": 0,
+    "live": true,
+    "models": null,
+    "phase": "study3",
+    "project": false,
+    "run_dir": null,
+    "tier": "S2"
+  },
+  "arm_order": "per (world, model) random, seed = derive_seed('s3-arm-order-v1', wid, model)",
+  "arms": {
+    "p4": "IE_P4",
+    "router": "IE_RTR"
+  },
+  "budget": {
+    "max_fact_chars": 4000,
+    "max_records_total": 12,
+    "page_size": 5,
+    "q_max": 3
+  },
+  "c_lim_checker": "f3-c-lim-complete-v1",
+  "code_hash": "1b0eef6d483f4cf8c3ba5cc130383105f327e2f680a268a7007cb09a8e3e5784",
+  "created_utc": "20261108T123529Z",
+  "manifest_sha256": "a7d3a0665cee6749846747786fb59f50ffe3b2f9ea5eec8b2948402a4eb71675",
+  "models": [
+    "sonnet"
+  ],
+  "name": "s3-S2",
+  "p3i": "off",
+  "regime": "handbook",
+  "router_rules_version": "s3-router-v2",
+  "run_id": "20261108T123529Z_s3-S2_346d17",
+  "schema": "e1.monitor_result.v1",
+  "study": "study3",
+  "study3_code_sha256": {
+    "study2_router.py": "8e4d54616da2bb0ea38d4701e654d8b5da120c8936fe0f92890955067b74e830",
+    "study3_build.py": "229f2b4d1a87535871573f9f1e83bc968f7354e569c3b1f0311fbb2e9b62d602",
+    "study3_checker.py": "ee3cddc4e5c884600b362368e5ee99e53d2794e4cb7844011fa15ba85b65ab97",
+    "study3_router.py": "813aec2e91bfba6cdea19d407c7065d124436850973636b408aac1cdeb741267",
+    "study3_run.py": "b57dde3fef1c49d5576599b877f6b7cd8d6c7fc0bcf062675b2704411c917ac5"
+  },
+  "verdict_schema_version": "verdict-schema-v2-rationale-first"
+}

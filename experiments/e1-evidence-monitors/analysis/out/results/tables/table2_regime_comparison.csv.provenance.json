@@ -1,0 +1,33 @@
+{
+  "artifact": "table2_regime_comparison.csv",
+  "artifact_sha256": "196cd8dcc0d46d7067ffc8919c7c12dc67af2ca7241dc1ecc80713ea512b6be7",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "5edd2abcd884f5b9",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "stats.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": {
+    "roles": [
+      "calibration",
+      "test"
+    ]
+  },
+  "generated_utc": "2026-11-08T05:42:04Z",
+  "is_result": true,
+  "mode": "results",
+  "n": 112,
+  "run_ids": [
+    "20261108T044431Z_e1main-hb_ce8cd6",
+    "20261108T051626Z_e1main_7536cd"
+  ]
+}

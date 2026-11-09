@@ -1,0 +1,70 @@
+{
+  "purpose": "Research/novelty verification before Study 4 outcomes; not submission prose",
+  "checked_utc_date": "2026-11-08",
+  "search_scope": "Focused primary-source searches for monitoring, evidence sufficiency, exculpatory querying and false accusations; not an exhaustive novelty claim",
+  "sources": [
+    {
+      "title": "Red-Teaming Multi-Agent Attacks for Loss-of-Control Risks",
+      "authors": "John Kitaoka, Thao Amelia Pham, Carlos Rafael Giudice, Jacob Merizian",
+      "published": "2026-10-16",
+      "url": "https://arxiv.org/abs/2610.24052",
+      "verified_scope": "MiniLab studies distributed covert attacks and monitor visibility, with 16 human-optimized attacks across interconnected services.",
+      "implication_for_E1": "Distributed-monitor blind spots are prior art. E1's distinctive empirical focus must be false accusations when an authoritative exculpatory check is available within budget, rather than discovery of distributed harm."
+    },
+    {
+      "title": "The Arbiter Agent: Continually Monitoring Multi-Agent Conversations to Detect Emergent Misalignment",
+      "authors": "Filippo Tonini, Federico Torrielli, Anton Danholt Lautrup, Peter Schneider-Kamp, Mustafa Mert Celikok, Lukas Galke Poech",
+      "published": "2026-06-09",
+      "url": "https://arxiv.org/html/2606.10747v1",
+      "verified_scope": "An active monitor allocates an inspection budget among observation, interrogation, internal inspection and logging. Logging can trade recall against precision.",
+      "implication_for_E1": "Do not claim invention of active budgeted oversight or discovery that monitoring tools can hurt precision. E1 tests a narrower matched-state evidence-acquisition failure and prospective risk forecast."
+    },
+    {
+      "title": "When Agents Overtrust Environmental Evidence: An Extensible Agentic Framework for Benchmarking Evidence-Grounding Defects in LLM Agents",
+      "authors": "Strick Sheng, Ziyue Wang, Liyi Zhou",
+      "published": "2026-05-09",
+      "url": "https://arxiv.org/abs/2605.08828",
+      "verified_scope": "EnvTrustBench evaluates actions based on stale, incorrect or malicious environment-facing claims when available current evidence could resolve them.",
+      "implication_for_E1": "Failure to resolve apparent evidence against authoritative state is not new. E1's monitor-role, harmful/exculpatory/ordinary-benign triplets and frozen forecast are the narrower distinction."
+    },
+    {
+      "title": "What Did the Agent Actually Do? Evidence-Grounded Oversight for Long-Horizon Agents",
+      "authors": "Zhongxiang Sun et al.",
+      "published": "2026-10-05",
+      "url": "https://arxiv.org/abs/2610.06406",
+      "verified_scope": "AgentMonBench evaluates consequential decision identification and evidence localization; an evidence-grounded behavior graph improves monitor access to source-linked evidence.",
+      "implication_for_E1": "Evidence organization/localization is established related work. Distinguish finding supporting records from resolving an available record that defeats an accusation."
+    },
+    {
+      "title": "Knowing When the Evidence Is Enough: Requirement-Directed Search with Horn-Closure Certificates",
+      "authors": "Xinyu Zhang, Weiwei Sun",
+      "published": "2026-10-26",
+      "url": "https://arxiv.org/html/2610.34684v1",
+      "verified_scope": "Certify constructs requirements, verifies passage/entity links and uses Horn closure to certify sufficiency or identify open requirements. Soundness is conditional on correct retrieval, requirements and links.",
+      "implication_for_E1": "Structural evidence obligations and sufficiency certificates are prior art. A policy-derived router can be a diagnostic control; E1 has not implemented or validated a general certificate-based defense."
+    },
+    {
+      "title": "You're Right, Let Me Fix It: How LLM Agents Damage Correct Work When Falsely Accused",
+      "authors": "Xutao Mao et al.",
+      "published": "2026-09-26",
+      "url": "https://arxiv.org/html/2609.32616v1",
+      "verified_scope": "CAVE-Bench studies harmful reactions to false accusations of already-correct work. Its decisive external/runtime facts are inaccessible to the evaluated agent, which should preserve work and request evidence.",
+      "implication_for_E1": "False accusations already motivate agent-safety work. E1 studies the monitor producing accusations despite accessible exculpatory evidence, rather than an accused worker's response to an unverifiable claim. Optional contextual citation, not the closest direct baseline."
+    },
+    {
+      "title": "ClaimReceipt: Verifying Evidence Sufficiency and Coverage in Agent Evaluations",
+      "authors": "Peiying Zhu, Sidi Chang",
+      "published": "2026-09-02",
+      "url": "https://arxiv.org/html/2609.01992v1",
+      "verified_scope": "Claim-relative receipts and committed experiment manifests distinguish evidence sufficiency from coverage, with selective validity/inconclusive judgments and a prospective audit epoch.",
+      "implication_for_E1": "Useful methodological context for complete run universes and qualified claims. Do not present hash binding or the basic indistinguishability argument as novel. This is not a direct monitor-query baseline."
+    }
+  ],
+  "claim_constraints": [
+    "No first or broad state-of-the-art claim is supported by this focused search.",
+    "Study 4 has no evaluated outcomes yet; nothing in this note predicts or rewrites its frozen score.",
+    "Same-template new-seed forecasting is narrower than generalization to unseen task families.",
+    "The total false-accusation rate need not equal the no-distinguishing-response component.",
+    "Ordinary-H conviction propensity is an essential descriptive comparator because it nearly equals the frozen forecast; the distinguishing flag's incremental predictive value is not established."
+  ]
+}

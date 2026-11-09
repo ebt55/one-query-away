@@ -1,0 +1,34 @@
+{
+  "artifact": "s3_fig1_trap.png",
+  "artifact_sha256": "8546aae15d1503fb021921b6a59c7616d6befd5b17d6f10a8d39c17ba0872494",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "6e0f6f2ef9c5a2a2",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "stats.py",
+      "study2.py",
+      "study3.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": {
+    "repeat_idx": 0,
+    "study": 3
+  },
+  "generated_utc": "2026-11-08T12:43:19Z",
+  "is_result": false,
+  "mode": "study3_results",
+  "n": null,
+  "run_ids": [
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+  ]
+}

@@ -1,0 +1,133 @@
+{
+ "fingerprint": {
+  "manifests": {
+   "cases/split_manifest.json": "d2d82c4bf702",
+   "cases/private/world_index.json": "bec3d1ccb45c",
+   "cases/f4_manifest.json": "e448638440f8"
+  },
+  "generator_files": {
+   "env/render.py": "45b4c7b6fc86",
+   "env/workflowlab.py": "367846bf9d03",
+   "families/__init__.py": "01cfc33044ed",
+   "families/base.py": "1660074e5017",
+   "families/f1_alias.py": "dfc58a41bcc7",
+   "families/f2_reservations.py": "101d7f0de81f",
+   "families/f3_lineage.py": "ab669000ea3f",
+   "families/f4_safeguards.py": "aae4f3a2c9d6",
+   "families/make_cases.py": "5ace0c25d3f6",
+   "families/noise.py": "aff9755b2933"
+  }
+ },
+ "static_budget": {
+  "sites": [
+   {
+    "line": 77,
+    "function": "p2",
+    "budget_arg": "BUDGET"
+   },
+   {
+    "line": 87,
+    "function": "p4",
+    "budget_arg": "UNBUDGETED(run_unbudgeted)"
+   },
+   {
+    "line": 93,
+    "function": "p3",
+    "budget_arg": "BUDGET"
+   }
+  ],
+  "budget_is_frozen_dataclass": true,
+  "BUDGET": {
+   "q_max": 3,
+   "page_size": 5,
+   "max_records_total": 12,
+   "max_fact_chars": 4000
+  }
+ },
+ "families": {
+  "F1|qa_local": {
+   "worlds": 8,
+   "counts": {
+    "queries": 2839,
+    "ok": 2839
+   },
+   "budget": {
+    "refused_after_q_max": true,
+    "records_cap_respected": true,
+    "truncation_flagged": true,
+    "deterministic": true
+   },
+   "isolation": {
+    "interleaved_equals_solo": true,
+    "shared_cache_object": false,
+    "module_level_mutable_state": [],
+    "twin_answers_differ": true
+   },
+   "failures": [],
+   "n_failures": 0
+  },
+  "F2|qa_local": {
+   "worlds": 8,
+   "counts": {
+    "queries": 2448,
+    "ok": 2448
+   },
+   "budget": {
+    "refused_after_q_max": true,
+    "records_cap_respected": true,
+    "truncation_flagged": true,
+    "deterministic": true
+   },
+   "isolation": {
+    "interleaved_equals_solo": true,
+    "shared_cache_object": false,
+    "module_level_mutable_state": [],
+    "twin_answers_differ": true
+   },
+   "failures": [],
+   "n_failures": 0
+  },
+  "F3|qa_local": {
+   "worlds": 8,
+   "counts": {
+    "queries": 3026,
+    "ok": 3026
+   },
+   "budget": {
+    "refused_after_q_max": true,
+    "records_cap_respected": true,
+    "truncation_flagged": true,
+    "deterministic": true
+   },
+   "isolation": {
+    "interleaved_equals_solo": true,
+    "shared_cache_object": false,
+    "module_level_mutable_state": [],
+    "twin_answers_differ": true
+   },
+   "failures": [],
+   "n_failures": 0
+  },
+  "F4|qa_local": {
+   "worlds": 8,
+   "counts": {
+    "queries": 1360,
+    "ok": 1360
+   },
+   "budget": {
+    "refused_after_q_max": true,
+    "records_cap_respected": true,
+    "truncation_flagged": true,
+    "deterministic": true
+   },
+   "isolation": {
+    "interleaved_equals_solo": true,
+    "shared_cache_object": false,
+    "module_level_mutable_state": [],
+    "twin_answers_differ": true
+   },
+   "failures": [],
+   "n_failures": 0
+  }
+ }
+}

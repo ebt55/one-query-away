@@ -1,0 +1,35 @@
+F1|cases: worlds=12 {'queries': 12240, 'ok': 12240} budget={'refused_after_q_max': True, 'records_cap_respected': True, 'truncation_flagged': True, 'deterministic': True} iso={'interleaved_equals_solo': True, 'shared_cache_object': False, 'module_level_mutable_state': [], 'twin_answers_differ': True}
+F2|cases: worlds=12 {'queries': 11628, 'ok': 11628} budget={'refused_after_q_max': True, 'records_cap_respected': True, 'truncation_flagged': True, 'deterministic': True} iso={'interleaved_equals_solo': True, 'shared_cache_object': False, 'module_level_mutable_state': [], 'twin_answers_differ': True}
+F3|cases: worlds=12 {'queries': 10880, 'ok': 10880, 'paged': 28} budget={'refused_after_q_max': True, 'records_cap_respected': True, 'truncation_flagged': True, 'deterministic': True} iso={'interleaved_equals_solo': True, 'shared_cache_object': False, 'module_level_mutable_state': [], 'twin_answers_differ': True}
+F4|cases: worlds=12 {'queries': 6324, 'ok': 6324} budget={'refused_after_q_max': True, 'records_cap_respected': True, 'truncation_flagged': True, 'deterministic': True} iso={'interleaved_equals_solo': True, 'shared_cache_object': False, 'module_level_mutable_state': [], 'twin_answers_differ': True}
+{
+ "sites": [
+  {
+   "line": 88,
+   "function": "p2",
+   "budget_arg": "BUDGET"
+  },
+  {
+   "line": 99,
+   "function": "p2g",
+   "budget_arg": "BUDGET"
+  },
+  {
+   "line": 110,
+   "function": "p4",
+   "budget_arg": "UNBUDGETED(run_unbudgeted)"
+  },
+  {
+   "line": 116,
+   "function": "p3",
+   "budget_arg": "BUDGET"
+  }
+ ],
+ "budget_is_frozen_dataclass": true,
+ "BUDGET": {
+  "q_max": 3,
+  "page_size": 5,
+  "max_records_total": 12,
+  "max_fact_chars": 4000
+ }
+}

@@ -1,0 +1,21 @@
+{
+  "_doc": "Runs analysed by `make_all.py --mode results`: Stage 1 (lead message after the G2 freeze, 10:13 IST) plus the Stage 2 add-backs listed by the builder in REQUESTS.md R21.",
+  "run_ids": [
+    "20261108T044431Z_e1main-hb_c9234d",
+    "20261108T044431Z_e1main-hb_ce8cd6",
+    "20261108T044431Z_e1main-hb_0c9733",
+    "20261108T045714Z_e1pilot-hb_2a0667",
+    "20261108T050323Z_e1f4-hb_9c6358",
+    "20261108T050751Z_e1main-hb_4c5a2d",
+    "20261108T051626Z_e1main_7536cd",
+    "20261108T053135Z_e1main-hb_70e644",
+    "20261108T053355Z_e1main-hb_bca251"
+  ],
+  "addbacks": {
+    "A1": {"run_id": "20261108T050751Z_e1main-hb_4c5a2d", "rows": 720, "contents": "repeats 1-2, n=18, Sonnet + Haiku, V0/V2/P1/P2G/P3 (handbook)"},
+    "A2": {"run_id": "20261108T051626Z_e1main_7536cd", "rows": 1512, "contents": "Haiku targeted primary + shared-selector P3I, calibration + test"},
+    "A3": {"run_id": "20261108T053135Z_e1main-hb_70e644", "rows": 72, "contents": "Sonnet standalone-selector P3I, 36 calibration + 36 repeat-subset test worlds"},
+    "A4": {"run_id": null, "reason": "skipped by the D5 add-back gate (settled + add-back cost > $77)"},
+    "A5": {"run_id": "20261108T053355Z_e1main-hb_bca251", "rows": 72, "contents": "Sonnet V-solo + V-sep, calibration only (descriptive)"}
+  }
+}

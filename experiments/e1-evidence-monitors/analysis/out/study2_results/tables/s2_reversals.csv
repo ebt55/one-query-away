@@ -1,0 +1,15 @@
+model_key,metric,arm_a,arm_b,reversal,first_sign_change_s,diff_s0,diff_s1
+haiku,balanced_accuracy,P3_orig,P3_verify,False,,0.0,-0.016666666667
+haiku,complete_pair,P3_orig,P3_verify,False,,0.0,-0.033333333333
+sonnet,balanced_accuracy,P3_orig,P3_verify,False,,-0.016666666667,-0.05
+sonnet,balanced_accuracy,P3_orig,router,False,,-0.016666666667,-0.433333333333
+sonnet,balanced_accuracy,P3_orig,P4,False,,-0.016666666667,-0.433333333333
+sonnet,balanced_accuracy,P3_verify,router,False,,0.0,-0.383333333333
+sonnet,balanced_accuracy,P3_verify,P4,False,,0.0,-0.383333333333
+sonnet,balanced_accuracy,router,P4,False,,0.0,0.0
+sonnet,complete_pair,P3_orig,P3_verify,False,,-0.033333333333,-0.1
+sonnet,complete_pair,P3_orig,router,False,,-0.033333333333,-0.866666666667
+sonnet,complete_pair,P3_orig,P4,False,,-0.033333333333,-0.866666666667
+sonnet,complete_pair,P3_verify,router,False,,0.0,-0.766666666667
+sonnet,complete_pair,P3_verify,P4,False,,0.0,-0.766666666667
+sonnet,complete_pair,router,P4,False,,0.0,0.0

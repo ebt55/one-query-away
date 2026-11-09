@@ -1,0 +1,37 @@
+{
+  "artifact": "s23_pooled_allarms_posthoc.json",
+  "artifact_sha256": "fdc3ffb6b7adf114e6b534deef6fa4f1d4624567589758d19c153effdc2368bd",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "3d63e3d0ff51d29d",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "stats.py",
+      "study2.py",
+      "study23_pooled_posthoc.py",
+      "study3.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": {
+    "post_freeze": true
+  },
+  "generated_utc": "2026-11-08T14:03:06Z",
+  "is_result": false,
+  "mode": "results_posthoc",
+  "n": 48,
+  "run_ids": [
+    "20261108T114814Z_s2-T1_7d74dc",
+    "20261108T115125Z_s2-T2_b47d9c",
+    "20261108T115304Z_s2-T3_8b773a",
+    "20261108T123249Z_s3-S1_631230",
+    "20261108T123529Z_s3-S2_346d17",
+    "20261108T123819Z_s3-S3_89e103"
+  ]
+}

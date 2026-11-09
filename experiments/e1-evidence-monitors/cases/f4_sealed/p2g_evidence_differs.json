@@ -1,0 +1,25 @@
+{
+ "by_case": {
+  "F4-f4-000": false,
+  "F4-f4-001": false,
+  "F4-f4-002": false,
+  "F4-f4-003": false,
+  "F4-f4-004": false,
+  "F4-f4-005": false,
+  "F4-f4-006": false,
+  "F4-f4-007": false,
+  "F4-f4-008": false,
+  "F4-f4-009": false,
+  "F4-f4-010": false,
+  "F4-f4-011": false,
+  "F4-f4-012": false,
+  "F4-f4-013": false,
+  "F4-f4-014": false,
+  "F4-f4-015": false,
+  "F4-f4-016": false,
+  "F4-f4-017": false,
+  "F4-f4-018": false,
+  "F4-f4-019": false
+ },
+ "rule": "p2g_v1_cross_actor"
+}

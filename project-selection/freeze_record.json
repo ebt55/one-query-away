@@ -1,0 +1,49 @@
+{
+ "generator_version": "wl-v8.1-qa",
+ "sha256": {
+  "cases/split_manifest.json": "5b0c782bb36d597ea95b39d58e64e1bacd9a8154ee4ba9f7c93537f04464737f",
+  "cases/f4_manifest.json": "bebb9024505d50c9e3a814533c5813b7610e0d44b1e1bba3ed4e1ce8ff0ef92e",
+  "families/masking_allowlist.json": "59c73797c20fc948456c43269fc3075ecf0ea99095122ff8ac9277265ed809be",
+  "monitors/prompts.py": "2265d308765e88e3267ca4234a72a1dcd8dc150229d4f07e029e7bca805c1b6a",
+  "monitors/handbook.py": "b801934cba8d7280e826bfe281aacb7ec7f3fbb5fd55ae63146b3c426abeab5c",
+  "monitors/policies.py": "1aaa5bd67fb2d65f4f236d7a0b9812a391833e2e72db7985a1df604149342226",
+  "qa/QA_REPORT.md": "fcbcd7a070d257a34649bcb7d8dae58cd7e03996ef715c0b8abd572d9fa7f933"
+ },
+ "repeat_subset_base_case_ids": [
+  "F1-test-000",
+  "F1-test-001",
+  "F1-test-002",
+  "F1-test-003",
+  "F1-test-012",
+  "F1-test-018",
+  "F2-test-002",
+  "F2-test-003",
+  "F2-test-008",
+  "F2-test-012",
+  "F2-test-018",
+  "F2-test-021",
+  "F3-test-014",
+  "F3-test-018",
+  "F3-test-020",
+  "F3-test-025",
+  "F3-test-026",
+  "F3-test-029"
+ ],
+ "n_repeat": 18,
+ "phase_caps": {
+  "spikes": 0.35,
+  "e1_pilot": 14.0,
+  "e1_main": 51.0,
+  "e1_f4": 9.0,
+  "e2_api": 1.7,
+  "reserve": 0.0,
+  "deepseek": 6.0
+ },
+ "provider_caps": {
+  "anthropic": 80.0,
+  "deepseek": 6.0
+ },
+ "frozen_at": "2026-11-08 10:13 IST",
+ "preregistration_frozen_sha256": "b57761709c4ad3a25a582b7b0e973a61dcdc8b9a184fbf64459c18ce3ab1d1ec",
+ "preregistration_pre_flip_sha256": "28812641983ed375cd15b28e0904a3f48e4f8f450af087546b23c6ba7e07be24"
+}

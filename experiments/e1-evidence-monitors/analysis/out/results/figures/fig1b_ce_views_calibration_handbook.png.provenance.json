@@ -1,0 +1,35 @@
+{
+  "artifact": "fig1b_ce_views_calibration_handbook.png",
+  "artifact_sha256": "e2a13e16f77fe24d36445042312c70bb08bf6c05b7a6a47cabe9eac7a5927d8a",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "5edd2abcd884f5b9",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "stats.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": {
+    "regime": "handbook",
+    "repeat_idx": 0,
+    "role": "split==calibration (IN-SAMPLE thresholds); descriptive",
+    "stratum": "CE"
+  },
+  "generated_utc": "2026-11-08T05:42:02Z",
+  "is_result": true,
+  "mode": "results",
+  "n": 216,
+  "run_ids": [
+    "20261108T044431Z_e1main-hb_0c9733",
+    "20261108T044431Z_e1main-hb_c9234d",
+    "20261108T044431Z_e1main-hb_ce8cd6",
+    "20261108T053355Z_e1main-hb_bca251"
+  ]
+}

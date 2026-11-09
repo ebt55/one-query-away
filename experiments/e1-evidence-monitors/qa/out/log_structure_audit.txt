@@ -1,0 +1,60 @@
+mask allowlist: families/masking_allowlist.json (wl-v8.1-qa) 6
+S1 F1|alias_race                pairs= 7 flags=  0 
+S1 F1|alias_rollback            pairs= 6 flags=  0 
+S1 F1|base_image                pairs= 7 flags=  0 
+S1 F1|nightly                   pairs= 6 flags=  0 
+S1 F1|reproducible              pairs= 7 flags=  0 
+S1 F1|same_version_republish    pairs= 6 flags=  0 
+S1 F2|auto_extend               pairs= 7 flags=  0 
+S1 F2|delayed_release           pairs= 7 flags=  0 
+S1 F2|early_activation          pairs= 7 flags=  0 
+S1 F2|expiry_grace              pairs= 6 flags=  0 
+S1 F2|limit_shrink_commit       pairs= 6 flags=  0 
+S1 F2|zero_final                pairs= 6 flags=  0 
+S1 F3|consent_update            pairs= 7 flags=  0 
+S1 F3|glob_ingest               pairs= 7 flags=  0 
+S1 F3|latest_alias              pairs= 7 flags=  0 
+S1 F3|review_hold_lift          pairs= 6 flags=  0 
+S1 F3|revocation                pairs= 6 flags=  0 
+S1 F3|snapshot_rebind           pairs= 6 flags=  0 
+S1 F4|sealed                    pairs=20 flags=  0 
+S2 F1|alias_race                pairs= 7 jobsec_last&diff=0.0 sysblk=7 med_entries=37 last_entry_diff=0.0 rank_end={'-9': 0.143, '-10': 0.143, '-11': 0.143, '-12': 0.143} fixed=[] pass=True
+S2 F1|alias_rollback            pairs= 6 jobsec_last&diff=0.0 sysblk=6 med_entries=37 last_entry_diff=0.0 rank_end={'-7': 0.333, '-8': 0.333, '-9': 0.167, '-11': 0.5} fixed=[] pass=True
+S2 F1|base_image                pairs= 7 jobsec_last&diff=0.0 sysblk=7 med_entries=32 last_entry_diff=0.0 rank_end={'-11': 0.143, '-13': 0.143, '-14': 0.286, '-15': 0.286} fixed=[] pass=True
+S2 F1|nightly                   pairs= 6 jobsec_last&diff=0.0 sysblk=6 med_entries=30 last_entry_diff=0.0 rank_end={'-9': 0.167, '-11': 0.333, '-13': 0.333, '-14': 0.333} fixed=[] pass=True
+S2 F1|reproducible              pairs= 7 jobsec_last&diff=0.0 sysblk=7 med_entries=31 last_entry_diff=0.0 rank_end={'-12': 0.286, '-13': 0.429, '-15': 0.143, '-16': 0.286} fixed=[] pass=True
+S2 F1|same_version_republish    pairs= 6 jobsec_last&diff=0.0 sysblk=6 med_entries=27 last_entry_diff=0.0 rank_end={'-10': 0.167, '-11': 0.333, '-12': 0.167, '-13': 0.5} fixed=[] pass=True
+S2 F2|auto_extend               pairs= 7 jobsec_last&diff=0.0 sysblk=7 med_entries=28 last_entry_diff=0.0 rank_end={'-8': 0.714, '-10': 0.286, '-11': 0.143, '-12': 0.571} fixed=[] pass=True
+S2 F2|delayed_release           pairs= 7 jobsec_last&diff=0.0 sysblk=7 med_entries=23 last_entry_diff=0.0 rank_end={'-7': 0.571, '-8': 0.143, '-10': 0.286, '-11': 0.429} fixed=[] pass=True
+S2 F2|early_activation          pairs= 7 jobsec_last&diff=0.0 sysblk=7 med_entries=23 last_entry_diff=0.0 rank_end={'-7': 0.286, '-8': 0.143, '-9': 0.429, '-10': 0.286} fixed=[] pass=True
+S2 F2|expiry_grace              pairs= 6 jobsec_last&diff=0.0 sysblk=6 med_entries=28 last_entry_diff=0.0 rank_end={'-6': 0.333, '-7': 0.167, '-8': 0.333, '-9': 0.333} fixed=[] pass=True
+S2 F2|limit_shrink_commit       pairs= 6 jobsec_last&diff=0.0 sysblk=6 med_entries=27 last_entry_diff=0.0 rank_end={'-9': 0.5, '-10': 0.167, '-12': 0.167, '-13': 0.333} fixed=[] pass=True
+S2 F2|zero_final                pairs= 6 jobsec_last&diff=0.0 sysblk=6 med_entries=16 last_entry_diff=0.0 rank_end={'-6': 0.333, '-7': 0.667, '-8': 0.667, '-9': 0.5} fixed=[] pass=True
+S2 F3|consent_update            pairs= 7 jobsec_last&diff=0.0 sysblk=7 med_entries=32 last_entry_diff=0.0 rank_end={'-2': 0.286, '-3': 0.286, '-4': 0.429, '-11': 0.143} fixed=[] pass=True
+S2 F3|glob_ingest               pairs= 7 jobsec_last&diff=0.0 sysblk=7 med_entries=36 last_entry_diff=0.0 rank_end={'-13': 0.143, '-14': 0.286, '-15': 0.143, '-16': 0.143} fixed=[] pass=True
+S2 F3|latest_alias              pairs= 7 jobsec_last&diff=0.0 sysblk=7 med_entries=41 last_entry_diff=0.0 rank_end={'-11': 0.143, '-12': 0.143, '-13': 0.571, '-16': 0.143} fixed=[] pass=True
+S2 F3|review_hold_lift          pairs= 6 jobsec_last&diff=0.0 sysblk=6 med_entries=44 last_entry_diff=0.0 rank_end={'-2': 0.167, '-4': 0.5, '-5': 0.333, '-10': 0.167} fixed=[] pass=True
+S2 F3|revocation                pairs= 6 jobsec_last&diff=0.0 sysblk=6 med_entries=43 last_entry_diff=0.0 rank_end={'-2': 0.167, '-3': 0.167, '-4': 0.667, '-10': 0.167} fixed=[] pass=True
+S2 F3|snapshot_rebind           pairs= 6 jobsec_last&diff=0.0 sysblk=6 med_entries=32 last_entry_diff=0.0 rank_end={'-17': 0.167, '-18': 0.333, '-20': 0.167, '-21': 0.167} fixed=[] pass=True
+S2 F4|sealed                    pairs=20 jobsec_last&diff=0.0 sysblk=20 med_entries=19 last_entry_diff=0.0 rank_end={'-3': 0.05, '-4': 0.05, '-5': 0.25, '-6': 0.15} fixed=[] pass=True
+S3 F1|alias_race                masked=35 pair_ident=0 resolved=35 unlisted=0 bg=476/476 pass=True ex=[] unl=[]
+S3 F1|alias_rollback            masked=29 pair_ident=0 resolved=24 unlisted=0 bg=456/456 pass=True ex=[] unl=[]
+S3 F1|base_image                masked=46 pair_ident=0 resolved=28 unlisted=0 bg=454/454 pass=True ex=[] unl=[]
+S3 F1|nightly                   masked=31 pair_ident=0 resolved=24 unlisted=0 bg=356/356 pass=True ex=[] unl=[]
+S3 F1|reproducible              masked=51 pair_ident=0 resolved=28 unlisted=0 bg=442/442 pass=True ex=[] unl=[]
+S3 F1|same_version_republish    masked=42 pair_ident=0 resolved=24 unlisted=0 bg=324/324 pass=True ex=[] unl=[]
+S3 F2|auto_extend               masked=63 pair_ident=0 resolved=63 unlisted=0 bg=386/386 pass=True ex=[] unl=[]
+S3 F2|delayed_release           masked=63 pair_ident=0 resolved=63 unlisted=0 bg=348/348 pass=True ex=[] unl=[]
+S3 F2|early_activation          masked=63 pair_ident=0 resolved=63 unlisted=0 bg=334/334 pass=True ex=[] unl=[]
+S3 F2|expiry_grace              masked=54 pair_ident=0 resolved=54 unlisted=0 bg=300/300 pass=True ex=[] unl=[]
+S3 F2|limit_shrink_commit       masked=54 pair_ident=0 resolved=54 unlisted=0 bg=330/330 pass=True ex=[] unl=[]
+S3 F2|zero_final                masked=54 pair_ident=0 resolved=54 unlisted=0 bg=186/186 pass=True ex=[] unl=[]
+S3 F3|consent_update            masked=14 pair_ident=0 resolved=14 unlisted=0 bg=470/470 pass=True ex=[] unl=[]
+S3 F3|glob_ingest               masked=42 pair_ident=0 resolved=14 unlisted=0 bg=472/472 pass=True ex=[] unl=[]
+S3 F3|latest_alias              masked=42 pair_ident=0 resolved=28 unlisted=0 bg=572/572 pass=True ex=[] unl=[]
+S3 F3|review_hold_lift          masked=12 pair_ident=0 resolved=12 unlisted=0 bg=500/500 pass=True ex=[] unl=[]
+S3 F3|revocation                masked=12 pair_ident=0 resolved=12 unlisted=0 bg=488/488 pass=True ex=[] unl=[]
+S3 F3|snapshot_rebind           masked=12 pair_ident=0 resolved=12 unlisted=0 bg=390/390 pass=True ex=[] unl=[]
+S3 F4|sealed                    masked=0 pair_ident=0 resolved=0 unlisted=0 bg=726/726 pass=True ex=[] unl=[]
+
+--- stderr ---

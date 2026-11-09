@@ -1,0 +1,438 @@
+{
+ "dev_renderings_unchanged": "6/18",
+ "p2g_twin_evidence_differs": {
+  "F1": "7/39",
+  "F2": "33/39",
+  "F3": "21/39",
+  "F4": "0/20"
+ },
+ "p2s_twin_evidence_differs": {
+  "F1": "39/39",
+  "F2": "39/39",
+  "F3": "39/39",
+  "F4": "20/20"
+ },
+ "structure": {
+  "allowlist_version": "wl-v8.1-qa",
+  "masking_allowlist": {
+   "F1/alias_race": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 70,
+    "unlisted": 0
+   },
+   "F1/alias_rollback": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 48,
+    "unlisted": 0
+   },
+   "F1/base_image": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 56,
+    "unlisted": 0
+   },
+   "F1/nightly": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 48,
+    "unlisted": 0
+   },
+   "F1/reproducible": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 56,
+    "unlisted": 0
+   },
+   "F1/same_version_republish": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 48,
+    "unlisted": 0
+   },
+   "F2/auto_extend": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 126,
+    "unlisted": 0
+   },
+   "F2/delayed_release": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 126,
+    "unlisted": 0
+   },
+   "F2/early_activation": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 126,
+    "unlisted": 0
+   },
+   "F2/expiry_grace": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 108,
+    "unlisted": 0
+   },
+   "F2/limit_shrink_commit": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 108,
+    "unlisted": 0
+   },
+   "F2/zero_final": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 108,
+    "unlisted": 0
+   },
+   "F3/consent_update": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 28,
+    "unlisted": 0
+   },
+   "F3/glob_ingest": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 28,
+    "unlisted": 0
+   },
+   "F3/latest_alias": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 56,
+    "unlisted": 0
+   },
+   "F3/review_hold_lift": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 24,
+    "unlisted": 0
+   },
+   "F3/revocation": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 24,
+    "unlisted": 0
+   },
+   "F3/snapshot_rebind": {
+    "examples": {},
+    "ok": true,
+    "resolved_lines": 24,
+    "unlisted": 0
+   }
+  },
+  "phrase_value_balance": {
+   "F1/alias_race": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 7
+   },
+   "F1/alias_rollback": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 6
+   },
+   "F1/base_image": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 7
+   },
+   "F1/nightly": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 6
+   },
+   "F1/reproducible": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 7
+   },
+   "F1/same_version_republish": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 6
+   },
+   "F2/auto_extend": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 7
+   },
+   "F2/delayed_release": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 7
+   },
+   "F2/early_activation": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 7
+   },
+   "F2/expiry_grace": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 6
+   },
+   "F2/limit_shrink_commit": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 6
+   },
+   "F2/zero_final": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 6
+   },
+   "F3/consent_update": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 7
+   },
+   "F3/glob_ingest": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 7
+   },
+   "F3/latest_alias": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 7
+   },
+   "F3/review_hold_lift": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 6
+   },
+   "F3/revocation": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 6
+   },
+   "F3/snapshot_rebind": {
+    "flags": [],
+    "n_flags": 0,
+    "ok": true,
+    "pairs": 6
+   }
+  },
+  "system_block_position": {
+   "F1/alias_race": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 7
+   },
+   "F1/alias_rollback": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 6
+   },
+   "F1/base_image": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 7
+   },
+   "F1/nightly": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 6
+   },
+   "F1/reproducible": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 7
+   },
+   "F1/same_version_republish": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 6
+   },
+   "F2/auto_extend": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 7
+   },
+   "F2/delayed_release": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 7
+   },
+   "F2/early_activation": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 7
+   },
+   "F2/expiry_grace": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 6
+   },
+   "F2/limit_shrink_commit": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 6
+   },
+   "F2/zero_final": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 6
+   },
+   "F3/consent_update": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 7
+   },
+   "F3/glob_ingest": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 7
+   },
+   "F3/latest_alias": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 7
+   },
+   "F3/review_hold_lift": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 6
+   },
+   "F3/revocation": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 6
+   },
+   "F3/snapshot_rebind": {
+    "fixed_rank_flags": [],
+    "ok": true,
+    "pairs": 6
+   }
+  }
+ },
+ "structure_f4_sealed_aggregate": {
+  "masking_allowlist": {},
+  "phrase_value_balance": {
+   "F4/sealed": {
+    "n_flags": 0,
+    "ok": true
+   }
+  },
+  "system_block_position": {
+   "F4/sealed": {
+    "ok": true
+   }
+  }
+ },
+ "structure_ok": true,
+ "token_balance": {
+  "F1/alias_race": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F1/alias_rollback": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F1/base_image": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F1/nightly": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F1/reproducible": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F1/same_version_republish": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F2/auto_extend": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F2/delayed_release": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F2/early_activation": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F2/expiry_grace": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F2/limit_shrink_commit": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F2/zero_final": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F3/consent_update": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F3/glob_ingest": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F3/latest_alias": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F3/review_hold_lift": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F3/revocation": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  },
+  "F3/snapshot_rebind": {
+   "benign_only": [],
+   "harmful_only": [],
+   "ok": true
+  }
+ },
+ "token_balance_ok": true
+}

@@ -1,0 +1,25 @@
+{
+  "artifact": "superseded_rows.csv",
+  "artifact_sha256": "e5f8b4d0b38862856bff9e7a79f27759d175d8e83e3a145ed64a5435606934c2",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "5edd2abcd884f5b9",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "stats.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": "rows excluded as superseded (run_meta annotations + SUPERSEDED.json); audit only, never analysed",
+  "generated_utc": "2026-11-08T05:41:01Z",
+  "is_result": true,
+  "mode": "results",
+  "n": 0,
+  "run_ids": []
+}

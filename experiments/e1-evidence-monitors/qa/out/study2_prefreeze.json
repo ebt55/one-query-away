@@ -1,0 +1,63 @@
+{
+ "2_hidden_store_record": {
+  "pass": true,
+  "counts": {
+   "id_absent_from_views_H": 30,
+   "hidden_history_record_H": 30,
+   "id_only_in_history_records_H": 30,
+   "id_absent_from_views_X": 30,
+   "hidden_history_record_X": 30,
+   "id_only_in_history_records_X": 30,
+   "id_absent_from_views_B": 30,
+   "H_X_nonhistory_records_identical": 30,
+   "bases": 30
+  }
+ },
+ "3_prompt_bytes": {
+  "prereg_paragraph_sha256": "69eea3ee4e0b3cdfc431c05e6cafbf051dc0c1313b44510f6dfb806a8bb7a041",
+  "runner_VERIFY_PARAGRAPH_sha256": "69eea3ee4e0b3cdfc431c05e6cafbf051dc0c1313b44510f6dfb806a8bb7a041",
+  "runner_paragraph_equals_A3_extraction": true,
+  "verify_selector_system == orig_selector_system + '\\n\\n' + prereg paragraph": true,
+  "verify_selector_other_fields_equal_orig (messages, tools, output_format)": true,
+  "verify_judge_payload == orig_judge_payload": true,
+  "study1_logged_selector_system_prompts": 1,
+  "study1_logged_judge_system_prompts": 1,
+  "orig_selector_system in Study-1 logged selector prompts": true,
+  "orig_judge_system in Study-1 logged judge prompts": true,
+  "verify_judge_system in Study-1 logged judge prompts": true,
+  "verify_selector_system NOT in Study-1 (sanity)": true,
+  "pass": true
+ },
+ "4_fake_rows_R22": {
+  "pass": true,
+  "runs": [
+   "20261108T113634Z_s2fake-T1_3fea49",
+   "20261108T113637Z_s2fake-T2_2304e3",
+   "20261108T113639Z_s2fake-T3_59f9c9",
+   "20261108T113641Z_s2fake-T3ds_4fa739"
+  ],
+  "n_rows": 630,
+  "arms_by_model": {
+   "deepseek|P3_orig": 90,
+   "haiku|P3_orig": 90,
+   "haiku|P3_verify": 90,
+   "sonnet|P3_orig": 90,
+   "sonnet|P3_verify": 90,
+   "sonnet|P4": 90,
+   "sonnet|router": 90
+  },
+  "raw_arm_values": {
+   "p3verify": 180,
+   "p3orig": 270,
+   "router": 90,
+   "p4": 90
+  },
+  "note": "raw arm values are lowercase aliases (p3orig/p3verify/router/p4); analysis/study2.py ARM_ALIASES maps them to the R22 names",
+  "world_types": {
+   "H": 210,
+   "X": 210,
+   "B": 210
+  },
+  "problems": {}
+ }
+}

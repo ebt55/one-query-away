@@ -1,0 +1,45 @@
+{
+  "artifact": "fig3_f4_transfer.pdf",
+  "artifact_sha256": "136257e5d3119d37782e99d54e42e21f9718f3d08cf401de0446cf2537d00c67",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "5edd2abcd884f5b9",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "stats.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": {
+    "contrasts": [
+      "C2",
+      "C1",
+      "C4"
+    ],
+    "metric": "tpr / decisive_clim_unknown",
+    "regime": "handbook",
+    "roles": [
+      "test",
+      "f4"
+    ]
+  },
+  "generated_utc": "2026-11-08T05:42:04Z",
+  "is_result": true,
+  "mode": "results",
+  "n": 20,
+  "run_ids": [
+    "20261108T044431Z_e1main-hb_0c9733",
+    "20261108T044431Z_e1main-hb_c9234d",
+    "20261108T044431Z_e1main-hb_ce8cd6",
+    "20261108T045714Z_e1pilot-hb_2a0667",
+    "20261108T050323Z_e1f4-hb_9c6358",
+    "20261108T051626Z_e1main_7536cd",
+    "20261108T053135Z_e1main-hb_70e644"
+  ]
+}

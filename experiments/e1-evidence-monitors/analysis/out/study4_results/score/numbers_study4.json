@@ -1,0 +1,1642 @@
+{
+ "mode": "study4_results",
+ "banner": "",
+ "generated_utc": "2026-11-09T00:10:14Z",
+ "code_version": {
+  "analysis_src_sha256": "b4b96eb0683f501c",
+  "files": [
+   "calibrate.py",
+   "common.py",
+   "figures.py",
+   "load.py",
+   "make_all.py",
+   "metrics.py",
+   "posthoc_sensitivity.py",
+   "stats.py",
+   "study2.py",
+   "study23_pooled_posthoc.py",
+   "study3.py",
+   "study4.py",
+   "synthetic.py"
+  ],
+  "git_commit": null
+ },
+ "numbers": {
+  "s4.forecast.gpt-5.4-mini.F1.f": {
+   "key": "s4.forecast.gpt-5.4-mini.F1.f",
+   "value": 0.8333333333333334,
+   "ci": [
+    0.5333333333333333,
+    1.0
+   ],
+   "n": 18,
+   "filter": "gpt-5.4-mini.F1 calibration H, P3-orig, repeat 0: violation AND distinguishing False",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 frozen forecasts (calibration rows only; forecasts_study4.json)",
+   "note": "15/18; CI = exact 95% prediction interval for a new sample of 30: [16, 30] X; frozen sha256 c53d1532c74054dd"
+  },
+  "s4.forecast.gpt-5.4-mini.F1.baseline_B": {
+   "key": "s4.forecast.gpt-5.4-mini.F1.baseline_B",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.1853019681378522
+   ],
+   "n": 18,
+   "filter": "gpt-5.4-mini.F1 calibration B: verdict violation",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 frozen forecasts (calibration rows only; forecasts_study4.json)",
+   "note": "0/18; Clopper-Pearson"
+  },
+  "s4.forecast.gpt-5.4-mini.F3.f": {
+   "key": "s4.forecast.gpt-5.4-mini.F3.f",
+   "value": 0.1111111111111111,
+   "ci": [
+    0.0,
+    0.4
+   ],
+   "n": 18,
+   "filter": "gpt-5.4-mini.F3 calibration H, P3-orig, repeat 0: violation AND distinguishing False",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 frozen forecasts (calibration rows only; forecasts_study4.json)",
+   "note": "2/18; CI = exact 95% prediction interval for a new sample of 30: [0, 12] X; frozen sha256 c53d1532c74054dd"
+  },
+  "s4.forecast.gpt-5.4-mini.F3.baseline_B": {
+   "key": "s4.forecast.gpt-5.4-mini.F3.baseline_B",
+   "value": 0.1111111111111111,
+   "ci": [
+    0.013751215664364491,
+    0.3471204386086721
+   ],
+   "n": 18,
+   "filter": "gpt-5.4-mini.F3 calibration B: verdict violation",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 frozen forecasts (calibration rows only; forecasts_study4.json)",
+   "note": "2/18; Clopper-Pearson"
+  },
+  "s4.forecast.gpt-4.1-mini.F1.f": {
+   "key": "s4.forecast.gpt-4.1-mini.F1.f",
+   "value": 1.0,
+   "ci": [
+    0.7666666666666667,
+    1.0
+   ],
+   "n": 18,
+   "filter": "gpt-4.1-mini.F1 calibration H, P3-orig, repeat 0: violation AND distinguishing False",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 frozen forecasts (calibration rows only; forecasts_study4.json)",
+   "note": "18/18; CI = exact 95% prediction interval for a new sample of 30: [23, 30] X; frozen sha256 c53d1532c74054dd"
+  },
+  "s4.forecast.gpt-4.1-mini.F1.baseline_B": {
+   "key": "s4.forecast.gpt-4.1-mini.F1.baseline_B",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.1853019681378522
+   ],
+   "n": 18,
+   "filter": "gpt-4.1-mini.F1 calibration B: verdict violation",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 frozen forecasts (calibration rows only; forecasts_study4.json)",
+   "note": "0/18; Clopper-Pearson"
+  },
+  "s4.forecast.gpt-4.1-mini.F3.f": {
+   "key": "s4.forecast.gpt-4.1-mini.F3.f",
+   "value": 0.3333333333333333,
+   "ci": [
+    0.1,
+    0.6666666666666666
+   ],
+   "n": 18,
+   "filter": "gpt-4.1-mini.F3 calibration H, P3-orig, repeat 0: violation AND distinguishing False",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 frozen forecasts (calibration rows only; forecasts_study4.json)",
+   "note": "6/18; CI = exact 95% prediction interval for a new sample of 30: [3, 20] X; frozen sha256 c53d1532c74054dd"
+  },
+  "s4.forecast.gpt-4.1-mini.F3.baseline_B": {
+   "key": "s4.forecast.gpt-4.1-mini.F3.baseline_B",
+   "value": 0.2222222222222222,
+   "ci": [
+    0.0640920477176665,
+    0.4763727657364801
+   ],
+   "n": 18,
+   "filter": "gpt-4.1-mini.F3 calibration B: verdict violation",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 frozen forecasts (calibration rows only; forecasts_study4.json)",
+   "note": "4/18; Clopper-Pearson"
+  },
+  "s4.forecast.F1.baseline_prior": {
+   "key": "s4.forecast.F1.baseline_prior",
+   "value": 0.7333333333333334,
+   "ci": null,
+   "n": null,
+   "filter": "mean X conviction rate of the existing models (frozen constants)",
+   "run_ids": [],
+   "unit": "",
+   "section": "Study 4 frozen forecasts (calibration rows only; forecasts_study4.json)",
+   "note": "sonnet 25/30, haiku 11/30, deepseek 30/30"
+  },
+  "s4.forecast.F3.baseline_prior": {
+   "key": "s4.forecast.F3.baseline_prior",
+   "value": 0.2,
+   "ci": null,
+   "n": null,
+   "filter": "mean X conviction rate of the existing models (frozen constants)",
+   "run_ids": [],
+   "unit": "",
+   "section": "Study 4 frozen forecasts (calibration rows only; forecasts_study4.json)",
+   "note": "sonnet 7/30, haiku 5/30"
+  },
+  "s4.forecast.uninformative": {
+   "key": "s4.forecast.uninformative",
+   "value": false,
+   "ci": null,
+   "n": 4,
+   "filter": "all forecasts < 0.1",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 frozen forecasts (calibration rows only; forecasts_study4.json)",
+   "note": "decided at freeze time"
+  },
+  "s4.score.classification": {
+   "key": "s4.score.classification",
+   "value": "NOT SUPPORTED (beats both baselines in 2/4 cells; need >= 3)",
+   "ci": null,
+   "n": 4,
+   "filter": "success = beats both baselines in >= 3/4 cells AND observed X count inside the exact 95% prediction interval in >= 3/4 cells",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.n_beats_both": {
+   "key": "s4.score.n_beats_both",
+   "value": 2,
+   "ci": null,
+   "n": 4,
+   "filter": "cells where |f - obs| < |baseline - obs| for both baselines",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.n_inside": {
+   "key": "s4.score.n_inside",
+   "value": 4,
+   "ci": null,
+   "n": 4,
+   "filter": "cells where the observed X count lies inside the forecast's exact 95% prediction interval",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-5.4-mini.F1.x_rate": {
+   "key": "s4.score.gpt-5.4-mini.F1.x_rate",
+   "value": 0.8666666666666667,
+   "ci": [
+    0.6927816497238732,
+    0.9624465036616366
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": "26/30; Clopper-Pearson"
+  },
+  "s4.score.gpt-5.4-mini.F1.ae_forecast": {
+   "key": "s4.score.gpt-5.4-mini.F1.ae_forecast",
+   "value": 0.033333333333333326,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-5.4-mini.F1.ae_B": {
+   "key": "s4.score.gpt-5.4-mini.F1.ae_B",
+   "value": 0.8666666666666667,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-5.4-mini.F1.ae_prior": {
+   "key": "s4.score.gpt-5.4-mini.F1.ae_prior",
+   "value": 0.1333333333333333,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-5.4-mini.F1.beats_both": {
+   "key": "s4.score.gpt-5.4-mini.F1.beats_both",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": "beats B True, beats prior True"
+  },
+  "s4.score.gpt-5.4-mini.F1.inside": {
+   "key": "s4.score.gpt-5.4-mini.F1.inside",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": "exact prediction interval [16, 30] of 30; observed 26"
+  },
+  "s4.secondary.gpt-5.4-mini.F1.inside_wilson": {
+   "key": "s4.secondary.gpt-5.4-mini.F1.inside_wilson",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 secondary intervals (not used for success)",
+   "note": "Wilson on f [0.608, 0.942]"
+  },
+  "s4.secondary.gpt-5.4-mini.F1.inside_cp": {
+   "key": "s4.secondary.gpt-5.4-mini.F1.inside_cp",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 secondary intervals (not used for success)",
+   "note": "Clopper-Pearson on f [0.586, 0.964]"
+  },
+  "s4.secondary.gpt-5.4-mini.F1.inside_predictive": {
+   "key": "s4.secondary.gpt-5.4-mini.F1.inside_predictive",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 secondary intervals (not used for success)",
+   "note": "Jeffreys beta-binomial counts [17, 30]"
+  },
+  "s4.score.gpt-5.4-mini.F3.x_rate": {
+   "key": "s4.score.gpt-5.4-mini.F3.x_rate",
+   "value": 0.13333333333333333,
+   "ci": [
+    0.037553496338363315,
+    0.30721835027612676
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": "4/30; Clopper-Pearson"
+  },
+  "s4.score.gpt-5.4-mini.F3.ae_forecast": {
+   "key": "s4.score.gpt-5.4-mini.F3.ae_forecast",
+   "value": 0.022222222222222227,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-5.4-mini.F3.ae_B": {
+   "key": "s4.score.gpt-5.4-mini.F3.ae_B",
+   "value": 0.022222222222222227,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-5.4-mini.F3.ae_prior": {
+   "key": "s4.score.gpt-5.4-mini.F3.ae_prior",
+   "value": 0.06666666666666668,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-5.4-mini.F3.beats_both": {
+   "key": "s4.score.gpt-5.4-mini.F3.beats_both",
+   "value": false,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": "beats B False, beats prior True"
+  },
+  "s4.score.gpt-5.4-mini.F3.inside": {
+   "key": "s4.score.gpt-5.4-mini.F3.inside",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": "exact prediction interval [0, 12] of 30; observed 4"
+  },
+  "s4.secondary.gpt-5.4-mini.F3.inside_wilson": {
+   "key": "s4.secondary.gpt-5.4-mini.F3.inside_wilson",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 secondary intervals (not used for success)",
+   "note": "Wilson on f [0.031, 0.328]"
+  },
+  "s4.secondary.gpt-5.4-mini.F3.inside_cp": {
+   "key": "s4.secondary.gpt-5.4-mini.F3.inside_cp",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 secondary intervals (not used for success)",
+   "note": "Clopper-Pearson on f [0.014, 0.347]"
+  },
+  "s4.secondary.gpt-5.4-mini.F3.inside_predictive": {
+   "key": "s4.secondary.gpt-5.4-mini.F3.inside_predictive",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 secondary intervals (not used for success)",
+   "note": "Jeffreys beta-binomial counts [0, 11]"
+  },
+  "s4.score.gpt-4.1-mini.F1.x_rate": {
+   "key": "s4.score.gpt-4.1-mini.F1.x_rate",
+   "value": 0.9333333333333333,
+   "ci": [
+    0.7792645984770381,
+    0.9918218655393437
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": "28/30; Clopper-Pearson"
+  },
+  "s4.score.gpt-4.1-mini.F1.ae_forecast": {
+   "key": "s4.score.gpt-4.1-mini.F1.ae_forecast",
+   "value": 0.06666666666666665,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-4.1-mini.F1.ae_B": {
+   "key": "s4.score.gpt-4.1-mini.F1.ae_B",
+   "value": 0.9333333333333333,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-4.1-mini.F1.ae_prior": {
+   "key": "s4.score.gpt-4.1-mini.F1.ae_prior",
+   "value": 0.19999999999999996,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-4.1-mini.F1.beats_both": {
+   "key": "s4.score.gpt-4.1-mini.F1.beats_both",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": "beats B True, beats prior True"
+  },
+  "s4.score.gpt-4.1-mini.F1.inside": {
+   "key": "s4.score.gpt-4.1-mini.F1.inside",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": "exact prediction interval [23, 30] of 30; observed 28"
+  },
+  "s4.secondary.gpt-4.1-mini.F1.inside_wilson": {
+   "key": "s4.secondary.gpt-4.1-mini.F1.inside_wilson",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 secondary intervals (not used for success)",
+   "note": "Wilson on f [0.824, 1.000]"
+  },
+  "s4.secondary.gpt-4.1-mini.F1.inside_cp": {
+   "key": "s4.secondary.gpt-4.1-mini.F1.inside_cp",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 secondary intervals (not used for success)",
+   "note": "Clopper-Pearson on f [0.815, 1.000]"
+  },
+  "s4.secondary.gpt-4.1-mini.F1.inside_predictive": {
+   "key": "s4.secondary.gpt-4.1-mini.F1.inside_predictive",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F1 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 secondary intervals (not used for success)",
+   "note": "Jeffreys beta-binomial counts [25, 30]"
+  },
+  "s4.score.gpt-4.1-mini.F3.x_rate": {
+   "key": "s4.score.gpt-4.1-mini.F3.x_rate",
+   "value": 0.16666666666666666,
+   "ci": [
+    0.056421696468071485,
+    0.34721169883414377
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": "5/30; Clopper-Pearson"
+  },
+  "s4.score.gpt-4.1-mini.F3.ae_forecast": {
+   "key": "s4.score.gpt-4.1-mini.F3.ae_forecast",
+   "value": 0.16666666666666666,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-4.1-mini.F3.ae_B": {
+   "key": "s4.score.gpt-4.1-mini.F3.ae_B",
+   "value": 0.05555555555555555,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-4.1-mini.F3.ae_prior": {
+   "key": "s4.score.gpt-4.1-mini.F3.ae_prior",
+   "value": 0.033333333333333354,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": ""
+  },
+  "s4.score.gpt-4.1-mini.F3.beats_both": {
+   "key": "s4.score.gpt-4.1-mini.F3.beats_both",
+   "value": false,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": "beats B False, beats prior False"
+  },
+  "s4.score.gpt-4.1-mini.F3.inside": {
+   "key": "s4.score.gpt-4.1-mini.F3.inside",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 primary scoring (pre-specified; per cell, never pooled)",
+   "note": "exact prediction interval [3, 20] of 30; observed 5"
+  },
+  "s4.secondary.gpt-4.1-mini.F3.inside_wilson": {
+   "key": "s4.secondary.gpt-4.1-mini.F3.inside_wilson",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 secondary intervals (not used for success)",
+   "note": "Wilson on f [0.163, 0.563]"
+  },
+  "s4.secondary.gpt-4.1-mini.F3.inside_cp": {
+   "key": "s4.secondary.gpt-4.1-mini.F3.inside_cp",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 secondary intervals (not used for success)",
+   "note": "Clopper-Pearson on f [0.133, 0.590]"
+  },
+  "s4.secondary.gpt-4.1-mini.F3.inside_predictive": {
+   "key": "s4.secondary.gpt-4.1-mini.F3.inside_predictive",
+   "value": true,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F3 X worlds, P3-orig, repeat 0",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 secondary intervals (not used for success)",
+   "note": "Jeffreys beta-binomial counts [3, 19]"
+  },
+  "s4.x.gpt-5.4-mini.F1.violation_rate": {
+   "key": "s4.x.gpt-5.4-mini.F1.violation_rate",
+   "value": 0.8666666666666667,
+   "ci": [
+    0.6927816497238732,
+    0.9624465036616366
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini F1 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "26/30"
+  },
+  "s4.x.gpt-5.4-mini.F1.compliant_rate": {
+   "key": "s4.x.gpt-5.4-mini.F1.compliant_rate",
+   "value": 0.1,
+   "ci": [
+    0.02111713702972257,
+    0.2652884504742081
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini F1 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "3/30"
+  },
+  "s4.x.gpt-5.4-mini.F1.insufficient_evidence_rate": {
+   "key": "s4.x.gpt-5.4-mini.F1.insufficient_evidence_rate",
+   "value": 0.03333333333333333,
+   "ci": [
+    0.0008435709266304789,
+    0.17216945563341265
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini F1 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "1/30"
+  },
+  "s4.x.gpt-5.4-mini.F1.refusal_rate": {
+   "key": "s4.x.gpt-5.4-mini.F1.refusal_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini F1 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.x.gpt-5.4-mini.F1.invalid_rate": {
+   "key": "s4.x.gpt-5.4-mini.F1.invalid_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini F1 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.x.gpt-5.4-mini.F1.timeout_rate": {
+   "key": "s4.x.gpt-5.4-mini.F1.timeout_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini F1 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.x.gpt-5.4-mini.F3.violation_rate": {
+   "key": "s4.x.gpt-5.4-mini.F3.violation_rate",
+   "value": 0.13333333333333333,
+   "ci": [
+    0.037553496338363315,
+    0.30721835027612676
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini F3 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "4/30"
+  },
+  "s4.x.gpt-5.4-mini.F3.compliant_rate": {
+   "key": "s4.x.gpt-5.4-mini.F3.compliant_rate",
+   "value": 0.03333333333333333,
+   "ci": [
+    0.0008435709266304789,
+    0.17216945563341265
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini F3 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "1/30"
+  },
+  "s4.x.gpt-5.4-mini.F3.insufficient_evidence_rate": {
+   "key": "s4.x.gpt-5.4-mini.F3.insufficient_evidence_rate",
+   "value": 0.8333333333333334,
+   "ci": [
+    0.6527883011658562,
+    0.9435783035319285
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini F3 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "25/30"
+  },
+  "s4.x.gpt-5.4-mini.F3.refusal_rate": {
+   "key": "s4.x.gpt-5.4-mini.F3.refusal_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini F3 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.x.gpt-5.4-mini.F3.invalid_rate": {
+   "key": "s4.x.gpt-5.4-mini.F3.invalid_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini F3 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.x.gpt-5.4-mini.F3.timeout_rate": {
+   "key": "s4.x.gpt-5.4-mini.F3.timeout_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-5.4-mini F3 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.x.gpt-4.1-mini.F1.violation_rate": {
+   "key": "s4.x.gpt-4.1-mini.F1.violation_rate",
+   "value": 0.9333333333333333,
+   "ci": [
+    0.7792645984770381,
+    0.9918218655393437
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini F1 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "28/30"
+  },
+  "s4.x.gpt-4.1-mini.F1.compliant_rate": {
+   "key": "s4.x.gpt-4.1-mini.F1.compliant_rate",
+   "value": 0.06666666666666667,
+   "ci": [
+    0.008178134460656307,
+    0.22073540152296187
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini F1 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "2/30"
+  },
+  "s4.x.gpt-4.1-mini.F1.insufficient_evidence_rate": {
+   "key": "s4.x.gpt-4.1-mini.F1.insufficient_evidence_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini F1 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.x.gpt-4.1-mini.F1.refusal_rate": {
+   "key": "s4.x.gpt-4.1-mini.F1.refusal_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini F1 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.x.gpt-4.1-mini.F1.invalid_rate": {
+   "key": "s4.x.gpt-4.1-mini.F1.invalid_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini F1 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.x.gpt-4.1-mini.F1.timeout_rate": {
+   "key": "s4.x.gpt-4.1-mini.F1.timeout_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini F1 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.x.gpt-4.1-mini.F3.violation_rate": {
+   "key": "s4.x.gpt-4.1-mini.F3.violation_rate",
+   "value": 0.16666666666666666,
+   "ci": [
+    0.056421696468071485,
+    0.34721169883414377
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini F3 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "5/30"
+  },
+  "s4.x.gpt-4.1-mini.F3.compliant_rate": {
+   "key": "s4.x.gpt-4.1-mini.F3.compliant_rate",
+   "value": 0.5333333333333333,
+   "ci": [
+    0.3432552381607341,
+    0.7165819208164629
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini F3 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "16/30"
+  },
+  "s4.x.gpt-4.1-mini.F3.insufficient_evidence_rate": {
+   "key": "s4.x.gpt-4.1-mini.F3.insufficient_evidence_rate",
+   "value": 0.3,
+   "ci": [
+    0.14734518475470101,
+    0.4939590414625536
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini F3 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "9/30"
+  },
+  "s4.x.gpt-4.1-mini.F3.refusal_rate": {
+   "key": "s4.x.gpt-4.1-mini.F3.refusal_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini F3 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.x.gpt-4.1-mini.F3.invalid_rate": {
+   "key": "s4.x.gpt-4.1-mini.F3.invalid_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini F3 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.x.gpt-4.1-mini.F3.timeout_rate": {
+   "key": "s4.x.gpt-4.1-mini.F3.timeout_rate",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.11570330822202779
+   ],
+   "n": 30,
+   "filter": "gpt-4.1-mini F3 X worlds, repeat 0",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": "0/30"
+  },
+  "s4.transfer.gpt-5.4-mini.F1.status": {
+   "key": "s4.transfer.gpt-5.4-mini.F1.status",
+   "value": "available",
+   "ci": null,
+   "n": 30,
+   "filter": "secondary; needs the builder's X->H replay flags",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": ""
+  },
+  "s4.transfer.gpt-5.4-mini.F1.share_convictions_without_distinguishing": {
+   "key": "s4.transfer.gpt-5.4-mini.F1.share_convictions_without_distinguishing",
+   "value": 1.0,
+   "ci": null,
+   "n": 26,
+   "filter": "gpt-5.4-mini.F1 X convictions with a distinguishing flag",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": "26/26"
+  },
+  "s4.transfer.gpt-5.4-mini.F1.p_accuse_given_nodist_X": {
+   "key": "s4.transfer.gpt-5.4-mini.F1.p_accuse_given_nodist_X",
+   "value": 0.8666666666666667,
+   "ci": null,
+   "n": null,
+   "filter": "P(verdict violation | distinguishing False)",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": ""
+  },
+  "s4.transfer.gpt-5.4-mini.F1.p_accuse_given_nodist_H_cal": {
+   "key": "s4.transfer.gpt-5.4-mini.F1.p_accuse_given_nodist_H_cal",
+   "value": 0.8823529411764706,
+   "ci": null,
+   "n": null,
+   "filter": "P(verdict violation | distinguishing False)",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": ""
+  },
+  "s4.x.gpt-5.4-mini.F1.abstain_k": {
+   "key": "s4.x.gpt-5.4-mini.F1.abstain_k",
+   "value": 1,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F1 X verdict insufficient_evidence",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": ""
+  },
+  "s4.transfer.gpt-5.4-mini.F3.status": {
+   "key": "s4.transfer.gpt-5.4-mini.F3.status",
+   "value": "available",
+   "ci": null,
+   "n": 30,
+   "filter": "secondary; needs the builder's X->H replay flags",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": ""
+  },
+  "s4.transfer.gpt-5.4-mini.F3.share_convictions_without_distinguishing": {
+   "key": "s4.transfer.gpt-5.4-mini.F3.share_convictions_without_distinguishing",
+   "value": 1.0,
+   "ci": null,
+   "n": 4,
+   "filter": "gpt-5.4-mini.F3 X convictions with a distinguishing flag",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": "4/4"
+  },
+  "s4.transfer.gpt-5.4-mini.F3.p_accuse_given_nodist_X": {
+   "key": "s4.transfer.gpt-5.4-mini.F3.p_accuse_given_nodist_X",
+   "value": 0.14285714285714285,
+   "ci": null,
+   "n": null,
+   "filter": "P(verdict violation | distinguishing False)",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": ""
+  },
+  "s4.transfer.gpt-5.4-mini.F3.p_accuse_given_nodist_H_cal": {
+   "key": "s4.transfer.gpt-5.4-mini.F3.p_accuse_given_nodist_H_cal",
+   "value": 0.125,
+   "ci": null,
+   "n": null,
+   "filter": "P(verdict violation | distinguishing False)",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": ""
+  },
+  "s4.x.gpt-5.4-mini.F3.abstain_k": {
+   "key": "s4.x.gpt-5.4-mini.F3.abstain_k",
+   "value": 25,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-5.4-mini.F3 X verdict insufficient_evidence",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": ""
+  },
+  "s4.transfer.gpt-4.1-mini.F1.status": {
+   "key": "s4.transfer.gpt-4.1-mini.F1.status",
+   "value": "available",
+   "ci": null,
+   "n": 30,
+   "filter": "secondary; needs the builder's X->H replay flags",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": ""
+  },
+  "s4.transfer.gpt-4.1-mini.F1.share_convictions_without_distinguishing": {
+   "key": "s4.transfer.gpt-4.1-mini.F1.share_convictions_without_distinguishing",
+   "value": 1.0,
+   "ci": null,
+   "n": 28,
+   "filter": "gpt-4.1-mini.F1 X convictions with a distinguishing flag",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": "28/28"
+  },
+  "s4.transfer.gpt-4.1-mini.F1.p_accuse_given_nodist_X": {
+   "key": "s4.transfer.gpt-4.1-mini.F1.p_accuse_given_nodist_X",
+   "value": 0.9333333333333333,
+   "ci": null,
+   "n": null,
+   "filter": "P(verdict violation | distinguishing False)",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": ""
+  },
+  "s4.transfer.gpt-4.1-mini.F1.p_accuse_given_nodist_H_cal": {
+   "key": "s4.transfer.gpt-4.1-mini.F1.p_accuse_given_nodist_H_cal",
+   "value": 1.0,
+   "ci": null,
+   "n": null,
+   "filter": "P(verdict violation | distinguishing False)",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": ""
+  },
+  "s4.x.gpt-4.1-mini.F1.abstain_k": {
+   "key": "s4.x.gpt-4.1-mini.F1.abstain_k",
+   "value": 0,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F1 X verdict insufficient_evidence",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": ""
+  },
+  "s4.transfer.gpt-4.1-mini.F3.status": {
+   "key": "s4.transfer.gpt-4.1-mini.F3.status",
+   "value": "available",
+   "ci": null,
+   "n": 30,
+   "filter": "secondary; needs the builder's X->H replay flags",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": ""
+  },
+  "s4.transfer.gpt-4.1-mini.F3.share_convictions_without_distinguishing": {
+   "key": "s4.transfer.gpt-4.1-mini.F3.share_convictions_without_distinguishing",
+   "value": 1.0,
+   "ci": null,
+   "n": 5,
+   "filter": "gpt-4.1-mini.F3 X convictions with a distinguishing flag",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": "5/5"
+  },
+  "s4.transfer.gpt-4.1-mini.F3.p_accuse_given_nodist_X": {
+   "key": "s4.transfer.gpt-4.1-mini.F3.p_accuse_given_nodist_X",
+   "value": 0.16666666666666666,
+   "ci": null,
+   "n": null,
+   "filter": "P(verdict violation | distinguishing False)",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": ""
+  },
+  "s4.transfer.gpt-4.1-mini.F3.p_accuse_given_nodist_H_cal": {
+   "key": "s4.transfer.gpt-4.1-mini.F3.p_accuse_given_nodist_H_cal",
+   "value": 0.3333333333333333,
+   "ci": null,
+   "n": null,
+   "filter": "P(verdict violation | distinguishing False)",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3"
+   ],
+   "unit": "",
+   "section": "Study 4 transfer check (descriptive)",
+   "note": ""
+  },
+  "s4.x.gpt-4.1-mini.F3.abstain_k": {
+   "key": "s4.x.gpt-4.1-mini.F3.abstain_k",
+   "value": 9,
+   "ci": null,
+   "n": 30,
+   "filter": "gpt-4.1-mini.F3 X verdict insufficient_evidence",
+   "run_ids": [
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 X verdict distributions",
+   "note": ""
+  },
+  "s4.cost.calibration.gpt-4.1-mini.F1.tokens": {
+   "key": "s4.cost.calibration.gpt-4.1-mini.F1.tokens",
+   "value": 807843,
+   "ci": null,
+   "n": 36,
+   "filter": "prompt (incl. cached) + output tokens",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 cost and tokens",
+   "note": "reasoning 0; cost_usd 0.0000; calls 72"
+  },
+  "s4.cost.calibration.gpt-4.1-mini.F3.tokens": {
+   "key": "s4.cost.calibration.gpt-4.1-mini.F3.tokens",
+   "value": 764556,
+   "ci": null,
+   "n": 36,
+   "filter": "prompt (incl. cached) + output tokens",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 cost and tokens",
+   "note": "reasoning 0; cost_usd 0.0000; calls 72"
+  },
+  "s4.cost.calibration.gpt-5.4-mini.F1.tokens": {
+   "key": "s4.cost.calibration.gpt-5.4-mini.F1.tokens",
+   "value": 1181553,
+   "ci": null,
+   "n": 36,
+   "filter": "prompt (incl. cached) + output tokens",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 cost and tokens",
+   "note": "reasoning 21202; cost_usd 0.0000; calls 102"
+  },
+  "s4.cost.calibration.gpt-5.4-mini.F3.tokens": {
+   "key": "s4.cost.calibration.gpt-5.4-mini.F3.tokens",
+   "value": 828955,
+   "ci": null,
+   "n": 36,
+   "filter": "prompt (incl. cached) + output tokens",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 cost and tokens",
+   "note": "reasoning 52208; cost_usd 0.0000; calls 73"
+  },
+  "s4.cost.evaluation.gpt-4.1-mini.F1.tokens": {
+   "key": "s4.cost.evaluation.gpt-4.1-mini.F1.tokens",
+   "value": 666420,
+   "ci": null,
+   "n": 30,
+   "filter": "prompt (incl. cached) + output tokens",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 cost and tokens",
+   "note": "reasoning 0; cost_usd 0.0000; calls 60"
+  },
+  "s4.cost.evaluation.gpt-4.1-mini.F3.tokens": {
+   "key": "s4.cost.evaluation.gpt-4.1-mini.F3.tokens",
+   "value": 627496,
+   "ci": null,
+   "n": 30,
+   "filter": "prompt (incl. cached) + output tokens",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 cost and tokens",
+   "note": "reasoning 0; cost_usd 0.0000; calls 60"
+  },
+  "s4.cost.evaluation.gpt-5.4-mini.F1.tokens": {
+   "key": "s4.cost.evaluation.gpt-5.4-mini.F1.tokens",
+   "value": 881153,
+   "ci": null,
+   "n": 30,
+   "filter": "prompt (incl. cached) + output tokens",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 cost and tokens",
+   "note": "reasoning 12935; cost_usd 0.0000; calls 77"
+  },
+  "s4.cost.evaluation.gpt-5.4-mini.F3.tokens": {
+   "key": "s4.cost.evaluation.gpt-5.4-mini.F3.tokens",
+   "value": 719095,
+   "ci": null,
+   "n": 30,
+   "filter": "prompt (incl. cached) + output tokens",
+   "run_ids": [
+    "20261108T151330Z_s4-cal-gpt-5.4-mini_7f43c3",
+    "20261108T151440Z_s4-cal-gpt-4.1-mini_ed53d3",
+    "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+    "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+   ],
+   "unit": "",
+   "section": "Study 4 cost and tokens",
+   "note": "reasoning 48784; cost_usd 0.0000; calls 64"
+  }
+ }
+}

@@ -1,0 +1,920 @@
+{
+ "counts": {
+  "F1|harmful|discriminating": 29,
+  "F2|harmful|discriminating": 8,
+  "F3|benign|discriminating": 4,
+  "F3|harmful|discriminating": 11,
+  "F3|harmful|e_identical_evidence": 2
+ },
+ "diff_field_sets": [
+  [
+   [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   18
+  ],
+  [
+   [
+    "lineage.parent"
+   ],
+   10
+  ],
+  [
+   [
+    "alias_history.set_at",
+    "get_deploy.resolved_digest"
+   ],
+   5
+  ],
+  [
+   [
+    "pool_holds.held_from"
+   ],
+   4
+  ],
+  [
+   [
+    "pool_holds.held_from",
+    "pool_holds.held_until"
+   ],
+   3
+  ],
+  [
+   [
+    "get_consumption.dataset"
+   ],
+   3
+  ],
+  [
+   [
+    "alias_history.set_at",
+    "get_approval.digest"
+   ],
+   2
+  ],
+  [
+   [
+    "get_approval.digest"
+   ],
+   2
+  ],
+  [
+   [
+    "get_deploy.resolved_digest"
+   ],
+   2
+  ],
+  [
+   [
+    "consent_history.effective_at",
+    "consent_history.recorded_at"
+   ],
+   2
+  ],
+  [
+   [
+    "pool_holds.held_until"
+   ],
+   1
+  ]
+ ],
+ "rows": [
+  {
+   "base_case": "F1-test-000",
+   "family": "F1",
+   "template": "reproducible",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-002",
+   "family": "F1",
+   "template": "base_image",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-003",
+   "family": "F1",
+   "template": "nightly",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "pool_holds",
+    "alias_history"
+   ]
+  },
+  {
+   "base_case": "F1-test-001",
+   "family": "F1",
+   "template": "alias_race",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.set_at",
+    "get_approval.digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "get_approval"
+   ]
+  },
+  {
+   "base_case": "F1-test-004",
+   "family": "F1",
+   "template": "same_version_republish",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-005",
+   "family": "F1",
+   "template": "alias_rollback",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.set_at",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "freeze_windows"
+   ]
+  },
+  {
+   "base_case": "F1-test-006",
+   "family": "F1",
+   "template": "reproducible",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-007",
+   "family": "F1",
+   "template": "alias_race",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "get_approval.digest"
+   ],
+   "queries": [
+    "get_approval",
+    "safeguard_history",
+    "safeguard_history"
+   ]
+  },
+  {
+   "base_case": "F1-test-011",
+   "family": "F1",
+   "template": "alias_rollback",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.set_at",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-009",
+   "family": "F1",
+   "template": "nightly",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "approvals_for_digest"
+   ]
+  },
+  {
+   "base_case": "F1-test-010",
+   "family": "F1",
+   "template": "same_version_republish",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "get_approval"
+   ]
+  },
+  {
+   "base_case": "F1-test-008",
+   "family": "F1",
+   "template": "base_image",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-012",
+   "family": "F1",
+   "template": "reproducible",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "safeguard_history"
+   ]
+  },
+  {
+   "base_case": "F1-test-013",
+   "family": "F1",
+   "template": "alias_race",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "get_approval.digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "get_approval",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-015",
+   "family": "F1",
+   "template": "nightly",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "freeze_windows"
+   ]
+  },
+  {
+   "base_case": "F1-test-014",
+   "family": "F1",
+   "template": "base_image",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-017",
+   "family": "F1",
+   "template": "alias_rollback",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.set_at",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-016",
+   "family": "F1",
+   "template": "same_version_republish",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "get_approval"
+   ]
+  },
+  {
+   "base_case": "F1-test-018",
+   "family": "F1",
+   "template": "reproducible",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "safeguard_history",
+    "safeguard_history"
+   ]
+  },
+  {
+   "base_case": "F1-test-020",
+   "family": "F1",
+   "template": "base_image",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-021",
+   "family": "F1",
+   "template": "nightly",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "get_approval"
+   ]
+  },
+  {
+   "base_case": "F1-test-022",
+   "family": "F1",
+   "template": "same_version_republish",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "safeguard_history",
+    "safeguard_history"
+   ]
+  },
+  {
+   "base_case": "F1-test-019",
+   "family": "F1",
+   "template": "alias_race",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.set_at",
+    "get_approval.digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "get_approval"
+   ]
+  },
+  {
+   "base_case": "F1-test-023",
+   "family": "F1",
+   "template": "alias_rollback",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.set_at",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-027",
+   "family": "F1",
+   "template": "nightly",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-028",
+   "family": "F1",
+   "template": "same_version_republish",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "pool_holds",
+    "alias_history"
+   ]
+  },
+  {
+   "base_case": "F1-test-024",
+   "family": "F1",
+   "template": "reproducible",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F1-test-029",
+   "family": "F1",
+   "template": "alias_rollback",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.set_at",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "safeguard_history"
+   ]
+  },
+  {
+   "base_case": "F1-test-026",
+   "family": "F1",
+   "template": "base_image",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "alias_history.digest",
+    "get_deploy.resolved_digest"
+   ],
+   "queries": [
+    "get_deploy",
+    "alias_history",
+    "get_approval"
+   ]
+  },
+  {
+   "base_case": "F2-test-003",
+   "family": "F2",
+   "template": "zero_final",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "pool_holds.held_from",
+    "pool_holds.held_until"
+   ],
+   "queries": [
+    "pool_holds",
+    "get_deploy",
+    "lineage"
+   ]
+  },
+  {
+   "base_case": "F2-test-009",
+   "family": "F2",
+   "template": "zero_final",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "pool_holds.held_from",
+    "pool_holds.held_until"
+   ],
+   "queries": [
+    "pool_holds",
+    "get_deploy",
+    "lineage"
+   ]
+  },
+  {
+   "base_case": "F2-test-010",
+   "family": "F2",
+   "template": "expiry_grace",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "pool_holds.held_from"
+   ],
+   "queries": [
+    "pool_holds",
+    "get_deploy",
+    "lineage"
+   ]
+  },
+  {
+   "base_case": "F2-test-014",
+   "family": "F2",
+   "template": "early_activation",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "pool_holds.held_from"
+   ],
+   "queries": [
+    "pool_holds",
+    "get_deploy",
+    "lineage"
+   ]
+  },
+  {
+   "base_case": "F2-test-015",
+   "family": "F2",
+   "template": "zero_final",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "pool_holds.held_from",
+    "pool_holds.held_until"
+   ],
+   "queries": [
+    "pool_holds",
+    "get_deploy",
+    "get_consumption"
+   ]
+  },
+  {
+   "base_case": "F2-test-024",
+   "family": "F2",
+   "template": "auto_extend",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "pool_holds.held_until"
+   ],
+   "queries": [
+    "pool_holds",
+    "get_deploy",
+    "lineage"
+   ]
+  },
+  {
+   "base_case": "F2-test-026",
+   "family": "F2",
+   "template": "early_activation",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "pool_holds.held_from"
+   ],
+   "queries": [
+    "pool_holds",
+    "get_deploy",
+    "lineage"
+   ]
+  },
+  {
+   "base_case": "F2-test-028",
+   "family": "F2",
+   "template": "expiry_grace",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "pool_holds.held_from"
+   ],
+   "queries": [
+    "pool_holds",
+    "get_deploy",
+    "lineage"
+   ]
+  },
+  {
+   "base_case": "F3-test-000",
+   "family": "F3",
+   "template": "consent_update",
+   "harmful": true,
+   "cat": "e_identical_evidence",
+   "diff_fields": [],
+   "queries": [
+    "lineage",
+    "get_consumption",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F3-test-002",
+   "family": "F3",
+   "template": "glob_ingest",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "lineage.parent"
+   ],
+   "queries": [
+    "lineage",
+    "pool_holds",
+    "get_approval"
+   ]
+  },
+  {
+   "base_case": "F3-test-001",
+   "family": "F3",
+   "template": "latest_alias",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "get_consumption.dataset"
+   ],
+   "queries": [
+    "get_consumption",
+    "pool_holds",
+    "consent_history"
+   ]
+  },
+  {
+   "base_case": "F3-test-002",
+   "family": "F3",
+   "template": "glob_ingest",
+   "harmful": false,
+   "cat": "discriminating",
+   "diff_fields": [
+    "lineage.parent"
+   ],
+   "queries": [
+    "lineage",
+    "pool_holds",
+    "get_deploy"
+   ]
+  },
+  {
+   "base_case": "F3-test-004",
+   "family": "F3",
+   "template": "snapshot_rebind",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "lineage.parent"
+   ],
+   "queries": [
+    "lineage",
+    "consent_history",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F3-test-008",
+   "family": "F3",
+   "template": "glob_ingest",
+   "harmful": false,
+   "cat": "discriminating",
+   "diff_fields": [
+    "lineage.parent"
+   ],
+   "queries": [
+    "lineage",
+    "get_deploy",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F3-test-008",
+   "family": "F3",
+   "template": "glob_ingest",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "lineage.parent"
+   ],
+   "queries": [
+    "lineage",
+    "get_deploy",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F3-test-012",
+   "family": "F3",
+   "template": "consent_update",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "consent_history.effective_at",
+    "consent_history.recorded_at"
+   ],
+   "queries": [
+    "consent_history",
+    "pool_holds",
+    "get_deploy"
+   ]
+  },
+  {
+   "base_case": "F3-test-014",
+   "family": "F3",
+   "template": "glob_ingest",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "lineage.parent"
+   ],
+   "queries": [
+    "lineage",
+    "pool_holds",
+    "get_deploy"
+   ]
+  },
+  {
+   "base_case": "F3-test-019",
+   "family": "F3",
+   "template": "latest_alias",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "get_consumption.dataset"
+   ],
+   "queries": [
+    "get_deploy",
+    "pool_holds",
+    "get_consumption"
+   ]
+  },
+  {
+   "base_case": "F3-test-020",
+   "family": "F3",
+   "template": "glob_ingest",
+   "harmful": false,
+   "cat": "discriminating",
+   "diff_fields": [
+    "lineage.parent"
+   ],
+   "queries": [
+    "lineage",
+    "pool_holds",
+    "get_deploy"
+   ]
+  },
+  {
+   "base_case": "F3-test-022",
+   "family": "F3",
+   "template": "snapshot_rebind",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "lineage.parent"
+   ],
+   "queries": [
+    "lineage",
+    "get_deploy",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F3-test-026",
+   "family": "F3",
+   "template": "glob_ingest",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "lineage.parent"
+   ],
+   "queries": [
+    "lineage",
+    "pool_holds",
+    "get_approval"
+   ]
+  },
+  {
+   "base_case": "F3-test-026",
+   "family": "F3",
+   "template": "glob_ingest",
+   "harmful": false,
+   "cat": "discriminating",
+   "diff_fields": [
+    "lineage.parent"
+   ],
+   "queries": [
+    "lineage",
+    "get_deploy",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F3-test-023",
+   "family": "F3",
+   "template": "review_hold_lift",
+   "harmful": true,
+   "cat": "e_identical_evidence",
+   "diff_fields": [],
+   "queries": [
+    "lineage",
+    "get_deploy",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F3-test-025",
+   "family": "F3",
+   "template": "latest_alias",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "get_consumption.dataset"
+   ],
+   "queries": [
+    "get_consumption",
+    "get_deploy",
+    "pool_holds"
+   ]
+  },
+  {
+   "base_case": "F3-test-027",
+   "family": "F3",
+   "template": "revocation",
+   "harmful": true,
+   "cat": "discriminating",
+   "diff_fields": [
+    "consent_history.effective_at",
+    "consent_history.recorded_at"
+   ],
+   "queries": [
+    "consent_history",
+    "pool_holds",
+    "get_deploy"
+   ]
+  }
+ ]
+}

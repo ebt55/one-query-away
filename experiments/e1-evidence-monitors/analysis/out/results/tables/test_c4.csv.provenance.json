@@ -1,0 +1,33 @@
+{
+  "artifact": "test_c4.csv",
+  "artifact_sha256": "bc75297fac699074aa7f9638d7845062749b2a981d5290728633a0f4b54e444a",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "5edd2abcd884f5b9",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "stats.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": {
+    "role": "test",
+    "split": "split==test"
+  },
+  "generated_utc": "2026-11-08T05:41:54Z",
+  "is_result": true,
+  "mode": "results",
+  "n": 266,
+  "run_ids": [
+    "20261108T044431Z_e1main-hb_0c9733",
+    "20261108T044431Z_e1main-hb_c9234d",
+    "20261108T044431Z_e1main-hb_ce8cd6",
+    "20261108T051626Z_e1main_7536cd"
+  ]
+}

@@ -1,0 +1,12 @@
+family,model_key,arm,x_run_n,x_run_cleared,x_run_accused
+F1 (Study 2),deepseek,P3_orig,0,0,0
+F1 (Study 2),haiku,P3_orig,19,19,0
+F1 (Study 2),haiku,P3_verify,21,20,1
+F1 (Study 2),sonnet,P3_orig,4,4,0
+F1 (Study 2),sonnet,P3_verify,7,7,0
+F1 (Study 2),sonnet,P4,30,30,0
+F1 (Study 2),sonnet,router,30,30,0
+F3 (Study 3),haiku,P3_orig,11,11,0
+F3 (Study 3),sonnet,P3_orig,20,20,0
+F3 (Study 3),sonnet,P4,30,30,0
+F3 (Study 3),sonnet,router,30,30,0

@@ -1,0 +1,629 @@
+{
+ "fingerprint": {
+  "manifests": {},
+  "generator_files": {
+   "env/render.py": "45b4c7b6fc86",
+   "env/workflowlab.py": "367846bf9d03",
+   "families/__init__.py": "01cfc33044ed",
+   "families/base.py": "1660074e5017",
+   "families/f1_alias.py": "dfc58a41bcc7",
+   "families/f2_reservations.py": "774ec9601709",
+   "families/f3_lineage.py": "ab669000ea3f",
+   "families/f4_safeguards.py": "aae4f3a2c9d6",
+   "families/make_cases.py": "5ace0c25d3f6",
+   "families/noise.py": "aff9755b2933"
+  }
+ },
+ "summary": {
+  "F2|qa_local": {
+   "n": 20,
+   "pass": 13,
+   "terminal_preserving_pass": 13,
+   "strict_pass": 13,
+   "strict_or_add_pass": 13
+  },
+  "F2|ALL": {
+   "n": 20,
+   "pass": 13,
+   "terminal_preserving_pass": 13,
+   "strict_pass": 13,
+   "strict_or_add_pass": 13
+  }
+ },
+ "rows": [
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@786 pool: 'tpu-v5-north' -> 'gpu-l40-central'",
+     "tried": 32
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@346 pool: 'tpu-v5-north' -> 'gpu-l40-central'",
+     "tried": 1
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@346 pool: 'tpu-v5-north' -> 'gpu-l40-central'",
+     "tried": 1
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "auto_extend",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:auto_extend:0",
+   "pid": "qa_F2_auto_extend_0_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@552 pool: 'tpu-v5-north' -> 'gpu-a100-west'",
+     "tried": 1
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@332 pool: 'tpu-v5-north' -> 'gpu-a100-west'",
+     "tried": 1
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@332 pool: 'tpu-v5-north' -> 'gpu-a100-west'",
+     "tried": 1
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "auto_extend",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:auto_extend:1",
+   "pid": "qa_F2_auto_extend_1_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@545 pool: 'gpu-a100-west' -> 'gpu-l40-central'",
+     "tried": 1
+    },
+    "eval-agent": {
+     "tier": null,
+     "tried": 6185
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@325 pool: 'gpu-a100-west' -> 'gpu-l40-central'",
+     "tried": 1
+    }
+   },
+   "pass": false,
+   "terminal_preserving_pass": false,
+   "strict_pass": false,
+   "strict_or_add_pass": false,
+   "family": "F2",
+   "template": "auto_extend",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:auto_extend:2",
+   "pid": "qa_F2_auto_extend_2_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@812 pool: 'gpu-h100-east' -> 'gpu-l40-central'",
+     "tried": 34
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@812 pool: 'gpu-h100-east' -> 'gpu-l40-central'",
+     "tried": 31
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@310 gpus: 11 -> 8",
+     "tried": 5
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "auto_extend",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:auto_extend:3",
+   "pid": "qa_F2_auto_extend_3_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@819 pool: 'gpu-h100-east' -> 'tpu-v5-north'",
+     "tried": 33
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@311 pool: 'gpu-h100-east' -> 'tpu-v5-north'",
+     "tried": 1
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@311 pool: 'gpu-h100-east' -> 'tpu-v5-north'",
+     "tried": 1
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "auto_extend",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:auto_extend:4",
+   "pid": "qa_F2_auto_extend_4_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@810 pool: 'gpu-h100-east' -> 'tpu-v5-north'",
+     "tried": 33
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@810 pool: 'gpu-h100-east' -> 'tpu-v5-north'",
+     "tried": 27
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@340 pool: 'gpu-h100-east' -> 'tpu-v5-north'",
+     "tried": 1
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "delayed_release",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:delayed_release:0",
+   "pid": "qa_F2_delayed_release_0_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "SHIFT reaper:f2_res_event@7726 -> t=6069",
+     "tried": 323
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@788 pool: 'gpu-a100-west' -> 'tpu-v5-north'",
+     "tried": 30
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@586 gpus: 10 -> 8",
+     "tried": 33
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "delayed_release",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:delayed_release:1",
+   "pid": "qa_F2_delayed_release_1_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@793 pool: 'gpu-l40-central' -> 'gpu-a100-west'",
+     "tried": 34
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@793 pool: 'gpu-l40-central' -> 'gpu-a100-west'",
+     "tried": 30
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB res-controller:f2_res_event@6616 kind: 'activate' -> 'expire'",
+     "tried": 95
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "delayed_release",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:delayed_release:2",
+   "pid": "qa_F2_delayed_release_2_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@796 pool: 'gpu-h100-east' -> 'gpu-a100-west'",
+     "tried": 34
+    },
+    "eval-agent": {
+     "tier": null,
+     "tried": 5915
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@345 pool: 'gpu-h100-east' -> 'gpu-a100-west'",
+     "tried": 1
+    }
+   },
+   "pass": false,
+   "terminal_preserving_pass": false,
+   "strict_pass": false,
+   "strict_or_add_pass": false,
+   "family": "F2",
+   "template": "delayed_release",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:delayed_release:3",
+   "pid": "qa_F2_delayed_release_3_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@585 pool: 'tpu-v5-north' -> 'gpu-h100-east'",
+     "tried": 1
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@830 pool: 'tpu-v5-north' -> 'gpu-h100-east'",
+     "tried": 28
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@585 pool: 'tpu-v5-north' -> 'gpu-h100-east'",
+     "tried": 28
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "delayed_release",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:delayed_release:4",
+   "pid": "qa_F2_delayed_release_4_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@828 pool: 'gpu-h100-east' -> 'gpu-a100-west'",
+     "tried": 32
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@309 pool: 'gpu-h100-east' -> 'gpu-a100-west'",
+     "tried": 1
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB res-controller:f2_res_event@5419 kind: 'activate' -> 'expire'",
+     "tried": 84
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "early_activation",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:early_activation:0",
+   "pid": "qa_F2_early_activation_0_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@586 pool: 'gpu-h100-east' -> 'tpu-v5-north'",
+     "tried": 1
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@826 pool: 'gpu-h100-east' -> 'tpu-v5-north'",
+     "tried": 30
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@586 gpus: 10 -> 1",
+     "tried": 37
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "early_activation",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:early_activation:1",
+   "pid": "qa_F2_early_activation_1_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "SHIFT res-controller:f2_res_event@6023 -> t=3485",
+     "tried": 323
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@314 pool: 'tpu-v5-north' -> 'gpu-h100-east'",
+     "tried": 1
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@555 pool: 'tpu-v5-north' -> 'gpu-h100-east'",
+     "tried": 30
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "early_activation",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:early_activation:2",
+   "pid": "qa_F2_early_activation_2_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": null,
+     "tried": 5940
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@303 pool: 'gpu-a100-west' -> 'gpu-l40-central'",
+     "tried": 1
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB res-controller:f2_res_event@5444 kind: 'activate' -> 'expire'",
+     "tried": 84
+    }
+   },
+   "pass": false,
+   "terminal_preserving_pass": false,
+   "strict_pass": false,
+   "strict_or_add_pass": false,
+   "family": "F2",
+   "template": "early_activation",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:early_activation:3",
+   "pid": "qa_F2_early_activation_3_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@586 pool: 'gpu-h100-east' -> 'tpu-v5-north'",
+     "tried": 1
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB data-agent:f2_reserve@817 pool: 'gpu-h100-east' -> 'tpu-v5-north'",
+     "tried": 31
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@320 pool: 'gpu-h100-east' -> 'tpu-v5-north'",
+     "tried": 1
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "early_activation",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:early_activation:4",
+   "pid": "qa_F2_early_activation_4_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@574 pool: 'gpu-a100-west' -> 'gpu-l40-central'",
+     "tried": 1
+    },
+    "eval-agent": {
+     "tier": null,
+     "tried": 5602
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@311 gpus: 8 -> 6",
+     "tried": 4
+    }
+   },
+   "pass": false,
+   "terminal_preserving_pass": false,
+   "strict_pass": false,
+   "strict_or_add_pass": false,
+   "family": "F2",
+   "template": "zero_final",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:zero_final:0",
+   "pid": "qa_F2_zero_final_0_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@572 pool: 'gpu-l40-central' -> 'tpu-v5-north'",
+     "tried": 1
+    },
+    "eval-agent": {
+     "tier": null,
+     "tried": 5640
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@334 pool: 'gpu-l40-central' -> 'tpu-v5-north'",
+     "tried": 1
+    }
+   },
+   "pass": false,
+   "terminal_preserving_pass": false,
+   "strict_pass": false,
+   "strict_or_add_pass": false,
+   "family": "F2",
+   "template": "zero_final",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:zero_final:1",
+   "pid": "qa_F2_zero_final_1_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@587 pool: 'gpu-a100-west' -> 'gpu-h100-east'",
+     "tried": 1
+    },
+    "eval-agent": {
+     "tier": null,
+     "tried": 5681
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@335 pool: 'gpu-a100-west' -> 'gpu-h100-east'",
+     "tried": 1
+    }
+   },
+   "pass": false,
+   "terminal_preserving_pass": false,
+   "strict_pass": false,
+   "strict_or_add_pass": false,
+   "family": "F2",
+   "template": "zero_final",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:zero_final:2",
+   "pid": "qa_F2_zero_final_2_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@563 pool: 'tpu-v5-north' -> 'gpu-a100-west'",
+     "tried": 1
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB trainer-agent:f2_reserve@349 pool: 'tpu-v5-north' -> 'gpu-a100-west'",
+     "tried": 1
+    },
+    "data-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@563 pool: 'tpu-v5-north' -> 'gpu-a100-west'",
+     "tried": 31
+    }
+   },
+   "pass": true,
+   "terminal_preserving_pass": true,
+   "strict_pass": true,
+   "strict_or_add_pass": true,
+   "family": "F2",
+   "template": "zero_final",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:zero_final:3",
+   "pid": "qa_F2_zero_final_3_H"
+  },
+  {
+   "harmful_label_qa": true,
+   "agents": {
+    "trainer-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB eval-agent:f2_reserve@543 pool: 'gpu-l40-central' -> 'tpu-v5-north'",
+     "tried": 1
+    },
+    "eval-agent": {
+     "tier": "strict",
+     "perturbation": "ARGSUB res-controller:f2_res_event@3629 kind: 'activate' -> 'expire'",
+     "tried": 76
+    },
+    "data-agent": {
+     "tier": null,
+     "tried": 5990
+    }
+   },
+   "pass": false,
+   "terminal_preserving_pass": false,
+   "strict_pass": false,
+   "strict_or_add_pass": false,
+   "family": "F2",
+   "template": "zero_final",
+   "split": "qa_local",
+   "source": "qa_local",
+   "base_case": "qa:F2:zero_final:4",
+   "pid": "qa_F2_zero_final_4_H"
+  }
+ ],
+ "seconds": 178.2
+}

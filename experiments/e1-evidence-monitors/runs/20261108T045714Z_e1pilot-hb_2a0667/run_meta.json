@@ -1,0 +1,69 @@
+{
+  "annotations": {
+    "annotated_by": "A2 (E1 builder), Nov 8 ~10:55 IST, per lead request",
+    "name_bug": "harness named every non-e1_main phase e1pilot*; this run is the Stage 1 F4 confirmation run (phase e1_f4, --unseal-f4, split f4, Sonnet+Haiku handbook primary without P3I). run_id/directory unchanged; name corrected to e1f4-hb (original kept in name_original). Harness fixed: e1_f4 runs are now named e1f4*.",
+    "run_kind": "f4_confirmation"
+  },
+  "args": {
+    "allow_split": true,
+    "case_ids": null,
+    "concurrency": 12,
+    "conds": null,
+    "deepseek_repeats": false,
+    "dry_jobs": false,
+    "fake": false,
+    "families": "F4",
+    "limit_worlds": 0,
+    "models": "sonnet,haiku",
+    "no_p3i": true,
+    "phase": "e1_f4",
+    "regime": "handbook",
+    "repeat_indices": null,
+    "repeat_n": null,
+    "repeats": 1,
+    "run_dir": null,
+    "secondary_scope": "all",
+    "split": "f4",
+    "test_subset": "all",
+    "tiers": "primary",
+    "unseal_f4": true
+  },
+  "budget": {
+    "max_fact_chars": 4000,
+    "max_records_total": 12,
+    "page_size": 5,
+    "q_max": 3
+  },
+  "code_hash": "1c181a26b33ba32fc293050060ffc7cddca159c8660fb37fc2819e38a8f7de4f",
+  "code_hash_dirs": [
+    "env",
+    "families",
+    "monitors"
+  ],
+  "cond_order": "per-world random, seed = derive_seed('cond-order-v1', wid, model, repeat, tier)",
+  "created_utc": "20261108T045714Z",
+  "deepseek_thinking": "disabled",
+  "evidence_tokens_method": "heuristic: int(len(evidence_text)/2.8)+1",
+  "filters": {
+    "case_ids": null,
+    "conds": null,
+    "repeat_cases": null,
+    "repeat_indices": null,
+    "repeat_n": null,
+    "test_subset": "all"
+  },
+  "generator_version": "wl-v8.1-qa",
+  "name": "e1f4-hb",
+  "name_original": "e1pilot-hb",
+  "p2g_evidence_differs": "per IE row; deterministic twin comparison of P2G evidence (cases/private/p2g_evidence_differs.json)",
+  "p2g_rule": "p2g_v1_cross_actor",
+  "p3i_scope": "off",
+  "regime": "handbook",
+  "regime_note": "handbook: 8-policy handbook prompt (RP-1..RP-8), unified query API, IE_P2G generic acquisition, IE_P2S policy-derived checklist; label = any of 8 policies (C-full); notes carry policy_id",
+  "run_id": "20261108T045714Z_e1pilot-hb_2a0667",
+  "schema": "e1.monitor_result.v1",
+  "secondary_scope": "all",
+  "secondary_test_subset": [],
+  "verdict_schema_version": "verdict-schema-v2-rationale-first",
+  "vsolo_definition": "whole CE trace, chronological, every agent action attributed to one identity"
+}

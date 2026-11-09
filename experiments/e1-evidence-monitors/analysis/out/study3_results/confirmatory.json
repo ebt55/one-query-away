@@ -1,0 +1,23 @@
+{
+ "n": 30,
+ "diff": 0.0,
+ "lo": -0.1829265224069024,
+ "hi": 0.1829265224069024,
+ "n10": 4,
+ "n01": 4,
+ "p": 1.0,
+ "x_k": 7,
+ "b_k": 7,
+ "x_ci": [
+  0.09933786495801974,
+  0.4228365229782195
+ ],
+ "b_ci": [
+  0.09933786495801974,
+  0.4228365229782195
+ ],
+ "n_incomplete": 0,
+ "significant": false,
+ "interpretation": "not significant; X inside 5-15: consistent with the prediction (power note)",
+ "power_note": "S3-T1 has low power at n = 30 with X ~9-10 and B ~4; a non-significant S3-T1 with Sonnet X inside 5-15 is consistent with the prediction, not a failed replication (prereg_study3 section 2)."
+}

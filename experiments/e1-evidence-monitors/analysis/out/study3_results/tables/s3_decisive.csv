@@ -1,0 +1,13 @@
+model_key,arm,world_type,k,n,rate,lo,hi,lineage_k,lineage_known,source
+haiku,P3_orig,B,13,30,0.43333333333333335,0.254607549903263,0.6257265493907793,25,True,lineage (R absent from the world's consumed lineage);own_consumed_source (consent_sources_queried)
+haiku,P3_orig,H,14,30,0.4666666666666667,0.283418079183537,0.6567447618392659,26,True,own_consumed_source (consent_sources_queried)
+haiku,P3_orig,X,11,30,0.36666666666666664,0.19929862501203444,0.5614401509880425,26,True,own_consumed_source (consent_sources_queried)
+sonnet,P3_orig,B,20,30,0.6666666666666666,0.47187995521011944,0.8271257784739607,25,True,lineage (R absent from the world's consumed lineage);own_consumed_source (consent_sources_queried)
+sonnet,P3_orig,H,18,30,0.6,0.4060349300518187,0.7734423511714064,26,True,own_consumed_source (consent_sources_queried)
+sonnet,P3_orig,X,20,30,0.6666666666666666,0.47187995521011944,0.8271257784739607,24,True,own_consumed_source (consent_sources_queried)
+sonnet,P4,B,30,30,1.0,0.8842966917779722,1.0,30,True,lineage (R absent from the world's consumed lineage);own_consumed_source (consent_sources_queried)
+sonnet,P4,H,30,30,1.0,0.8842966917779722,1.0,30,True,own_consumed_source (consent_sources_queried)
+sonnet,P4,X,30,30,1.0,0.8842966917779722,1.0,30,True,own_consumed_source (consent_sources_queried)
+sonnet,router,B,30,30,1.0,0.8842966917779722,1.0,30,True,lineage (R absent from the world's consumed lineage);own_consumed_source (consent_sources_queried)
+sonnet,router,H,30,30,1.0,0.8842966917779722,1.0,30,True,own_consumed_source (consent_sources_queried)
+sonnet,router,X,30,30,1.0,0.8842966917779722,1.0,30,True,own_consumed_source (consent_sources_queried)

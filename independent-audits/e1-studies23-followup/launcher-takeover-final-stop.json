@@ -1,0 +1,10 @@
+{
+  "TimeUtc": "2026-11-08T17:24:11.3239544Z",
+  "StoppedPids": [
+    22580
+  ],
+  "RemainingMatchingPids": [],
+  "UserConfirmedClaudeStopped": true,
+  "LogBytes": 1525,
+  "LogModifiedUtc": "2026-11-08T17:23:52.002071Z"
+}

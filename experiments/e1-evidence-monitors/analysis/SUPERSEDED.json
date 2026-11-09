@@ -1,0 +1,18 @@
+{
+  "_doc": "A4-owned registry of superseded rows, used IN ADDITION to run_meta (authoritative: run_meta.p2g_rule, run_meta.annotations.p2g_rule, run_meta.annotations.superseded_conds written by A2). load.py drops matching rows BEFORE any table or NUMBERS key is computed; they go to out/<mode>/superseded_rows.csv for audit only. Handbook IE_P2G rows must have a known P2G rule; unknown -> SchemaDriftError. Entries: run_id, conds (or ['*']), optional models, p2g_rule, reason.",
+  "p2g_rules": {
+    "current": "p2g_v1_cross_actor",
+    "superseded": ["p2g_v0"],
+    "source": "preregistration.md deviations log, Nov 8 ~08:15 IST: P2g redefined as the cross-actor rule; the 'latest consequential action' rule p2g_v0 is retired."
+  },
+  "excluded_runs": [
+    {"run_id_prefix": "20261108T043220Z_e1fake_78bd23",
+     "reason": "accidental REAL DeepSeek calls during a fake-backend test (runs/_validation/..._REAL_DEEPSEEK_SPEND_not_results); never analyse (lead, Nov 8)"}
+  ],
+  "runs": [
+    {"run_id": "20261108T010026Z_e1pilot-hb_092172", "conds": ["IE_P2G"], "p2g_rule": "p2g_v0",
+     "reason": "IE_P2G produced by the retired p2g_v0 rule (also annotated by A2 in run_meta.annotations)"},
+    {"run_id": "20261108T010920Z_e1pilot-hb_54a564", "conds": ["IE_P2G"], "p2g_rule": "p2g_v0",
+     "reason": "IE_P2G produced by the retired p2g_v0 rule (also annotated by A2 in run_meta.annotations)"}
+  ]
+}

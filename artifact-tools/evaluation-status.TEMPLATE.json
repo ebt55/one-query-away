@@ -1,0 +1,9 @@
+{
+  "schema": "e1-owner-evaluation-archive-status-v1",
+  "owner_approved_for_packaging": false,
+  "study4_scientific_status": "NOT_EVALUATED",
+  "attempts": [],
+  "scored_run_ids": [],
+  "additional_artifacts": [],
+  "instructions": "TEMPLATE ONLY. Primary must list every actual real evaluation attempt with status complete, partial or failed. Partials/failed attempts stay archived UNSCORED. EVALUATED additionally requires exactly two complete fixed-model runs and independent_audit_path/independent_audit_sha256 for the complete120 raw-data scoring proof. Do not approve before final manuscript/PDF and operational receipts are ready."
+}

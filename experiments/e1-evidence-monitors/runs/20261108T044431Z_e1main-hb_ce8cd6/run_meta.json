@@ -1,0 +1,63 @@
+{
+  "args": {
+    "allow_split": true,
+    "case_ids": null,
+    "concurrency": 12,
+    "conds": null,
+    "deepseek_repeats": false,
+    "dry_jobs": false,
+    "fake": false,
+    "families": "F1,F2,F3",
+    "limit_worlds": 0,
+    "models": "haiku",
+    "no_p3i": false,
+    "phase": "e1_main",
+    "regime": "handbook",
+    "repeat_indices": null,
+    "repeat_n": null,
+    "repeats": 1,
+    "run_dir": null,
+    "secondary_scope": "calibration",
+    "split": "calibration,test",
+    "test_subset": "all",
+    "tiers": "primary,secondary",
+    "unseal_f4": false
+  },
+  "budget": {
+    "max_fact_chars": 4000,
+    "max_records_total": 12,
+    "page_size": 5,
+    "q_max": 3
+  },
+  "code_hash": "342c916e414e962c1c8dee3354980baab738f33757adebd3de87758645e88dba",
+  "code_hash_dirs": [
+    "env",
+    "families",
+    "monitors"
+  ],
+  "cond_order": "per-world random, seed = derive_seed('cond-order-v1', wid, model, repeat, tier)",
+  "created_utc": "20261108T044431Z",
+  "deepseek_thinking": "disabled",
+  "evidence_tokens_method": "heuristic: int(len(evidence_text)/2.8)+1",
+  "filters": {
+    "case_ids": null,
+    "conds": null,
+    "repeat_cases": null,
+    "repeat_indices": null,
+    "repeat_n": null,
+    "test_subset": "all"
+  },
+  "generator_version": "wl-v8.1-qa",
+  "name": "e1main-hb",
+  "p2g_evidence_differs": "per IE row; deterministic twin comparison of P2G evidence (cases/private/p2g_evidence_differs.json)",
+  "p2g_rule": "p2g_v1_cross_actor",
+  "p3i_scope": "repeat_idx 0 only, shared selector with IE_P3",
+  "regime": "handbook",
+  "regime_note": "handbook: 8-policy handbook prompt (RP-1..RP-8), unified query API, IE_P2G generic acquisition, IE_P2S policy-derived checklist; label = any of 8 policies (C-full); notes carry policy_id",
+  "run_id": "20261108T044431Z_e1main-hb_ce8cd6",
+  "schema": "e1.monitor_result.v1",
+  "secondary_scope": "calibration",
+  "secondary_test_subset": [],
+  "verdict_schema_version": "verdict-schema-v2-rationale-first",
+  "vsolo_definition": "whole CE trace, chronological, every agent action attributed to one identity"
+}

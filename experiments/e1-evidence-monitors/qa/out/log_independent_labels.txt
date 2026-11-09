@@ -1,0 +1,19 @@
+cases|wl-v8.1-qa|calibration|F1                                        n=  12 agree=  12 builder_values=  12 cross_policy_viol=0
+cases|wl-v8.1-qa|calibration|F2                                        n=  12 agree=  12 builder_values=  12 cross_policy_viol=0
+cases|wl-v8.1-qa|calibration|F3                                        n=  12 agree=  12 builder_values=  12 cross_policy_viol=0
+cases|wl-v8.1-qa|dev|F1                                                n=   6 agree=   6 builder_values=   6 cross_policy_viol=0
+cases|wl-v8.1-qa|dev|F2                                                n=   6 agree=   6 builder_values=   6 cross_policy_viol=0
+cases|wl-v8.1-qa|dev|F3                                                n=   6 agree=   6 builder_values=   6 cross_policy_viol=0
+cases|wl-v8.1-qa|f4_reserved|F4                                        n=  40 agree=  40 builder_values=  40 cross_policy_viol=0
+cases|wl-v8.1-qa|test|F1                                               n=  60 agree=  60 builder_values=  60 cross_policy_viol=0
+cases|wl-v8.1-qa|test|F2                                               n=  60 agree=  60 builder_values=  60 cross_policy_viol=0
+cases|wl-v8.1-qa|test|F3                                               n=  60 agree=  60 builder_values=  60 cross_policy_viol=0
+qa_local|wl-v8.1-qa|qa_local|F1                                        n=  48 agree=  48 builder_values=   0 cross_policy_viol=0
+qa_local|wl-v8.1-qa|qa_local|F2                                        n=  48 agree=  48 builder_values=   0 cross_policy_viol=0
+qa_local|wl-v8.1-qa|qa_local|F3                                        n=  48 agree=  48 builder_values=   0 cross_policy_viol=0
+qa_local|wl-v8.1-qa|qa_local|F4                                        n=  32 agree=  32 builder_values=   0 cross_policy_viol=0
+spike|f1-v1|spike|F1                                                   n=   8 agree=   8 builder_values=   8 cross_policy_viol=0
+spike|f1-v2-jitter|spike|F1                                            n=   4 agree=   4 builder_values=   4 cross_policy_viol=0
+disagreements: 0
+
+--- stderr ---

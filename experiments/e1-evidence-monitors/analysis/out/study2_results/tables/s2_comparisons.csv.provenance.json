@@ -1,0 +1,34 @@
+{
+  "artifact": "s2_comparisons.csv",
+  "artifact_sha256": "bb179ab4a0a707a52f3b50fe44cab28a3cd32f610b4c66f4528f0c92ae41cc12",
+  "banner": "",
+  "code_version": {
+    "analysis_src_sha256": "5274357c0eb59956",
+    "files": [
+      "calibrate.py",
+      "common.py",
+      "figures.py",
+      "load.py",
+      "make_all.py",
+      "metrics.py",
+      "stats.py",
+      "study2.py",
+      "synthetic.py"
+    ],
+    "git_commit": null
+  },
+  "filters": {
+    "repeat_idx": 0,
+    "study": 2
+  },
+  "generated_utc": "2026-11-08T12:00:10Z",
+  "is_result": false,
+  "mode": "study2_results",
+  "n": 16,
+  "run_ids": [
+    "20261108T114814Z_s2-T1_7d74dc",
+    "20261108T115125Z_s2-T2_b47d9c",
+    "20261108T115304Z_s2-T3_8b773a",
+    "20261108T115748Z_s2-T3ds_5d1b17"
+  ]
+}

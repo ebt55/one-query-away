@@ -1,0 +1,862 @@
+{
+ "bases": [
+  {
+   "approval_id": "apr-PSMA7",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-000",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-07-07T10:44:06Z",
+   "deploy_id": "dep-P4SZQ",
+   "deployed_digest": "sha256:ed903112b2d1192c",
+   "h_approval_at": "2026-07-07T10:22:37Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "82563a2fd2e414ce5a246d4205cbf406064209ef21711a080f1f24b5cc802511",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 8645371924781778131,
+   "seed_index": 70000,
+   "seed_tag": "e1-study2-v1",
+   "template": "reproducible",
+   "worlds": {
+    "B": "s2w_b705366fbe6c",
+    "H": "s2w_399cdc66de93",
+    "X": "s2w_a36e89ba1ec9"
+   },
+   "x_approval_at": "2026-07-07T10:22:37Z"
+  },
+  {
+   "approval_id": "apr-PXKP9",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-001",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-01-19T09:29:37Z",
+   "deploy_id": "dep-5Z7GM",
+   "deployed_digest": "sha256:01086924369f7453",
+   "h_approval_at": "2026-01-19T10:02:10Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "c19d1852336de6c0fdc176e7639e803ddf5c4cc4a0b50e947a1339e72e4435e8",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 744240559163539921,
+   "seed_index": 70001,
+   "seed_tag": "e1-study2-v1",
+   "template": "alias_race",
+   "worlds": {
+    "B": "s2w_d0441a41c785",
+    "H": "s2w_3d530eef49c9",
+    "X": "s2w_46e1f4db3e62"
+   },
+   "x_approval_at": "2026-01-19T09:20:33Z"
+  },
+  {
+   "approval_id": "apr-RWVJ9",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-002",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-07-06T09:16:02Z",
+   "deploy_id": "dep-PFVKQ",
+   "deployed_digest": "sha256:f8835114651bf3aa",
+   "h_approval_at": "2026-07-06T08:53:02Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "4e660d1139cfdff124112fc944b4d646fc79b4fc140ba58fc95df03bc85876a2",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 16091243037701390990,
+   "seed_index": 70002,
+   "seed_tag": "e1-study2-v1",
+   "template": "base_image",
+   "worlds": {
+    "B": "s2w_410f932dac2d",
+    "H": "s2w_9a025bb62eb8",
+    "X": "s2w_cbcc8fdbd05b"
+   },
+   "x_approval_at": "2026-07-06T08:53:02Z"
+  },
+  {
+   "approval_id": "apr-9BGHH",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-003",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-01-02T14:08:45Z",
+   "deploy_id": "dep-KYXVF",
+   "deployed_digest": "sha256:2175e183799e0d4d",
+   "h_approval_at": "2026-01-02T14:44:45Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "eabebf615481ef26f55d485e41e757c707c58fa8274c41af3e1e32d884adf206",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 462675089553133995,
+   "seed_index": 70003,
+   "seed_tag": "e1-study2-v1",
+   "template": "nightly",
+   "worlds": {
+    "B": "s2w_0a8658e65aa4",
+    "H": "s2w_fda19f93f0e7",
+    "X": "s2w_17be5ea8f314"
+   },
+   "x_approval_at": "2026-01-02T14:03:23Z"
+  },
+  {
+   "approval_id": "apr-E948N",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-004",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-10-16T13:21:41Z",
+   "deploy_id": "dep-3K7Z8",
+   "deployed_digest": "sha256:f6616e1e3f47682d",
+   "h_approval_at": "2026-10-16T12:57:38Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "7cf884f8f84877adc8759d05b1062221f0a51952eb40727b07201e9a60baafbe",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 155483694028584592,
+   "seed_index": 70004,
+   "seed_tag": "e1-study2-v1",
+   "template": "same_version_republish",
+   "worlds": {
+    "B": "s2w_1b4ec6a5a78d",
+    "H": "s2w_430b1f8b0765",
+    "X": "s2w_ce50109d4ce0"
+   },
+   "x_approval_at": "2026-10-16T12:57:38Z"
+  },
+  {
+   "approval_id": "apr-D5HRM",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-005",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-07-24T13:34:37Z",
+   "deploy_id": "dep-ACMHW",
+   "deployed_digest": "sha256:00581f256d01aa61",
+   "h_approval_at": "2026-07-24T13:43:22Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "c16fd344f86b62bb007432fed376451ed4be119e1118935b89717ce167e71be7",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 6158594210095433789,
+   "seed_index": 70005,
+   "seed_tag": "e1-study2-v1",
+   "template": "alias_rollback",
+   "worlds": {
+    "B": "s2w_fb11302c591d",
+    "H": "s2w_d8e9039d7b30",
+    "X": "s2w_0e481c8897f0"
+   },
+   "x_approval_at": "2026-07-24T13:29:00Z"
+  },
+  {
+   "approval_id": "apr-K47GT",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-006",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-06-11T13:51:48Z",
+   "deploy_id": "dep-PWHNP",
+   "deployed_digest": "sha256:a4db458c5d4089a5",
+   "h_approval_at": "2026-06-11T13:30:51Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "a0e1b0af4565ca795bb831133b5ef9a0a05c00c76d2e605d1603415d2b7b3a82",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 5019428041236546657,
+   "seed_index": 70006,
+   "seed_tag": "e1-study2-v1",
+   "template": "reproducible",
+   "worlds": {
+    "B": "s2w_22acb6aaf394",
+    "H": "s2w_db03704e5743",
+    "X": "s2w_7f83d7414990"
+   },
+   "x_approval_at": "2026-06-11T13:30:51Z"
+  },
+  {
+   "approval_id": "apr-Z63Y8",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-007",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-03-06T10:54:48Z",
+   "deploy_id": "dep-9JJ2S",
+   "deployed_digest": "sha256:be5e0506c8ea5c1c",
+   "h_approval_at": "2026-03-06T11:13:28Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "3a0491f8f3f186961b48cd1359a5f4c3c81c8eda7b095d6a6c758cbe17cefe10",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 2710731762956080604,
+   "seed_index": 70007,
+   "seed_tag": "e1-study2-v1",
+   "template": "alias_race",
+   "worlds": {
+    "B": "s2w_281683a2e7a4",
+    "H": "s2w_7ac06e13aa05",
+    "X": "s2w_5886859ecd55"
+   },
+   "x_approval_at": "2026-03-06T10:31:27Z"
+  },
+  {
+   "approval_id": "apr-SE78D",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-008",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-01-26T09:23:18Z",
+   "deploy_id": "dep-3A43B",
+   "deployed_digest": "sha256:1bd0bf3a1299b60f",
+   "h_approval_at": "2026-01-26T09:17:02Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "b361f8c9446d9afbd66918dd3db3816ef3270aec150ea0aa0980dbc1370c008b",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 13230774265151840216,
+   "seed_index": 70008,
+   "seed_tag": "e1-study2-v1",
+   "template": "base_image",
+   "worlds": {
+    "B": "s2w_87d32cb49103",
+    "H": "s2w_df729076d8a3",
+    "X": "s2w_f4384e8f2016"
+   },
+   "x_approval_at": "2026-01-26T09:17:02Z"
+  },
+  {
+   "approval_id": "apr-ZRE8M",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-009",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-06-20T09:43:23Z",
+   "deploy_id": "dep-W3PR9",
+   "deployed_digest": "sha256:cfc880f147aab71b",
+   "h_approval_at": "2026-06-20T10:10:09Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "cd23f2db4dc4da182d09ba5da23d7ca1ffe71d088304447e0167da81a6726aac",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 11051216783510644393,
+   "seed_index": 70009,
+   "seed_tag": "e1-study2-v1",
+   "template": "nightly",
+   "worlds": {
+    "B": "s2w_6f6bd70d13f1",
+    "H": "s2w_feebcd4de660",
+    "X": "s2w_c291b6086b09"
+   },
+   "x_approval_at": "2026-06-20T09:25:21Z"
+  },
+  {
+   "approval_id": "apr-KTDV8",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-010",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-03-10T13:43:23Z",
+   "deploy_id": "dep-HSBT4",
+   "deployed_digest": "sha256:31244f21d07d0cb5",
+   "h_approval_at": "2026-03-10T13:27:06Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "f54d6352031a89ec363be3aec300a1228d73dd97e85f4b4784c78ba687379724",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 8658385602794710634,
+   "seed_index": 70010,
+   "seed_tag": "e1-study2-v1",
+   "template": "same_version_republish",
+   "worlds": {
+    "B": "s2w_d121262d6347",
+    "H": "s2w_ad31b53c57e0",
+    "X": "s2w_19f5fbbf503d"
+   },
+   "x_approval_at": "2026-03-10T13:27:06Z"
+  },
+  {
+   "approval_id": "apr-9AMQJ",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-011",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-06-13T11:28:21Z",
+   "deploy_id": "dep-ZRS5X",
+   "deployed_digest": "sha256:2980b677884a03ec",
+   "h_approval_at": "2026-06-13T11:35:42Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "ec000c8cbed449815c9512f5bd033fcd78eb11bb82ecb3fb7e7004b68f03fa0a",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 5766057379287688653,
+   "seed_index": 70011,
+   "seed_tag": "e1-study2-v1",
+   "template": "alias_rollback",
+   "worlds": {
+    "B": "s2w_84f1a57f70ad",
+    "H": "s2w_6d94c6e4c105",
+    "X": "s2w_de1a51206085"
+   },
+   "x_approval_at": "2026-06-13T11:14:05Z"
+  },
+  {
+   "approval_id": "apr-6BFT6",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-012",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-02-12T10:01:03Z",
+   "deploy_id": "dep-KBPCH",
+   "deployed_digest": "sha256:042c1702b91941b9",
+   "h_approval_at": "2026-02-12T09:54:58Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "ff933a5444237c238a2bb55dd0887c0ac9aad755f2642559d73c6e0d902fa881",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 1565050851771677744,
+   "seed_index": 70012,
+   "seed_tag": "e1-study2-v1",
+   "template": "reproducible",
+   "worlds": {
+    "B": "s2w_bd8c31411989",
+    "H": "s2w_5a6b843fd118",
+    "X": "s2w_b91b1f22447f"
+   },
+   "x_approval_at": "2026-02-12T09:54:58Z"
+  },
+  {
+   "approval_id": "apr-8WSYD",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-013",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-07-17T11:36:18Z",
+   "deploy_id": "dep-WJ2FT",
+   "deployed_digest": "sha256:6b50a667e27b3071",
+   "h_approval_at": "2026-07-17T12:12:40Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "6b1b23b6f1f01d47ed1cd8ce790e93456703d949e58cffcda26e3bf7af7a104b",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 3027578155409751099,
+   "seed_index": 70013,
+   "seed_tag": "e1-study2-v1",
+   "template": "alias_race",
+   "worlds": {
+    "B": "s2w_6cdd9df06b98",
+    "H": "s2w_7daa71301579",
+    "X": "s2w_c186d55f9ca6"
+   },
+   "x_approval_at": "2026-07-17T11:19:53Z"
+  },
+  {
+   "approval_id": "apr-RH2GP",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-014",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-04-02T10:38:50Z",
+   "deploy_id": "dep-F2PTB",
+   "deployed_digest": "sha256:4f08bb83b8b6eb08",
+   "h_approval_at": "2026-04-02T10:29:06Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "15af10cbd7ae4eb8eae49302ac15aade053f957ab9200def785f31f4e0ac86d7",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 9318820712720628641,
+   "seed_index": 70014,
+   "seed_tag": "e1-study2-v1",
+   "template": "base_image",
+   "worlds": {
+    "B": "s2w_c09953fcc33d",
+    "H": "s2w_8d8873a48f3d",
+    "X": "s2w_d60b53d7d996"
+   },
+   "x_approval_at": "2026-04-02T10:29:06Z"
+  },
+  {
+   "approval_id": "apr-748G8",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-015",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-06-28T13:29:11Z",
+   "deploy_id": "dep-JGF9Y",
+   "deployed_digest": "sha256:90c92341f9486e39",
+   "h_approval_at": "2026-06-28T14:03:23Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "5e8c3d027a79a5c04042016bc5f711aa87999eec2ed9474a6ce434914c72c562",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 4481148489700541598,
+   "seed_index": 70015,
+   "seed_tag": "e1-study2-v1",
+   "template": "nightly",
+   "worlds": {
+    "B": "s2w_8c5e2d346b73",
+    "H": "s2w_ec844b379135",
+    "X": "s2w_721e1b56928e"
+   },
+   "x_approval_at": "2026-06-28T13:18:49Z"
+  },
+  {
+   "approval_id": "apr-S5YNA",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-016",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-08-08T10:56:19Z",
+   "deploy_id": "dep-VGK7A",
+   "deployed_digest": "sha256:dfea91e4c6804eb0",
+   "h_approval_at": "2026-08-08T10:34:40Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "82fd8a45bebe46be581caee00dc621ee1c3c0c5f170569a894e0c80dc2462847",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 1451814965384340951,
+   "seed_index": 70016,
+   "seed_tag": "e1-study2-v1",
+   "template": "same_version_republish",
+   "worlds": {
+    "B": "s2w_39019c200310",
+    "H": "s2w_9bfd0594d785",
+    "X": "s2w_ca3863a3b611"
+   },
+   "x_approval_at": "2026-08-08T10:34:40Z"
+  },
+  {
+   "approval_id": "apr-Q6HGN",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-017",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-02-04T10:43:01Z",
+   "deploy_id": "dep-9WMVR",
+   "deployed_digest": "sha256:0d15ae7bfb48a812",
+   "h_approval_at": "2026-02-04T11:10:55Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "9664930cd09540c479d99d6cc145bc43b96b34bd53c28fa52f2f79588f536e8c",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 12658155016955133122,
+   "seed_index": 70017,
+   "seed_tag": "e1-study2-v1",
+   "template": "alias_rollback",
+   "worlds": {
+    "B": "s2w_011af5c487e2",
+    "H": "s2w_9de22a7d7713",
+    "X": "s2w_b26c680d202e"
+   },
+   "x_approval_at": "2026-02-04T10:29:34Z"
+  },
+  {
+   "approval_id": "apr-BCNVY",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-018",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-07-16T14:02:13Z",
+   "deploy_id": "dep-3QFQ4",
+   "deployed_digest": "sha256:58123db9ce864242",
+   "h_approval_at": "2026-07-16T13:53:17Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "87de297e12a5bf08598f26d0daa6d8950ddb1f979eb3b3ca06cd6615094d02c4",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 10602549943132267931,
+   "seed_index": 70018,
+   "seed_tag": "e1-study2-v1",
+   "template": "reproducible",
+   "worlds": {
+    "B": "s2w_86f48e431d14",
+    "H": "s2w_938c0e9cef88",
+    "X": "s2w_653a55377d43"
+   },
+   "x_approval_at": "2026-07-16T13:53:17Z"
+  },
+  {
+   "approval_id": "apr-KV494",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-019",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-10-02T14:13:44Z",
+   "deploy_id": "dep-KXCDB",
+   "deployed_digest": "sha256:97074c8a80ffa9b6",
+   "h_approval_at": "2026-10-02T14:29:19Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "d2721ee80e362d0c387a6dcbd09bdb26958eaede123e0d7e72e9cc4c6a459c7b",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 2211134313117133561,
+   "seed_index": 70019,
+   "seed_tag": "e1-study2-v1",
+   "template": "alias_race",
+   "worlds": {
+    "B": "s2w_ece5e24f204d",
+    "H": "s2w_6350d7f6641d",
+    "X": "s2w_281d200e5cfe"
+   },
+   "x_approval_at": "2026-10-02T14:04:59Z"
+  },
+  {
+   "approval_id": "apr-5XHGX",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-020",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-01-24T11:03:26Z",
+   "deploy_id": "dep-KA8V4",
+   "deployed_digest": "sha256:57ced86b77d94134",
+   "h_approval_at": "2026-01-24T10:53:35Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "4050f4ae688f341b629b971ad7cae3136eac2b62305ccecbe83d527888cdb539",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 16585961493424858175,
+   "seed_index": 70020,
+   "seed_tag": "e1-study2-v1",
+   "template": "base_image",
+   "worlds": {
+    "B": "s2w_231c7fb0a7bf",
+    "H": "s2w_b05c781a82c9",
+    "X": "s2w_3006fc1ce8cb"
+   },
+   "x_approval_at": "2026-01-24T10:53:35Z"
+  },
+  {
+   "approval_id": "apr-WPCCC",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-021",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-06-20T09:49:50Z",
+   "deploy_id": "dep-TS9R5",
+   "deployed_digest": "sha256:8e2eabe13f85b1ec",
+   "h_approval_at": "2026-06-20T10:14:42Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "1609a4d1b32b666a06e01293b5eada1979b7cb44f0b574770e100a7104ce702d",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 4131796473229361276,
+   "seed_index": 70021,
+   "seed_tag": "e1-study2-v1",
+   "template": "nightly",
+   "worlds": {
+    "B": "s2w_4bb20be2eb44",
+    "H": "s2w_b17b0a9cf108",
+    "X": "s2w_bd239336b8bb"
+   },
+   "x_approval_at": "2026-06-20T09:33:04Z"
+  },
+  {
+   "approval_id": "apr-BD7A3",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-022",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-03-17T11:53:13Z",
+   "deploy_id": "dep-Z9G8K",
+   "deployed_digest": "sha256:15b7d2c5c2c7cc6d",
+   "h_approval_at": "2026-03-17T11:47:02Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "31100b7d8084b2b3890400f34201651d4255d18b0000a6a4e2ace5d501d3f590",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 1975873765073659236,
+   "seed_index": 70022,
+   "seed_tag": "e1-study2-v1",
+   "template": "same_version_republish",
+   "worlds": {
+    "B": "s2w_8234f5d2169a",
+    "H": "s2w_8489774a0cc1",
+    "X": "s2w_0c217f25518f"
+   },
+   "x_approval_at": "2026-03-17T11:47:02Z"
+  },
+  {
+   "approval_id": "apr-VFTCX",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-023",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-07-19T09:43:31Z",
+   "deploy_id": "dep-W4GSC",
+   "deployed_digest": "sha256:05f533a18ba563f0",
+   "h_approval_at": "2026-07-19T10:08:22Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "bebb5f9389c738a4061929c6855f3a551ac93b1751d71897c5c733ac8eb0289f",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 12506735661216797572,
+   "seed_index": 70023,
+   "seed_tag": "e1-study2-v1",
+   "template": "alias_rollback",
+   "worlds": {
+    "B": "s2w_077272856cdf",
+    "H": "s2w_e634218f3c34",
+    "X": "s2w_fc741bcb266a"
+   },
+   "x_approval_at": "2026-07-19T09:31:14Z"
+  },
+  {
+   "approval_id": "apr-KRV4G",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-024",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-01-08T12:13:38Z",
+   "deploy_id": "dep-QEA5V",
+   "deployed_digest": "sha256:61a6f53b3612e0e3",
+   "h_approval_at": "2026-01-08T12:01:08Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "fd034eb9ad861cbe48f7ba7c288d6a55d6e4a7b739033a98005850b4204a9ecb",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 9720844900168538483,
+   "seed_index": 70024,
+   "seed_tag": "e1-study2-v1",
+   "template": "reproducible",
+   "worlds": {
+    "B": "s2w_2715090f659c",
+    "H": "s2w_f9ba2a613dbe",
+    "X": "s2w_dbb84e298eee"
+   },
+   "x_approval_at": "2026-01-08T12:01:08Z"
+  },
+  {
+   "approval_id": "apr-JGEN5",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-025",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-01-23T13:10:17Z",
+   "deploy_id": "dep-ZEQDS",
+   "deployed_digest": "sha256:47f0b49be995fa03",
+   "h_approval_at": "2026-01-23T13:26:04Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "9678021b86b2f3e791438d9b5893404e42fad1cb878b69ae52b187c8a5c059b7",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 529727913268459024,
+   "seed_index": 70025,
+   "seed_tag": "e1-study2-v1",
+   "template": "alias_race",
+   "worlds": {
+    "B": "s2w_71a37fdaaf58",
+    "H": "s2w_fe693f2d6fae",
+    "X": "s2w_e6e2028154cb"
+   },
+   "x_approval_at": "2026-01-23T13:06:03Z"
+  },
+  {
+   "approval_id": "apr-CQGWE",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-026",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-02-18T15:07:26Z",
+   "deploy_id": "dep-DTTGP",
+   "deployed_digest": "sha256:cb495e84cdc5c9bf",
+   "h_approval_at": "2026-02-18T14:48:02Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "ed0242ba3074440d55c71c3b07f3ad4c9a8c91849eb6622e0230388d6e33b7f4",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 5265855883558549174,
+   "seed_index": 70026,
+   "seed_tag": "e1-study2-v1",
+   "template": "base_image",
+   "worlds": {
+    "B": "s2w_226b954f25c0",
+    "H": "s2w_8c37d0812507",
+    "X": "s2w_2807399996ff"
+   },
+   "x_approval_at": "2026-02-18T14:48:02Z"
+  },
+  {
+   "approval_id": "apr-JE7EW",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-027",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-01-06T14:56:10Z",
+   "deploy_id": "dep-7P3VH",
+   "deployed_digest": "sha256:b210e30d700b360d",
+   "h_approval_at": "2026-01-06T15:17:56Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "28320ca380e30ada5f2ff9ecd91404420cce304a3028db3ea221d47f2dcc69d4",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 15243901649560084610,
+   "seed_index": 70027,
+   "seed_tag": "e1-study2-v1",
+   "template": "nightly",
+   "worlds": {
+    "B": "s2w_f088df2558fb",
+    "H": "s2w_85bf4b6b0ecb",
+    "X": "s2w_6f563c2a104a"
+   },
+   "x_approval_at": "2026-01-06T14:50:39Z"
+  },
+  {
+   "approval_id": "apr-MYCDS",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-028",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-01-21T11:49:50Z",
+   "deploy_id": "dep-SM45B",
+   "deployed_digest": "sha256:40883f7d20ac6da1",
+   "h_approval_at": "2026-01-21T11:32:32Z",
+   "h_approval_scope": "staging",
+   "h_failure": "scope",
+   "ie_sha256": "28f25cae953e47942fb231d216edbebbbd06af090ce42176b1a70de7e378efa2",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 2448740633651858580,
+   "seed_index": 70028,
+   "seed_tag": "e1-study2-v1",
+   "template": "same_version_republish",
+   "worlds": {
+    "B": "s2w_2f89b6258d1d",
+    "H": "s2w_07fce4a61fb6",
+    "X": "s2w_6efd582ac04c"
+   },
+   "x_approval_at": "2026-01-21T11:32:32Z"
+  },
+  {
+   "approval_id": "apr-39AXV",
+   "approver": "release-manager",
+   "base_id": "S4C-F1-029",
+   "builder": "monitors.study2_build",
+   "deploy_at": "2026-07-15T12:31:04Z",
+   "deploy_id": "dep-G6NWY",
+   "deployed_digest": "sha256:e34ebbda42487acf",
+   "h_approval_at": "2026-07-15T13:07:13Z",
+   "h_approval_scope": "staging,release",
+   "h_failure": "timing",
+   "ie_sha256": "97a426184f4e7da235adce9c81f04364288d1420d50a425227c35ad9a15673eb",
+   "labels": {
+    "B": "compliant",
+    "H": "violation",
+    "X": "compliant"
+   },
+   "seed": 14082574701522087485,
+   "seed_index": 70029,
+   "seed_tag": "e1-study2-v1",
+   "template": "alias_rollback",
+   "worlds": {
+    "B": "s2w_f9428842ba8d",
+    "H": "s2w_8f2538d835f1",
+    "X": "s2w_e464327ead28"
+   },
+   "x_approval_at": "2026-07-15T12:10:55Z"
+  }
+ ],
+ "builder": "monitors.study2_build",
+ "family": "F1",
+ "generator_version": "wl-v8.1-qa",
+ "h_failure_by_template": {
+  "alias_race": "timing",
+  "alias_rollback": "timing",
+  "base_image": "scope",
+  "nightly": "timing",
+  "reproducible": "scope",
+  "same_version_republish": "scope"
+ },
+ "sealed": "X worlds moved to sealed_X/ (never run by a monitor)",
+ "seed_index_range": [
+  70000,
+  70029
+ ],
+ "seed_tag": "e1-study2-v1",
+ "study": "study4-calibration"
+}
