@@ -46,6 +46,11 @@ PAID_USD_PER_M = {"input": 1.00, "output": 4.00}
 MAX_PAID_OVERFLOW_USD = 5.50   # lead, Nov 8 ~20:30 IST (was 5.00)
 MAX_TOTAL_TOKENS = 9_600_000   # lead, Nov 8 ~20:40 IST (was 9.0M, 5.5M)
 CACHED_INPUT_USD_PER_M = 0.25  # ASSUMPTION for the logged cached-adjusted estimate only (the guard uses the conservative price)
+# 2026-11-10 (Study 5, preregistration_study5.md section 9): calls whose run_id contains STUDY5_RUN_MARKER are guarded on
+# Study-5 entries only (same per-UTC-day free-allowance rule and prices): estimated paid overflow <= $2.20. They are exempt
+# from the cumulative Study-4 token ceilings (MAX_TOTAL_TOKENS, phase cap); the global paid-overflow check still applies.
+STUDY5_RUN_MARKER = "_s5-"
+STUDY5_MAX_PAID_OVERFLOW_USD = 2.20
 
 
 def _paid_estimate(day_rows):
@@ -143,17 +148,23 @@ class TokenLedger:
         with _TLOCK, self.lock:
             entries = self._entries()
             ein = int(est_in if est_in is not None else tokens)
+            s5 = STUDY5_RUN_MARKER in str(run_id)  # 2026-11-10: Study-5 limit (see STUDY5_MAX_PAID_OVERFLOW_USD)
+            if s5:
+                ids5 = {e["id"] for e in entries if e["kind"] == "reserve" and STUDY5_RUN_MARKER in str(e.get("run_id", ""))}
+                g5 = self.guard([e for e in entries if e["id"] in ids5], extra_in=ein, extra_out=max(0, int(tokens) - ein))
+                if g5["paid_overflow_usd_estimate"] > STUDY5_MAX_PAID_OVERFLOW_USD:
+                    raise TokenBudgetExceeded(f"Study-5 guard: projected paid overflow ${g5['paid_overflow_usd_estimate']:.2f} > ${STUDY5_MAX_PAID_OVERFLOW_USD:.2f} (estimate)")
             g = self.guard(entries, extra_in=ein, extra_out=max(0, int(tokens) - ein))
             if g["paid_overflow_usd_estimate"] > MAX_PAID_OVERFLOW_USD:
                 raise TokenBudgetExceeded(f"usage guard: projected paid overflow ${g['paid_overflow_usd_estimate']:.2f} > ${MAX_PAID_OVERFLOW_USD:.2f} (estimate)")
-            if g["total_tokens_incl_projected"] > MAX_TOTAL_TOKENS:
+            if not s5 and g["total_tokens_incl_projected"] > MAX_TOTAL_TOKENS:  # 2026-11-10: not for Study 5
                 raise TokenBudgetExceeded(f"usage guard: total tokens {g['total_tokens_incl_projected']} > {MAX_TOTAL_TOKENS}")
             st = self._state(entries)
             r = st["run"].get(run_id, {"settled": 0, "open": 0})
             p = st["phase"].get(phase, {"settled": 0, "open": 0})
             if r["settled"] + r["open"] + tokens > run_cap:
                 raise TokenBudgetExceeded(f"run {run_id}: committed {r['settled'] + r['open']} + {tokens} > STUDY4_MAX_TOKENS {run_cap}")
-            if p["settled"] + p["open"] + tokens > phase_cap:
+            if not s5 and p["settled"] + p["open"] + tokens > phase_cap:  # 2026-11-10: not for Study 5
                 raise TokenBudgetExceeded(f"phase {phase}: committed {p['settled'] + p['open']} + {tokens} > STUDY4_PHASE_MAX_TOKENS {phase_cap}")
             rid = "tok_" + secrets.token_hex(6)
             self._append({"kind": "reserve", "id": rid, "phase": phase, "provider": PROVIDER, "run_id": run_id, "tokens": int(tokens), "est_in": ein,

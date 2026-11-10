@@ -2,3 +2,10 @@
 # audits/audit_study4_results.py. Its recorded SHA-256 is of the file with LF line
 # endings, so Git must not convert it to CRLF on checkout (the Windows default).
 experiments/e1-evidence-monitors/analysis/forecasts_study4.json -text
+
+# Study 5 files are hashed byte for byte in project-selection/freeze_record_study5.json.
+project-selection/preregistration_study5.FROZEN.md -text
+experiments/e1-evidence-monitors/monitors/study5_seq.py -text
+experiments/e1-evidence-monitors/monitors/study5_run.py -text
+experiments/e1-evidence-monitors/qa/test_study5_seq.py -text
+experiments/e1-evidence-monitors/analysis/study5.py -text

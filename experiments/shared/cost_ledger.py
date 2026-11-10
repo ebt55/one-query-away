@@ -32,12 +32,14 @@ PHASE_CAPS = {
     "study2": 20.00,
     # Study 3 (F3 exculpatory replication; separately pre-registered). Added Nov 8 ~17:40 IST; author approved ("Yes, run F3").
     "study3": 11.00,  # raised 8 -> 11 before freeze (~17:45 IST): conservative projection $10.96; total stays under the author's $100 cap
+    # Study 5 (one query per turn; preregistration_study5.md section 9, author-approved). Added 2026-11-10.
+    "study5": 6.75,  # 2026-11-10 ~23:45 IST: raised 5.25 -> 6.75, author approved in chat (Sonnet B tranche); Anthropic total stays < 100
     # DeepSeek is budgeted separately ($6), outside the Anthropic cap.
-    "deepseek": 6.00,
+    "deepseek": 6.55,  # 2026-11-10: raised 6.00 -> 6.55 for Study 5 (prereg section 9)
 }
 SUBCAPS = {"spikes": {"e1_spike": 1.50, "e2_spike": 1.00}}
 PROVIDER_OF_PHASE = {p: ("deepseek" if p == "deepseek" else "anthropic") for p in PHASE_CAPS}
-PROVIDER_CAPS = {"anthropic": 100.00, "deepseek": 6.00}  # anthropic raised 80 -> 100 by the author, Nov 8 ~15:30 IST
+PROVIDER_CAPS = {"anthropic": 100.00, "deepseek": 6.55}  # anthropic raised 80 -> 100 by the author, Nov 8 ~15:30 IST; 2026-11-10: deepseek 6.00 -> 6.55 (Study 5)
 
 
 _TLOCK = threading.RLock()  # in-process guard (threads) in addition to the cross-process file lock

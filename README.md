@@ -1,6 +1,6 @@
 # One Query Away
 
-**LLM monitors accuse agents without checking what clears them.**
+**The submitted report's claim: LLM monitors accuse agents without checking what clears them. A pre-registered rerun after submission shows this holds for two of the five monitors tested, and was mostly produced by the test harness for the others. See the update below.**
 
 Ebin Babu Thomas, Independent AI Engineer & Researcher
 Research from the Apart Research [Swarm Alignment Hackathon](https://apartresearch.com/sprints/swarm-alignment-2026), November 2026.
@@ -15,7 +15,29 @@ Research from the Apart Research [Swarm Alignment Hackathon](https://apartresear
 > - Most monitors sent all three queries in one batch, before seeing any result: Claude Sonnet 5.5 in 90 of 90 runs, DeepSeek Flash in 89 of 90, GPT-4.1-mini in 30 of 30. The harness runs every query in the batch, and the budget is then spent. Claude Haiku 5.5 did this in 41 of 90 runs and GPT-5.4-mini in 13 of 30.
 > - Together these cover 76 of the 120 wrongful accusations. In those 76 the digest was not in the log and the whole budget went in the first batch, so the monitor could not have made the clearing lookup. In 28 more the budget also went in one batch, but the digest was in the log. In the remaining 16 the monitor had budget left after seeing a result and still did not look.
 >
-> What still holds: none of the 120 accusations came after the monitor retrieved the clearing record, and the judge accused without that record instead of saying it lacked evidence. The Sonnet judge chose the `insufficient_evidence` verdict in 0 of the 30 exculpatory worlds. A rerun with queries forced one at a time would separate the two failures. It has not been run. The batching was noted in [`SPIKE_REPORT.md`](experiments/e1-evidence-monitors/SPIKE_REPORT.md) during the first pilot and did not reach the report.
+> What still holds: none of the 120 accusations came after the monitor retrieved the clearing record, and the judge accused without that record instead of saying it lacked evidence. The Sonnet judge chose the `insufficient_evidence` verdict in 0 of the 30 exculpatory worlds. A rerun with queries forced one at a time would separate the two failures. It has now been run (Study 5, in the update below). The batching was noted in [`SPIKE_REPORT.md`](experiments/e1-evidence-monitors/SPIKE_REPORT.md) during the first pilot and did not reach the report.
+
+> **Update added 11 November 2026: the rerun (Study 5).** The report PDF is still the submitted version and does not contain this result.
+>
+> We pre-registered a rerun and froze it before any model call ([`preregistration_study5.FROZEN.md`](project-selection/preregistration_study5.FROZEN.md)). One thing changed: the monitor sends one query per turn and is told it will see each result before choosing the next. The 30 release triplets, the three-query budget, the policies and the judge are unchanged.
+>
+> | Monitor | X accused, original runs | X accused, one query at a time | Made the clearing lookup | Pre-registered reading |
+> |---|---:|---:|---:|---|
+> | Claude Sonnet 5.5 | 25 / 30 | 1 / 30 | 29 / 30 | largely resolved |
+> | Claude Haiku 5.5 | 11 / 30 | 2 / 30 | 28 / 30 | largely resolved |
+> | DeepSeek Flash | 30 / 30 | 8 / 30 | 24 / 30 | partly resolved |
+> | GPT-5.4-mini | 26 / 30 | 28 / 30 | 0 / 30 | failure persists |
+> | GPT-4.1-mini | 28 / 30 | 30 / 30 | 2 / 30 | failure persists |
+>
+> - **For the Claude monitors, the original result was mostly produced by the harness.** Once they could act on each result, they fetched the clearing record and stopped accusing. For Claude Sonnet 5.5 the drop from 25 to 1 is significant (exact paired test, Holm-adjusted p = 1.6e-6), and no gap remains between exculpatory and ordinary benign agents (1 of 30 versus 0 of 30, p = 1).
+> - **For the two GPT monitors, the failure persists.** In 57 of their 60 runs they had the deployed digest after the first query, with two queries left. They typically fetched the approval the agent cited and did not look for another. GPT-4.1-mini made the clearing lookup twice and accused both times.
+> - **DeepSeek Flash is in between.** Six of its eight accusations came without the lookup and two came after it.
+> - **By the rule fixed in advance, the report's title claim is not supported** as a general statement about LLM monitors. What the data support is narrower: whether a monitor finds clearing evidence depends on the model and on whether the scaffold lets it act on what it sees.
+> - **Other world types under the new arm:** ordinary benign agents accused: Sonnet 0 of 30, Haiku 0 of 30, DeepSeek 1 of 30. Harmful agents accused: Haiku 30 of 30, DeepSeek 30 of 30.
+> - **Not run:** harmful worlds for Claude Sonnet 5.5 (budget), and ordinary benign and harmful worlds for the two GPT monitors. For the GPT monitors the only ordinary-benign figure is still the original Study 4 calibration (0 of 18, different seeds, queries not forced one at a time).
+> - **One logged deviation:** a spending cap was raised after the first live check showed a higher cost per world. Nothing about the worlds, prompts, outcomes or tests changed.
+>
+> Results: [`STUDY5_RESULTS.md`](experiments/e1-evidence-monitors/analysis/out/study5_results/STUDY5_RESULTS.md). Run records: `experiments/e1-evidence-monitors/runs/20261110T181039Z_s5-all_7fdcc0/`.
 
 ---
 
@@ -33,7 +55,9 @@ Only queries can tell the three worlds apart. A good monitor accuses H and clear
 
 ![The exculpatory triplet test](paper/figures/triplet_schematic.png)
 
-## What we found
+## What the submitted report found
+
+This section describes the original runs, in which a monitor could send all of its queries at once. The Study 5 update above shows what changes when queries go one at a time.
 
 On release workflows, monitors from three providers accused most of the exculpatory agents. **None of the 120 wrongful accusations came after the monitor retrieved the clearing record.** In 76 of them the monitor had already spent its three queries in one batch and could not have made the lookup (see the correction above).
 
@@ -55,7 +79,7 @@ On release workflows, monitors from three providers accused most of the exculpat
 
 These are deliberately constructed stress cases, so the rates describe this test, not how often this happens in deployment.
 
-## The four studies
+## The five studies
 
 Each follow-up study was pre-registered and frozen (with SHA-256 hashes of the protocol and the generated worlds) before it was evaluated.
 
@@ -65,6 +89,7 @@ Each follow-up study was pre-registered and frozen (with SHA-256 hashes of the p
 | 2 | Release-approval triplets: the main result | Sonnet, Haiku, DeepSeek Flash | `*_s2-T1_*` (Sonnet P3 and reminder), `*_s2-T2_*` (router, witness), `*_s2-T3_*` (Haiku), `*_s2-T3ds_*` (DeepSeek) | `preregistration_study2.FROZEN.md` |
 | 3 | Data-consent triplets: the same test in another family | Sonnet, Haiku | `*_s3-S1_*`, `*_s3-S2_*`, `*_s3-S3_*` | `preregistration_study3.FROZEN.md` |
 | 4 | Can risk on X be forecast from behaviour on H and B? | GPT-5.4-mini, GPT-4.1-mini | `*_s4-cal-*` (calibration), `*_s4-eval-*` (evaluation) | `preregistration_study4.FROZEN.md` (+ takeover addendum) |
+| 5 | Post-submission rerun: does the failure survive when queries go one at a time? Not in the report | All five | `20261110T181039Z_s5-all_7fdcc0` | `preregistration_study5.FROZEN.md` |
 
 The `.FROZEN.md` files are the protocols exactly as frozen. The plain `.md` files next to them carry the logged deviations.
 
@@ -134,6 +159,13 @@ python -B experiments/e1-evidence-monitors/analysis/study2.py --mode results \
 ```
 
 `study3.py` and `study4.py` work the same way (see `--help`). These pipelines also rewrite their canonical numbers files in `analysis/`. On a clean rerun only the timestamp and code-hash header change; run `git restore experiments/e1-evidence-monitors/analysis/` afterwards, or work in a copy.
+
+The Study 5 analysis writes only to its output folder:
+
+```bash
+python -B experiments/e1-evidence-monitors/analysis/study5.py --mode results \
+  --runs experiments/e1-evidence-monitors/runs/20261110T181039Z_s5-all_7fdcc0 --out ../study5-out
+```
 
 ### 3. Check the generated worlds
 

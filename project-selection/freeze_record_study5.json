@@ -1,0 +1,53 @@
+{
+ "study": "Study 5: one query per turn (P3-sequential)",
+ "frozen_at": "Nov 10 23:40 IST",
+ "approved_by": "author (prereg section 9, 2026-11-10): all five monitors, est. 6-8 USD total",
+ "preregistration_sha256": "1f4574fbae2cf585f254850834aff69f7494c6aa8f43a11d30d21facd9ea9184",
+ "preregistration_frozen_sha256": "1f4574fbae2cf585f254850834aff69f7494c6aa8f43a11d30d21facd9ea9184",
+ "new_files_sha256": {
+  "monitors/study5_seq.py": "0f1b909372845353d97882e92594fe2dc7d442f1feaf063465bf4e72592f8419",
+  "monitors/study5_run.py": "70fc40699671fbccdb93211aeefb612d7aacd81129ec8d301fa59eebe3591379",
+  "qa/test_study5_seq.py": "69251c1975e596ffa3355f0b774142459006f0bada8caac409ac41c0f230a14b",
+  "analysis/study5.py": "58d7a088680ea4681ff991203ee8cbe712b2a543d55d6d4499f014e7f983617b",
+  "tools/freeze_study5.py": "88094bfad455900347eaa450493ee394c0d9d9b07fc51ba07689a930a567b9b0"
+ },
+ "edited_files_sha256": {
+  "shared/cost_ledger.py": "7e0a80ec00dac6d4477b6d8a982d7be9615acdf744fa8f898ac411882169985b",
+  "shared/token_ledger.py": "3f7519f74fb7cef35108273d9c32ca0f56d8b97bd4d2557b028a6979fef85deb"
+ },
+ "dependency_files_sha256": {
+  "monitors/policies.py": "1aaa5bd67fb2d65f4f236d7a0b9812a391833e2e72db7985a1df604149342226",
+  "monitors/prompts.py": "2265d308765e88e3267ca4234a72a1dcd8dc150229d4f07e029e7bca805c1b6a",
+  "monitors/handbook.py": "b801934cba8d7280e826bfe281aacb7ec7f3fbb5fd55ae63146b3c426abeab5c",
+  "monitors/query_api.py": "446ea768a74cb9dcaf03d813d41384366b95be1af761c9ffc6552b7821c480e3",
+  "monitors/harness.py": "16d8e9f050d0c73dab146fb31df99cc2a186366d6c3c90902577c8f035157baa",
+  "monitors/study2_run.py": "9fdc039c6f36ea1a07986a70b18f26c046793d11881e25e4905734588ab8480f",
+  "monitors/study4_run.py": "95121123750716ae2f5de9badb9b3332a9d46902ff21b7113b15809794fe404a",
+  "monitors/study4_handbook.py": "399b21ca07754852b95fdb20ddd93505a938357f8b8de0a8d3b3eb5377b529b4",
+  "analysis/stats.py": "17469dba07c86a9427e9a8dddd12510192740589fb7558e78f64191c5326f75d",
+  "shared/llm.py": "f2464b9079712a058c05cdf16d3aeee4f3c2d097e23e50f4d61fc09e57ab7451",
+  "cases_study2/manifest.json": "6da86af9f6fe66cd09ac31d787b5273267be70918b179b6575edd06256cd654b"
+ },
+ "cases_study2_tree_sha256": "dfab035dbefc960b7874a505546e0ff24710a1cf14cbed5d6ff4c4c4f6735826",
+ "cases_study2_tree_matches_freeze_record_study2": true,
+ "monitors": [
+  "sonnet",
+  "haiku",
+  "deepseek",
+  "gpt-5.4-mini",
+  "gpt-4.1-mini"
+ ],
+ "original_runs": {
+  "sonnet": "20261108T114814Z_s2-T1_7d74dc",
+  "haiku": "20261108T115304Z_s2-T3_8b773a",
+  "deepseek": "20261108T115748Z_s2-T3ds_5d1b17",
+  "gpt-5.4-mini": "20261109T000101Z_s4-eval-gpt-5.4-mini_44a59a",
+  "gpt-4.1-mini": "20261109T000352Z_s4-eval-gpt-4.1-mini_32e9cf"
+ },
+ "caps": {
+  "cost_ledger_phase_study5_usd": 5.25,
+  "deepseek_phase_and_provider_usd": 6.55,
+  "openai_study5_paid_overflow_usd": 2.2
+ },
+ "note": "shared/cost_ledger.py is also hashed by freeze_record_study2/3/4.json; its 2026-11-10 cap edit changes that hash (expected)."
+}
