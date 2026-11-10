@@ -1,0 +1,4 @@
+# The Study 4 forecast file is hashed byte for byte by verify/offline_verify.py and
+# audits/audit_study4_results.py. Its recorded SHA-256 is of the file with LF line
+# endings, so Git must not convert it to CRLF on checkout (the Windows default).
+experiments/e1-evidence-monitors/analysis/forecasts_study4.json -text

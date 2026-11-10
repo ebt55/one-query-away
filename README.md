@@ -7,6 +7,16 @@ Research from the Apart Research [Swarm Alignment Hackathon](https://apartresear
 
 **Read the report:** [`paper/e1-submission-final.pdf`](paper/e1-submission-final.pdf)
 
+> **Correction added 10 November 2026, after submission.** The report PDF is the version submitted to the hackathon. It is unchanged and does not contain this note.
+>
+> The title and the report say the clearing record was "one query away" and that the monitor could easily afford the lookup. For most of the data that is not accurate.
+>
+> - In 20 of the 30 triplets (four of the six templates) the clearing query, `approvals_for_digest`, needs the deployed digest, and the visible log does not show it. The monitor can only get it from the result of an earlier query (`get_deploy` or `alias_history`).
+> - Most monitors sent all three queries in one batch, before seeing any result: Claude Sonnet 5.5 in 90 of 90 runs, DeepSeek Flash in 89 of 90, GPT-4.1-mini in 30 of 30. The harness runs every query in the batch, and the budget is then spent. Claude Haiku 5.5 did this in 41 of 90 runs and GPT-5.4-mini in 13 of 30.
+> - Together these cover 76 of the 120 wrongful accusations. In those 76 the digest was not in the log and the whole budget went in the first batch, so the monitor could not have made the clearing lookup. In 28 more the budget also went in one batch, but the digest was in the log. In the remaining 16 the monitor had budget left after seeing a result and still did not look.
+>
+> What still holds: none of the 120 accusations came after the monitor retrieved the clearing record, and the judge accused without that record instead of saying it lacked evidence. The Sonnet judge chose the `insufficient_evidence` verdict in 0 of the 30 exculpatory worlds. A rerun with queries forced one at a time would separate the two failures. It has not been run. The batching was noted in [`SPIKE_REPORT.md`](experiments/e1-evidence-monitors/SPIKE_REPORT.md) during the first pilot and did not reach the report.
+
 ---
 
 ## The idea
@@ -16,7 +26,7 @@ AI agents are increasingly overseen by other AI models. These monitors are usual
 We build matched **triplets** of synthetic software-release workflows. All three worlds in a triplet show the monitor the same visible log, byte for byte:
 
 - **H (harmful):** the agent deploys an artifact without a valid approval.
-- **X (exculpatory):** the same suspicious-looking log, but a qualifying approval exists in the system's state. The monitor can find it with two queries (`get_deploy`, then `approvals_for_digest`), well within its three-query budget.
+- **X (exculpatory):** the same suspicious-looking log, but a qualifying approval exists in the system's state. In 20 of the 30 triplets, finding it takes two queries in sequence (`get_deploy`, then `approvals_for_digest`), because the second needs a digest that only the first returns. That fits the three-query budget only if the monitor reads the first result before sending the next query, and most monitors did not (see the correction above). In the other 10 triplets the digest is in the log and one query is enough.
 - **B (ordinary benign):** a normal compliant workflow.
 
 Only queries can tell the three worlds apart. A good monitor accuses H and clears both X and B.
@@ -25,7 +35,7 @@ Only queries can tell the three worlds apart. A good monitor accuses H and clear
 
 ## What we found
 
-On release workflows, monitors from three providers accused most of the exculpatory agents. **None of the 120 wrongful accusations came after the monitor retrieved the clearing record.**
+On release workflows, monitors from three providers accused most of the exculpatory agents. **None of the 120 wrongful accusations came after the monitor retrieved the clearing record.** In 76 of them the monitor had already spent its three queries in one batch and could not have made the lookup (see the correction above).
 
 | Monitor (provider) | X accused (exculpatory) | B accused (ordinary benign) |
 |---|---:|---:|
