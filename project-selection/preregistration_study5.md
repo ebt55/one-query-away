@@ -123,3 +123,10 @@ Logged after the 15-job live check and while the X tranche was running; no outco
 - Consequence: Claude Sonnet 5.5's H tranche (about 3 USD) does not fit under the 100 USD limit and will be reported as not run. Haiku and DeepSeek run all three tranches.
 - `shared/cost_ledger.py` changed by one line (the `study5` cap); its hash therefore differs from the one in `freeze_record_study5.json`. New SHA-256: e59377cde73dcb09a6a97ac847c046c0d886014ceaa2175d0236087a115cdb6f.
 - No change to worlds, prompts, the arm, outcomes, thresholds or tests.
+
+**D2, 2026-11-11 about 15:25 IST. OpenAI caps raised; GPT tranches run on 11 November.**
+Logged while the GPT B tranche was running and before any GPT B or H outcome was analysed.
+- What happened: the delayed job meant to run the GPT B tranche at the 11 November token reset never ran, because the computer was off. The B tranche was started by hand at about 15:15 IST on 11 November, on that day's unused free allowance.
+- Decision: the author then asked for the H tranche to run the same day ("run the harmful worlds too"), knowing it would be paid (about 2.90 USD by the ledger's conservative estimate). The Study 5 OpenAI paid-overflow cap was raised from 2.20 to 4.00 USD, and the ledger's overall OpenAI paid-overflow limit from 5.50 to 6.00 USD, which is the author's standing OpenAI limit.
+- `shared/token_ledger.py` changed by two lines (the two limits); its hash therefore differs from the one in `freeze_record_study5.json`. New SHA-256: ed1a03ca0b86815c69bd2d3e3f8bd3621ef2a2eb48ab5304c2e9e01b4b6a38eb.
+- No change to worlds, prompts, the arm, outcomes, thresholds or tests.

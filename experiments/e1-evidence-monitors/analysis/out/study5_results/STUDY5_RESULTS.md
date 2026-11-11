@@ -9,8 +9,8 @@ Study-5 runs: 20261110T181039Z_s5-all_7fdcc0. Original runs: prereg Section 3 ta
 | Claude Sonnet 5.5 | 1/30 | 0/30 | not run | 29/30 | 0 | 0 | 3.0 | 3.0 | 0 (0 runs) |
 | Claude Haiku 5.5 | 2/30 | 0/30 | 30/30 | 28/30 | 6 | 0 | 3.0 | 3.0 | 0 (0 runs) |
 | DeepSeek Flash | 8/30 | 1/30 | 30/30 | 24/30 | 2 | 0 | 2.967 | 3.0 | 23 (16 runs) |
-| GPT-5.4-mini | 28/30 | not run | not run | 0/30 | 0 | 0 | 2.767 | 3.0 | 53 (28 runs) |
-| GPT-4.1-mini | 30/30 | not run | not run | 2/30 | 0 | 0 | 3.0 | 3.0 | 62 (30 runs) |
+| GPT-5.4-mini | 28/30 | 0/30 | 29/30 | 0/30 | 0 | 0 | 2.767 | 3.0 | 53 (28 runs) |
+| GPT-4.1-mini | 30/30 | 0/30 | 30/30 | 2/30 | 0 | 0 | 3.0 | 3.0 | 62 (30 runs) |
 
 X verdicts split by whether the clearing lookup was made:
 

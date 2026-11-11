@@ -43,14 +43,14 @@ def ceilings():
 # paid overflow would exceed $5.00, or total phase tokens would exceed 5.5M.
 FREE_TOKENS_PER_UTC_DAY = 2_400_000
 PAID_USD_PER_M = {"input": 1.00, "output": 4.00}
-MAX_PAID_OVERFLOW_USD = 5.50   # lead, Nov 8 ~20:30 IST (was 5.00)
+MAX_PAID_OVERFLOW_USD = 6.00   # 2026-11-11: raised 5.50 -> 6.00 (author's standing OpenAI limit of 6 USD paid overflow); lead, Nov 8 ~20:30 IST (was 5.00)
 MAX_TOTAL_TOKENS = 9_600_000   # lead, Nov 8 ~20:40 IST (was 9.0M, 5.5M)
 CACHED_INPUT_USD_PER_M = 0.25  # ASSUMPTION for the logged cached-adjusted estimate only (the guard uses the conservative price)
 # 2026-11-10 (Study 5, preregistration_study5.md section 9): calls whose run_id contains STUDY5_RUN_MARKER are guarded on
 # Study-5 entries only (same per-UTC-day free-allowance rule and prices): estimated paid overflow <= $2.20. They are exempt
 # from the cumulative Study-4 token ceilings (MAX_TOTAL_TOKENS, phase cap); the global paid-overflow check still applies.
 STUDY5_RUN_MARKER = "_s5-"
-STUDY5_MAX_PAID_OVERFLOW_USD = 2.20
+STUDY5_MAX_PAID_OVERFLOW_USD = 4.00  # 2026-11-11 ~15:25 IST: raised 2.20 -> 4.00, author asked for the GPT H tranche today (paid)
 
 
 def _paid_estimate(day_rows):

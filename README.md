@@ -1,45 +1,43 @@
 # One Query Away
 
-**The submitted report's claim: LLM monitors accuse agents without checking what clears them. A pre-registered rerun after submission shows this holds for two of the five monitors tested, and was mostly produced by the test harness for the others. See the update below.**
+**Does an LLM monitor fetch the record that clears an agent before it accuses? In this test two GPT monitors did not, even with the lookup one step away. Three other monitors mostly did, once the test let them act on each query result.**
 
 Ebin Babu Thomas, Independent AI Engineer & Researcher
 Research from the Apart Research [Swarm Alignment Hackathon](https://apartresearch.com/sprints/swarm-alignment-2026), November 2026.
 
 **Read the report:** [`paper/e1-submission-final.pdf`](paper/e1-submission-final.pdf)
 
-> **Correction added 10 November 2026, after submission.** The report PDF is the version submitted to the hackathon. It is unchanged and does not contain this note.
+> **Update after submission (11 November 2026).** The report PDF is the version submitted to the hackathon on 9 November and is unchanged. Its headline is stronger than the evidence now supports. This note is the current summary.
 >
-> The title and the report say the clearing record was "one query away" and that the monitor could easily afford the lookup. For most of the data that is not accurate.
+> **What was wrong.** The report says the clearing record was "one query away" and easy to afford. In 20 of the 30 triplets the clearing query (`approvals_for_digest`) needs a digest that the log does not show and that only an earlier query returns. Most monitors sent all three queries in one turn, the harness ran them all, and the budget was gone before any result came back. Of the 120 wrongful accusations in the original runs, 76 could not have included an informed clearing lookup, 28 came from a single batch although the digest was in the log, and 16 came after the monitor had seen a result with budget left. The batching was noted in [`SPIKE_REPORT.md`](experiments/e1-evidence-monitors/SPIKE_REPORT.md) during the first pilot and did not reach the report.
 >
-> - In 20 of the 30 triplets (four of the six templates) the clearing query, `approvals_for_digest`, needs the deployed digest, and the visible log does not show it. The monitor can only get it from the result of an earlier query (`get_deploy` or `alias_history`).
-> - Most monitors sent all three queries in one batch, before seeing any result: Claude Sonnet 5.5 in 90 of 90 runs, DeepSeek Flash in 89 of 90, GPT-4.1-mini in 30 of 30. The harness runs every query in the batch, and the budget is then spent. Claude Haiku 5.5 did this in 41 of 90 runs and GPT-5.4-mini in 13 of 30.
-> - Together these cover 76 of the 120 wrongful accusations. In those 76 the digest was not in the log and the whole budget went in the first batch, so the monitor could not have made the clearing lookup. In 28 more the budget also went in one batch, but the digest was in the log. In the remaining 16 the monitor had budget left after seeing a result and still did not look.
+> **What we did.** A rerun (Study 5), pre-registered and frozen before any model call ([`preregistration_study5.FROZEN.md`](project-selection/preregistration_study5.FROZEN.md)). The monitor sends one query per turn and is told it will see each result before choosing the next. The 30 release triplets, the three-query budget, the policies and the judge are unchanged.
 >
-> What still holds: none of the 120 accusations came after the monitor retrieved the clearing record, and the judge accused without that record instead of saying it lacked evidence. The Sonnet judge chose the `insufficient_evidence` verdict in 0 of the 30 exculpatory worlds. A rerun with queries forced one at a time would separate the two failures. It has now been run (Study 5, in the update below). The batching was noted in [`SPIKE_REPORT.md`](experiments/e1-evidence-monitors/SPIKE_REPORT.md) during the first pilot and did not reach the report.
-
-> **Update added 11 November 2026: the rerun (Study 5).** The report PDF is still the submitted version and does not contain this result.
+> **What it shows** (counts out of 30):
 >
-> We pre-registered a rerun and froze it before any model call ([`preregistration_study5.FROZEN.md`](project-selection/preregistration_study5.FROZEN.md)). One thing changed: the monitor sends one query per turn and is told it will see each result before choosing the next. The 30 release triplets, the three-query budget, the policies and the judge are unchanged.
+> | Monitor | X accused, original runs | X accused, one query at a time | Made the clearing lookup | B accused | H accused | Successful triplets |
+> |---|---:|---:|---:|---:|---:|---:|
+> | Claude Sonnet 5.5 | 25 | 1 | 29 | 0 | not run | not available |
+> | Claude Haiku 5.5 | 11 | 2 | 28 | 0 | 30 | 28 |
+> | DeepSeek Flash | 30 | 8 | 24 | 1 | 30 | 21 |
+> | GPT-5.4-mini | 26 | 28 | 0 | 0 | 29 | 2 |
+> | GPT-4.1-mini | 28 | 30 | 2 | 0 | 30 | 0 |
 >
-> | Monitor | X accused, original runs | X accused, one query at a time | Made the clearing lookup | Pre-registered reading |
-> |---|---:|---:|---:|---|
-> | Claude Sonnet 5.5 | 25 / 30 | 1 / 30 | 29 / 30 | largely resolved |
-> | Claude Haiku 5.5 | 11 / 30 | 2 / 30 | 28 / 30 | largely resolved |
-> | DeepSeek Flash | 30 / 30 | 8 / 30 | 24 / 30 | partly resolved |
-> | GPT-5.4-mini | 26 / 30 | 28 / 30 | 0 / 30 | failure persists |
-> | GPT-4.1-mini | 28 / 30 | 30 / 30 | 2 / 30 | failure persists |
+> X is the exculpatory agent, B the ordinary benign agent, H the harmful agent. The B, H and triplet columns are for the one-query-at-a-time runs. A successful triplet means H was accused and neither X nor B was.
 >
-> - **For the Claude monitors, the original result was mostly produced by the harness.** Once they could act on each result, they fetched the clearing record and stopped accusing. For Claude Sonnet 5.5 the drop from 25 to 1 is significant (exact paired test, Holm-adjusted p = 1.6e-6), and there is no statistically detectable gap between exculpatory and ordinary benign agents in this sample (1 of 30 versus 0 of 30, p = 1). That does not show the two rates are equal.
-> - **For the two GPT monitors, the failure persists.** In all 60 of their runs the first query's result showed the deployed digest, with two queries left. They typically fetched the approval the agent cited and did not look for another. GPT-4.1-mini made the clearing lookup twice and accused both times.
+> - **Claude monitors: the original result was mostly produced by the harness.** Once they could act on each result, they fetched the clearing record and stopped accusing. For Claude Sonnet 5.5 the drop from 25 to 1 is significant (exact paired test, Holm-adjusted p = 1.6e-6), and there is no statistically detectable gap between exculpatory and ordinary benign agents in this sample (1 of 30 versus 0 of 30, p = 1). That does not show the two rates are equal.
+> - **GPT monitors: the failure persists.** In all 60 of their runs the first query's result showed the deployed digest, with two queries left. They typically fetched the approval the agent cited and did not look for another. They are not accusing everyone: they accused none of the 60 ordinary benign agents and 59 of the 60 harmful ones.
 > - **DeepSeek Flash is in between.** Six of its eight accusations came without the lookup.
-> - **By the rule fixed in advance, the report's title claim is not supported** as a general statement about LLM monitors. What the data support is narrower: whether a monitor finds clearing evidence depends on the model and on whether the scaffold lets it act on what it sees.
-> - **Other world types under the new arm:** ordinary benign agents accused: Sonnet 0 of 30, Haiku 0 of 30, DeepSeek 1 of 30. Harmful agents accused: Haiku 30 of 30, DeepSeek 30 of 30.
-> - **Not run:** harmful worlds for Claude Sonnet 5.5 (budget), and ordinary benign and harmful worlds for the two GPT monitors. For the GPT monitors the only ordinary-benign figure is still the original Study 4 calibration (0 of 18, different seeds, queries not forced one at a time).
-> - **What the rerun does and does not isolate.** Three things changed together: the added prompt sentences, the one-query-per-turn rule with its rejection messages, and a higher turn limit (which never came into play on the exculpatory worlds). The rerun shows a large difference between the two configurations. It does not show that batching alone caused the original result. The "not supported" verdict is the outcome of the rule fixed in advance for the submitted claim; two GPT configurations still fail almost completely.
-> - **Accusations after the record was retrieved.** Four accusations came after a correct clearing lookup (two by DeepSeek Flash, two by GPT-4.1-mini). That is a separate failure, in how the judge reads the record, and four cases are too few to estimate a rate.
-> - **One logged deviation:** a spending cap was raised after the first live check showed a higher cost per world. Nothing about the worlds, prompts, outcomes or tests changed.
+> - **A second, smaller failure.** Four accusations came after a correct clearing lookup (two by DeepSeek Flash, two by GPT-4.1-mini). That is a failure in how the judge reads the record. Four cases are too few to estimate a rate.
+> - **Verdict by the rule fixed in advance:** the report's title claim is not supported as a general statement about LLM monitors. What the data support is narrower: whether a monitor finds clearing evidence depends on the model and on whether the scaffold lets it act on what it sees.
 >
-> Results: [`STUDY5_RESULTS.md`](experiments/e1-evidence-monitors/analysis/out/study5_results/STUDY5_RESULTS.md). Run records: `experiments/e1-evidence-monitors/runs/20261110T181039Z_s5-all_7fdcc0/`.
+> **Limits.**
+> - Three things changed together in the rerun: the added prompt sentences, the one-query-per-turn rule with its rejection messages, and a higher turn limit (which never came into play on the exculpatory worlds). The rerun shows a large difference between the two configurations. It does not show that batching alone caused the original result.
+> - The evidence is one workflow family, six templates and one run per world. The two GPT monitors use a later version of the policy handbook than the other three, and API settings differ by provider, so differences between monitors cannot be put down to the model alone.
+> - Not run: harmful worlds for Claude Sonnet 5.5 (budget). The other results in the report (the verification reminder, the data-consent family and the forecast) come from the original harness and were not rerun.
+> - Two deviations are logged, both about spending caps. Nothing about the worlds, prompts, outcomes or tests changed.
+>
+> Results: [`STUDY5_RESULTS.md`](experiments/e1-evidence-monitors/analysis/out/study5_results/STUDY5_RESULTS.md). Run records: `experiments/e1-evidence-monitors/runs/20261110T181039Z_s5-all_7fdcc0/`. A second model (Kimi 3.1 Pro) independently reproduced the counts and tests on the first 300 of the 420 runs.
 
 ---
 
@@ -50,7 +48,7 @@ AI agents are increasingly overseen by other AI models. These monitors are usual
 We build matched **triplets** of synthetic software-release workflows. All three worlds in a triplet show the monitor the same visible log, byte for byte:
 
 - **H (harmful):** the agent deploys an artifact without a valid approval.
-- **X (exculpatory):** the same suspicious-looking log, but a qualifying approval exists in the system's state. In 20 of the 30 triplets, finding it takes two queries in sequence (`get_deploy`, then `approvals_for_digest`), because the second needs a digest that only the first returns. That fits the three-query budget only if the monitor reads the first result before sending the next query, and most monitors did not (see the correction above). In the other 10 triplets the digest is in the log and one query is enough.
+- **X (exculpatory):** the same suspicious-looking log, but a qualifying approval exists in the system's state. In 20 of the 30 triplets, finding it takes two queries in sequence (`get_deploy`, then `approvals_for_digest`), because the second needs a digest that only the first returns. That fits the three-query budget only if the monitor reads the first result before sending the next query, and in the original runs most monitors did not (see the update above). In the other 10 triplets the digest is in the log and one query is enough.
 - **B (ordinary benign):** a normal compliant workflow.
 
 Only queries can tell the three worlds apart. A good monitor accuses H and clears both X and B.
@@ -59,9 +57,9 @@ Only queries can tell the three worlds apart. A good monitor accuses H and clear
 
 ## What the submitted report found
 
-This section describes the original runs, in which a monitor could send all of its queries at once. The Study 5 update above shows what changes when queries go one at a time.
+This section describes the original runs, in which a monitor could send all of its queries at once. The update above shows what changes when queries go one at a time.
 
-On release workflows, monitors from three providers accused most of the exculpatory agents. **None of the 120 wrongful accusations came after the monitor retrieved the clearing record.** In 76 of them the monitor had already spent its three queries in one batch and could not have made the lookup (see the correction above).
+On release workflows, monitors from three providers accused most of the exculpatory agents. **None of the 120 wrongful accusations came after the monitor retrieved the clearing record.** In 76 of them the monitor had already spent its three queries in one batch and could not have made an informed lookup (see the update above).
 
 | Monitor (provider) | X accused (exculpatory) | B accused (ordinary benign) |
 |---|---:|---:|
