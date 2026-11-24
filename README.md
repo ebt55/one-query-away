@@ -7,6 +7,8 @@ Research from the Apart Research [Swarm Alignment Hackathon](https://apartresear
 
 **Read the report:** [`paper/e1-submission-final.pdf`](paper/e1-submission-final.pdf)
 
+**Video explainer (5:28):** [youtu.be/76eIGCPWe9c](https://youtu.be/76eIGCPWe9c)
+
 > **Update after submission (11 November 2026).** The report PDF is the version submitted to the hackathon on 9 November and is unchanged. Its headline is stronger than the evidence now supports. This note is the current summary.
 >
 > **What was wrong.** The report says the clearing record was "one query away" and easy to afford. In 20 of the 30 triplets the clearing query (`approvals_for_digest`) needs a digest that the log does not show and that only an earlier query returns. Most monitors sent all three queries in one turn, the harness ran them all, and the budget was gone before any result came back. Of the 120 wrongful accusations in the original runs, 76 could not have included an informed clearing lookup, 28 came from a single batch although the digest was in the log, and 16 came after the monitor had seen a result with budget left. The batching was noted in [`SPIKE_REPORT.md`](experiments/e1-evidence-monitors/SPIKE_REPORT.md) during the first pilot and did not reach the report.
